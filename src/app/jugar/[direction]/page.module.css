@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+  width: 100%;
+  text-align: center;
+}
+
+.directionLabel {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  margin: 0 0 var(--space-8) 0;
+}
+
+.placeholder {
+  margin: var(--space-12) 0;
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+}
+
+.back {
+  display: inline-block;
+  color: var(--color-primary);
+  font-size: var(--font-size-base);
+  margin-top: var(--space-6);
+}

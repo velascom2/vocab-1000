@@ -1,0 +1,11 @@
+.footer {
+  padding: var(--space-6) var(--space-4);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  margin-top: auto;
+}
+
+.attribution {
+  margin: 0;
+}

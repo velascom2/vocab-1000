@@ -1,0 +1,166 @@
+{
+  "source": "NGSL 1.2",
+  "license": "CC BY-SA 4.0",
+  "generatedBy": "Claude Opus 4.7 (1M context) · sesión Claude Code · piloto vocab-1000",
+  "generatedAt": "2026-05-22",
+  "pilotSize": 20,
+  "notes": [
+    "Sentidos puramente funcionales (auxiliares, modales condicionales sin equivalente lexical) se incluyen con la mejor traducción aproximada disponible.",
+    "Polisemia intra-tipo: hasta 3 acepciones por (lema, pos) ordenadas por frecuencia/utilidad pedagógica.",
+    "Polisemia inter-tipo: lemas con varios POS generan varios sentidos con pos diferente."
+  ],
+  "entries": [
+    {
+      "lemma_en": "be",
+      "sfi_rank": 2,
+      "senses": [
+        { "pos": "verb", "es": "ser" },
+        { "pos": "verb", "es": "estar" }
+      ]
+    },
+    {
+      "lemma_en": "have",
+      "sfi_rank": 8,
+      "senses": [
+        { "pos": "verb", "es": "tener" },
+        { "pos": "verb", "es": "haber" }
+      ]
+    },
+    {
+      "lemma_en": "do",
+      "sfi_rank": 21,
+      "senses": [
+        { "pos": "verb", "es": "hacer" }
+      ]
+    },
+    {
+      "lemma_en": "will",
+      "sfi_rank": 28,
+      "senses": [
+        { "pos": "modal", "es": "(futuro)" },
+        { "pos": "noun", "es": "voluntad" },
+        { "pos": "noun", "es": "testamento" }
+      ]
+    },
+    {
+      "lemma_en": "say",
+      "sfi_rank": 30,
+      "senses": [
+        { "pos": "verb", "es": "decir" }
+      ]
+    },
+    {
+      "lemma_en": "go",
+      "sfi_rank": 31,
+      "senses": [
+        { "pos": "verb", "es": "ir" }
+      ]
+    },
+    {
+      "lemma_en": "one",
+      "sfi_rank": 35,
+      "senses": [
+        { "pos": "numeral", "es": "uno" }
+      ]
+    },
+    {
+      "lemma_en": "would",
+      "sfi_rank": 36,
+      "senses": [
+        { "pos": "modal", "es": "(condicional)" }
+      ]
+    },
+    {
+      "lemma_en": "can",
+      "sfi_rank": 38,
+      "senses": [
+        { "pos": "modal", "es": "poder" },
+        { "pos": "noun", "es": "lata" }
+      ]
+    },
+    {
+      "lemma_en": "know",
+      "sfi_rank": 41,
+      "senses": [
+        { "pos": "verb", "es": "saber" },
+        { "pos": "verb", "es": "conocer" }
+      ]
+    },
+    {
+      "lemma_en": "get",
+      "sfi_rank": 43,
+      "senses": [
+        { "pos": "verb", "es": "obtener" },
+        { "pos": "verb", "es": "conseguir" },
+        { "pos": "verb", "es": "llegar" }
+      ]
+    },
+    {
+      "lemma_en": "like",
+      "sfi_rank": 45,
+      "senses": [
+        { "pos": "verb", "es": "gustar" },
+        { "pos": "preposition", "es": "como" }
+      ]
+    },
+    {
+      "lemma_en": "think",
+      "sfi_rank": 47,
+      "senses": [
+        { "pos": "verb", "es": "pensar" },
+        { "pos": "verb", "es": "creer" }
+      ]
+    },
+    {
+      "lemma_en": "make",
+      "sfi_rank": 48,
+      "senses": [
+        { "pos": "verb", "es": "hacer" },
+        { "pos": "verb", "es": "fabricar" }
+      ]
+    },
+    {
+      "lemma_en": "time",
+      "sfi_rank": 49,
+      "senses": [
+        { "pos": "noun", "es": "tiempo" },
+        { "pos": "noun", "es": "vez" }
+      ]
+    },
+    {
+      "lemma_en": "see",
+      "sfi_rank": 50,
+      "senses": [
+        { "pos": "verb", "es": "ver" }
+      ]
+    },
+    {
+      "lemma_en": "up",
+      "sfi_rank": 52,
+      "senses": [
+        { "pos": "adverb", "es": "arriba" }
+      ]
+    },
+    {
+      "lemma_en": "other",
+      "sfi_rank": 54,
+      "senses": [
+        { "pos": "adjective", "es": "otro" }
+      ]
+    },
+    {
+      "lemma_en": "out",
+      "sfi_rank": 55,
+      "senses": [
+        { "pos": "adverb", "es": "fuera" }
+      ]
+    },
+    {
+      "lemma_en": "good",
+      "sfi_rank": 56,
+      "senses": [
+        { "pos": "adjective", "es": "bueno" }
+      ]
+    }
+  ]
+}

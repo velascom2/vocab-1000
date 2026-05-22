@@ -1,0 +1,139 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.turnoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.directionLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-weight: 500;
+  min-width: 0;
+}
+
+.resetIcon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+}
+.resetIcon:hover {
+  background: var(--color-bg);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.turnoMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-4);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: var(--space-6);
+}
+
+.actions {
+  width: 100%;
+  margin-top: var(--space-8);
+}
+
+.evalButtons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+@media (min-width: 600px) {
+  .evalButtons {
+    flex-direction: row;
+  }
+}
+
+/* Pantalla Fin de Ronda */
+
+.finMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-4);
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  gap: var(--space-4);
+}
+
+.finIcon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.finTitle {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.25;
+}
+
+.finStats {
+  margin: var(--space-4) 0;
+}
+.finStats p {
+  margin: var(--space-2) 0;
+  color: var(--color-text);
+}
+.finStatsHint {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+}
+
+.finActions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: var(--space-3) var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  text-decoration: none;
+}
+.linkButton:hover {
+  border-color: var(--color-text-muted);
+}

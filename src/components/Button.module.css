@@ -3,14 +3,14 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
-  min-height: 44px;
+  min-height: 48px;
   padding: var(--space-3) var(--space-6);
   border: 1px solid transparent;
   border-radius: var(--radius-md);
   font-size: var(--font-size-base);
   font-weight: 500;
   cursor: pointer;
-  transition: background 120ms ease, border-color 120ms ease, transform 80ms ease;
+  transition: background 120ms ease, border-color 120ms ease, transform 80ms ease, box-shadow 200ms ease;
   text-decoration: none;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .btn:active {
-  transform: scale(0.99);
+  transform: scale(0.98);
 }
 
 .btn:disabled {
@@ -43,51 +43,61 @@
   width: 100%;
 }
 
+/* Primary — indigo, ligera glow al hover */
 .primary {
   background: var(--color-primary);
   color: white;
   border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
 }
 .primary:hover {
-  background: #1d4fd8;
-  border-color: #1d4fd8;
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  box-shadow: var(--shadow-glow-primary);
 }
 
+/* Secondary — surface elevada, borde sutil */
 .secondary {
   background: var(--color-surface);
   color: var(--color-text);
-  border-color: var(--color-border);
+  border-color: var(--color-border-strong);
 }
 .secondary:hover {
-  border-color: var(--color-text-muted);
+  background: var(--color-surface-elevated);
+  border-color: var(--color-text-faint);
 }
 
+/* Success — verde vivo */
 .success {
   background: var(--color-success);
   color: white;
   border-color: var(--color-success);
+  box-shadow: var(--shadow-sm);
 }
 .success:hover {
-  background: #128a3e;
-  border-color: #128a3e;
+  background: var(--color-success-hover);
+  border-color: var(--color-success-hover);
 }
 
+/* Danger — rojo vivo */
 .danger {
   background: var(--color-danger);
   color: white;
   border-color: var(--color-danger);
+  box-shadow: var(--shadow-sm);
 }
 .danger:hover {
-  background: #b91c1c;
-  border-color: #b91c1c;
+  background: var(--color-danger-hover);
+  border-color: var(--color-danger-hover);
 }
 
+/* Ghost — transparente con hover sutil */
 .ghost {
   background: transparent;
   color: var(--color-text-muted);
   border-color: transparent;
 }
 .ghost:hover {
-  background: var(--color-bg);
+  background: var(--color-surface-elevated);
   color: var(--color-text);
 }

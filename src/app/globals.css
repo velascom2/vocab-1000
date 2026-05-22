@@ -1,20 +1,40 @@
 /*
  * Design tokens — vocab-1000 MVP
- * Origen: ux.md v2 §3 (sistema de diseño). Tokens declarados en :root
- * permiten tema oscuro futuro sin reescritura (diferido a fase 2).
+ *
+ * Paleta SaaS premium oscura (estilo Linear / Vercel / Stripe).
+ * Familia: Paleta A de USA-R-006 con ajuste del stakeholder (Background
+ * más oscuro y Accent violeta cálido). Decisión 2026-05-22 — sub-gate 4.2.
+ *
+ * Audiencia: adultos aprendiendo idiomas en sesiones medio-largas.
+ * Sensación buscada: serio, moderno, foco. NO infantil. NO gamer.
  */
 
 :root {
-  /* Color · paleta semántica */
-  --color-bg: #fafafa;
-  --color-surface: #ffffff;
-  --color-text: #1a1a1a;
-  --color-text-muted: #6b7280;
-  --color-primary: #2563eb;
-  --color-success: #16a34a;
-  --color-danger: #dc2626;
-  --color-warning-soft: #f59e0b;
-  --color-border: #e5e7eb;
+  /* Fondos */
+  --color-bg: #020617;            /* slate-950 — fondo profundo */
+  --color-surface: #0F172A;       /* slate-900 — cards, header, footer */
+  --color-surface-elevated: #1E293B; /* slate-800 — modales, hover surfaces */
+
+  /* Texto */
+  --color-text: #F8FAFC;          /* slate-50 — primario */
+  --color-text-muted: #94A3B8;    /* slate-400 — secundario, labels */
+  --color-text-faint: #64748B;    /* slate-500 — terciario */
+
+  /* Marca */
+  --color-primary: #6366F1;       /* indigo-500 — botón primario, foco */
+  --color-primary-hover: #818CF8; /* indigo-400 — hover/active */
+  --color-accent: #A855F7;        /* violet-500 — acento opcional */
+
+  /* Semánticos (sobre fondo oscuro: tonos un punto más vivos que en claro) */
+  --color-success: #22C55E;       /* green-500 */
+  --color-success-hover: #16A34A; /* green-600 */
+  --color-danger: #EF4444;        /* red-500 */
+  --color-danger-hover: #DC2626;  /* red-600 */
+  --color-warning-soft: #FBBF24;  /* amber-400 */
+
+  /* Bordes */
+  --color-border: #1E293B;        /* slate-800 — bordes sutiles */
+  --color-border-strong: #334155; /* slate-700 — bordes definidos */
 
   /* Spacing */
   --space-1: 0.25rem;
@@ -24,9 +44,10 @@
   --space-6: 1.5rem;
   --space-8: 2rem;
   --space-12: 3rem;
+  --space-16: 4rem;
 
   /* Tipografía */
-  --font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
@@ -34,14 +55,17 @@
   --font-size-xxl: 3rem;
   --line-height-base: 1.5;
 
-  /* Radius */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
+  /* Radius (estilo Linear/Vercel: más generoso) */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
   --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
 
-  /* Sombras */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+  /* Sombras (sutiles sobre oscuro) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-glow-primary: 0 0 0 1px rgba(99, 102, 241, 0.25), 0 8px 24px rgba(99, 102, 241, 0.15);
 
   /* Safe area (futura WebView Capacitor — fase 2) */
   --safe-top: env(safe-area-inset-top);
@@ -64,6 +88,8 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -71,6 +97,10 @@ body {
   padding-bottom: var(--safe-bottom);
   min-height: 100vh;
   max-width: 100vw;
+}
+
+html {
+  color-scheme: dark;
 }
 
 button {
@@ -82,6 +112,10 @@ button {
 a {
   color: var(--color-primary);
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-hover);
 }
 
 a:focus-visible,

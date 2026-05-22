@@ -327,7 +327,7 @@
 .input:disabled,
 .textarea:disabled,
 .select:disabled {
-  background: var(--color-bg);
+  background: var(--color-surface-elevated);
   color: var(--color-text-faint);
   cursor: not-allowed;
 }

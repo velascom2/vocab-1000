@@ -1,40 +1,39 @@
 /*
  * Design tokens — vocab-1000 MVP
  *
- * Paleta SaaS premium oscura (estilo Linear / Vercel / Stripe).
- * Familia: Paleta A de USA-R-006 con ajuste del stakeholder (Background
- * más oscuro y Accent violeta cálido). Decisión 2026-05-22 — sub-gate 4.2.
+ * Paleta startup fresca clara (familia C de USA-R-006) con primary indigo
+ * mantenido de la iteración previa. Decisión 2026-05-22 — sub-gate 4.2 v4.
  *
- * Audiencia: adultos aprendiendo idiomas en sesiones medio-largas.
- * Sensación buscada: serio, moderno, foco. NO infantil. NO gamer.
+ * Audiencia: adultos aprendiendo idiomas, sesiones medio-largas.
+ * Sensación buscada: clara, accesible, productiva. NO infantil.
  */
 
 :root {
   /* Fondos */
-  --color-bg: #020617;            /* slate-950 — fondo profundo */
-  --color-surface: #0F172A;       /* slate-900 — cards, header, footer */
-  --color-surface-elevated: #1E293B; /* slate-800 — modales, hover surfaces */
+  --color-bg: #FFFFFF;             /* blanco puro */
+  --color-surface: #FFFFFF;        /* cards, header, footer (sin elevación de color) */
+  --color-surface-elevated: #F8FAFC; /* slate-50 — hover surfaces, modal */
 
   /* Texto */
-  --color-text: #F8FAFC;          /* slate-50 — primario */
-  --color-text-muted: #94A3B8;    /* slate-400 — secundario, labels */
-  --color-text-faint: #64748B;    /* slate-500 — terciario */
+  --color-text: #0F172A;           /* slate-900 — primario */
+  --color-text-muted: #475569;     /* slate-600 — secundario, labels */
+  --color-text-faint: #64748B;     /* slate-500 — terciario */
 
   /* Marca */
-  --color-primary: #6366F1;       /* indigo-500 — botón primario, foco */
-  --color-primary-hover: #818CF8; /* indigo-400 — hover/active */
-  --color-accent: #A855F7;        /* violet-500 — acento opcional */
+  --color-primary: #6366F1;        /* indigo-500 — botón primario, foco */
+  --color-primary-hover: #4F46E5;  /* indigo-600 — más oscuro al hover (en claro) */
+  --color-accent: #A855F7;         /* violet-500 — acento (gradient tagline) */
 
-  /* Semánticos (sobre fondo oscuro: tonos un punto más vivos que en claro) */
-  --color-success: #22C55E;       /* green-500 */
-  --color-success-hover: #16A34A; /* green-600 */
-  --color-danger: #EF4444;        /* red-500 */
-  --color-danger-hover: #DC2626;  /* red-600 */
-  --color-warning-soft: #FBBF24;  /* amber-400 */
+  /* Semánticos (sobre fondo claro: tonos más oscuros para contraste) */
+  --color-success: #16A34A;        /* green-600 */
+  --color-success-hover: #15803D;  /* green-700 */
+  --color-danger: #DC2626;         /* red-600 */
+  --color-danger-hover: #B91C1C;   /* red-700 */
+  --color-warning-soft: #F59E0B;   /* amber-500 */
 
   /* Bordes */
-  --color-border: #1E293B;        /* slate-800 — bordes sutiles */
-  --color-border-strong: #334155; /* slate-700 — bordes definidos */
+  --color-border: #E2E8F0;         /* slate-200 — bordes sutiles */
+  --color-border-strong: #CBD5E1;  /* slate-300 — bordes definidos */
 
   /* Spacing */
   --space-1: 0.25rem;
@@ -55,17 +54,17 @@
   --font-size-xxl: 3rem;
   --line-height-base: 1.5;
 
-  /* Radius (estilo Linear/Vercel: más generoso) */
+  /* Radius (estilo Linear/Vercel: generoso) */
   --radius-sm: 0.375rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
   --radius-xl: 1.5rem;
 
-  /* Sombras (sutiles sobre oscuro) */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
-  --shadow-glow-primary: 0 0 0 1px rgba(99, 102, 241, 0.25), 0 8px 24px rgba(99, 102, 241, 0.15);
+  /* Sombras (sutiles sobre blanco) */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.12);
+  --shadow-glow-primary: 0 0 0 1px rgba(99, 102, 241, 0.2), 0 8px 24px rgba(99, 102, 241, 0.12);
 
   /* Safe area (futura WebView Capacitor — fase 2) */
   --safe-top: env(safe-area-inset-top);
@@ -100,7 +99,7 @@ body {
 }
 
 html {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 button {

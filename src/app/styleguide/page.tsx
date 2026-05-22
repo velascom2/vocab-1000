@@ -20,32 +20,32 @@ type ColorToken = {
 };
 
 const COLOR_BACKGROUNDS: ColorToken[] = [
-  { name: "--color-bg", hex: "#020617", use: "Fondo principal de la app" },
-  { name: "--color-surface", hex: "#0F172A", use: "Header, footer, cards" },
-  { name: "--color-surface-elevated", hex: "#1E293B", use: "Modal, hover surfaces" },
+  { name: "--color-bg", hex: "#FFFFFF", use: "Fondo principal de la app" },
+  { name: "--color-surface", hex: "#FFFFFF", use: "Header, footer, cards" },
+  { name: "--color-surface-elevated", hex: "#F8FAFC", use: "Modal, hover surfaces" },
 ];
 
 const COLOR_TEXT: ColorToken[] = [
-  { name: "--color-text", hex: "#F8FAFC", use: "Texto primario" },
-  { name: "--color-text-muted", hex: "#94A3B8", use: "Labels, secundario" },
+  { name: "--color-text", hex: "#0F172A", use: "Texto primario" },
+  { name: "--color-text-muted", hex: "#475569", use: "Labels, secundario" },
   { name: "--color-text-faint", hex: "#64748B", use: "Terciario, atribución" },
 ];
 
 const COLOR_BRAND: ColorToken[] = [
   { name: "--color-primary", hex: "#6366F1", use: "Botón primario, foco", textColor: "#fff" },
-  { name: "--color-primary-hover", hex: "#818CF8", use: "Hover del primario", textColor: "#fff" },
+  { name: "--color-primary-hover", hex: "#4F46E5", use: "Hover del primario", textColor: "#fff" },
   { name: "--color-accent", hex: "#A855F7", use: "Acento (gradient tagline)", textColor: "#fff" },
 ];
 
 const COLOR_SEMANTIC: ColorToken[] = [
-  { name: "--color-success", hex: "#22C55E", use: "Botón Acerté", textColor: "#fff" },
-  { name: "--color-danger", hex: "#EF4444", use: "Botón Fallé, errores", textColor: "#fff" },
-  { name: "--color-warning-soft", hex: "#FBBF24", use: "Banner memory-only" },
+  { name: "--color-success", hex: "#16A34A", use: "Botón Acerté", textColor: "#fff" },
+  { name: "--color-danger", hex: "#DC2626", use: "Botón Fallé, errores", textColor: "#fff" },
+  { name: "--color-warning-soft", hex: "#F59E0B", use: "Banner memory-only" },
 ];
 
 const COLOR_BORDERS: ColorToken[] = [
-  { name: "--color-border", hex: "#1E293B", use: "Bordes sutiles entre superficies" },
-  { name: "--color-border-strong", hex: "#334155", use: "Bordes definidos, botones secundarios" },
+  { name: "--color-border", hex: "#E2E8F0", use: "Bordes sutiles entre superficies" },
+  { name: "--color-border-strong", hex: "#CBD5E1", use: "Bordes definidos, botones secundarios" },
 ];
 
 const TYPE_SCALE = [
@@ -135,9 +135,10 @@ export default function StyleguidePage() {
             <h2 className={styles.sectionTitle}>Colores</h2>
           </div>
           <p className={styles.sectionDesc}>
-            Paleta SaaS premium oscura (familia A de USA-R-006 con ajuste del stakeholder).
-            Tokens semánticos definidos en <code>globals.css</code>. Contraste verificado en
-            todos los pares texto/fondo (USA-013, USA-R-008).
+            Paleta startup fresca clara (familia C de USA-R-006) con primary indigo
+            heredado de la iteración previa. Tokens semánticos definidos en{" "}
+            <code>globals.css</code>. Contraste verificado en todos los pares texto/fondo
+            (USA-013, USA-R-008).
           </p>
           <ColorBlock tokens={COLOR_BACKGROUNDS} title="Fondos" />
           <ColorBlock tokens={COLOR_TEXT} title="Texto" />

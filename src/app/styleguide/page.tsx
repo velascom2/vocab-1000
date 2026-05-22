@@ -32,20 +32,20 @@ const COLOR_TEXT: ColorToken[] = [
 ];
 
 const COLOR_BRAND: ColorToken[] = [
-  { name: "--color-primary", hex: "#6366F1", use: "Botón primario, foco", textColor: "#fff" },
-  { name: "--color-primary-hover", hex: "#4F46E5", use: "Hover del primario", textColor: "#fff" },
-  { name: "--color-accent", hex: "#A855F7", use: "Acento (gradient tagline)", textColor: "#fff" },
+  { name: "--color-primary", hex: "#0F766E", use: "Botón primario, foco · teal-700", textColor: "#fff" },
+  { name: "--color-primary-hover", hex: "#0D5B54", use: "Hover del primario · teal-800", textColor: "#fff" },
+  { name: "--color-accent", hex: "#14B8A6", use: "Acento sutil · teal-500", textColor: "#fff" },
 ];
 
 const COLOR_SEMANTIC: ColorToken[] = [
-  { name: "--color-success", hex: "#16A34A", use: "Botón Acerté", textColor: "#fff" },
-  { name: "--color-danger", hex: "#DC2626", use: "Botón Fallé, errores", textColor: "#fff" },
-  { name: "--color-warning-soft", hex: "#F59E0B", use: "Banner memory-only" },
+  { name: "--color-success", hex: "#15803D", use: "Botón Acerté · green-700", textColor: "#fff" },
+  { name: "--color-danger", hex: "#B91C1C", use: "Botón Fallé, errores · red-700", textColor: "#fff" },
+  { name: "--color-warning-soft", hex: "#B45309", use: "Banner memory-only · amber-700", textColor: "#fff" },
 ];
 
 const COLOR_BORDERS: ColorToken[] = [
-  { name: "--color-border", hex: "#E2E8F0", use: "Bordes sutiles entre superficies" },
-  { name: "--color-border-strong", hex: "#CBD5E1", use: "Bordes definidos, botones secundarios" },
+  { name: "--color-border", hex: "#E2E8F0", use: "Bordes sutiles · slate-200" },
+  { name: "--color-border-strong", hex: "#94A3B8", use: "Bordes definidos · slate-400" },
 ];
 
 const TYPE_SCALE = [
@@ -105,7 +105,7 @@ export default function StyleguidePage() {
   return (
     <div className={styles.layout}>
       <aside className={styles.sidebar}>
-        <h1 className={styles.sidebarTitle}>vocab-1000 · Sistema de diseño</h1>
+        <h1 className={`${styles.sidebarTitle} cursor`}>vocab-1000 / sistema</h1>
         <ul className={styles.sidebarNav}>
           <li><a className={styles.sidebarLink} href="#colores">01 · Colores</a></li>
           <li><a className={styles.sidebarLink} href="#tipografia">02 · Tipografía</a></li>
@@ -135,9 +135,9 @@ export default function StyleguidePage() {
             <h2 className={styles.sectionTitle}>Colores</h2>
           </div>
           <p className={styles.sectionDesc}>
-            Paleta startup fresca clara (familia C de USA-R-006) con primary indigo
-            heredado de la iteración previa. Tokens semánticos definidos en{" "}
-            <code>globals.css</code>. Contraste verificado en todos los pares texto/fondo
+            Paleta &ldquo;terminal sobre blanco&rdquo; — fondo claro + acento teal
+            terminal + tipografía monoespaciada. Sensación robótica / developer-friendly,
+            sobria, sin frivolidad. Contraste verificado en todos los pares texto/fondo
             (USA-013, USA-R-008).
           </p>
           <ColorBlock tokens={COLOR_BACKGROUNDS} title="Fondos" />

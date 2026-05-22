@@ -7,7 +7,7 @@ type HeaderProps = {
 export function Header({ variant = "home" }: HeaderProps) {
   return (
     <header className={styles.header} data-variant={variant}>
-      <h1 className={styles.title}>vocab-1000</h1>
+      <h1 className={`${styles.title} cursor`}>vocab-1000</h1>
       <button
         type="button"
         className={styles.info}

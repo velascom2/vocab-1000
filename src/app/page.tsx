@@ -9,11 +9,12 @@ export default function Home() {
       <Header variant="home" />
       <main className={styles.main}>
         <h2 className={styles.tagline}>
+          <span className={styles.taglinePrefix} aria-hidden="true">&gt;</span>
           Aprende vocabulario
           <br />
           de las palabras más usadas
         </h2>
-        <p className={styles.intro}>Elige cómo quieres jugar:</p>
+        <p className={styles.intro}>// Elige cómo quieres jugar</p>
         <nav className={styles.directions} aria-label="Elegir dirección de juego">
           <DirectionButton from="Español" to="Inglés" href="/jugar/es-en" />
           <DirectionButton from="Inglés" to="Español" href="/jugar/en-es" />

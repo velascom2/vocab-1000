@@ -1,39 +1,41 @@
 /*
  * Design tokens — vocab-1000 MVP
  *
- * Paleta startup fresca clara (familia C de USA-R-006) con primary indigo
- * mantenido de la iteración previa. Decisión 2026-05-22 — sub-gate 4.2 v4.
+ * Paleta "terminal sobre blanco" (familia C variante mono — USA-R-006).
+ * Decisión 2026-05-22 v5: fondo blanco + tipografía monoespaciada para
+ * un look más robótico / desarrollador-friendly inspirado en terminales
+ * modernas (Cursor, Linear mono mode, Matrix sobrio).
  *
  * Audiencia: adultos aprendiendo idiomas, sesiones medio-largas.
- * Sensación buscada: clara, accesible, productiva. NO infantil.
+ * Sensación buscada: técnico, sobrio, foco, sin frivolidad.
  */
 
 :root {
   /* Fondos */
-  --color-bg: #FFFFFF;             /* blanco puro */
-  --color-surface: #FFFFFF;        /* cards, header, footer (sin elevación de color) */
-  --color-surface-elevated: #F8FAFC; /* slate-50 — hover surfaces, modal */
+  --color-bg: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F8FAFC;
 
   /* Texto */
-  --color-text: #0F172A;           /* slate-900 — primario */
-  --color-text-muted: #475569;     /* slate-600 — secundario, labels */
-  --color-text-faint: #64748B;     /* slate-500 — terciario */
+  --color-text: #0F172A;           /* slate-900 */
+  --color-text-muted: #475569;     /* slate-600 */
+  --color-text-faint: #64748B;     /* slate-500 */
 
-  /* Marca */
-  --color-primary: #6366F1;        /* indigo-500 — botón primario, foco */
-  --color-primary-hover: #4F46E5;  /* indigo-600 — más oscuro al hover (en claro) */
-  --color-accent: #A855F7;         /* violet-500 — acento (gradient tagline) */
+  /* Marca — teal terminal */
+  --color-primary: #0F766E;        /* teal-700 — primario */
+  --color-primary-hover: #0D5B54;  /* teal-800 — hover */
+  --color-accent: #14B8A6;         /* teal-500 — acento sutil para detalles */
 
-  /* Semánticos (sobre fondo claro: tonos más oscuros para contraste) */
-  --color-success: #16A34A;        /* green-600 */
-  --color-success-hover: #15803D;  /* green-700 */
-  --color-danger: #DC2626;         /* red-600 */
-  --color-danger-hover: #B91C1C;   /* red-700 */
-  --color-warning-soft: #F59E0B;   /* amber-500 */
+  /* Semánticos */
+  --color-success: #15803D;        /* green-700 — distinto del primary teal */
+  --color-success-hover: #166534;  /* green-800 */
+  --color-danger: #B91C1C;         /* red-700 */
+  --color-danger-hover: #991B1B;   /* red-800 */
+  --color-warning-soft: #B45309;   /* amber-700 */
 
   /* Bordes */
-  --color-border: #E2E8F0;         /* slate-200 — bordes sutiles */
-  --color-border-strong: #CBD5E1;  /* slate-300 — bordes definidos */
+  --color-border: #E2E8F0;         /* slate-200 */
+  --color-border-strong: #94A3B8;  /* slate-400 — más visible, look "cuadrado" */
 
   /* Spacing */
   --space-1: 0.25rem;
@@ -45,8 +47,10 @@
   --space-12: 3rem;
   --space-16: 4rem;
 
-  /* Tipografía */
-  --font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  /* Tipografía — monoespaciada como default */
+  --font-family: ui-monospace, "SF Mono", "Menlo", "Monaco", "Consolas",
+    "Liberation Mono", "Courier New", monospace;
+  --font-family-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.25rem;
@@ -54,17 +58,17 @@
   --font-size-xxl: 3rem;
   --line-height-base: 1.5;
 
-  /* Radius (estilo Linear/Vercel: generoso) */
-  --radius-sm: 0.375rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.5rem;
+  /* Radius — más cuadrado, look "código/terminal" */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.375rem;
+  --radius-xl: 0.5rem;
 
-  /* Sombras (sutiles sobre blanco) */
-  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
-  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
-  --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.12);
-  --shadow-glow-primary: 0 0 0 1px rgba(99, 102, 241, 0.2), 0 8px 24px rgba(99, 102, 241, 0.12);
+  /* Sombras — casi planas */
+  --shadow-sm: 0 1px 0 rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 2px 4px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.10);
+  --shadow-glow-primary: 0 0 0 1px rgba(15, 118, 110, 0.25);
 
   /* Safe area (futura WebView Capacitor — fase 2) */
   --safe-top: env(safe-area-inset-top);
@@ -123,6 +127,19 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+/* Cursor parpadeante para uso decorativo (terminal vibe) */
+.cursor::after {
+  content: "_";
+  color: var(--color-primary);
+  margin-left: 2px;
+  animation: blink 1s steps(2) infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -130,5 +147,10 @@ button:focus-visible {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+  }
+
+  .cursor::after {
+    animation: none;
+    opacity: 1;
   }
 }

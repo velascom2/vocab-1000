@@ -14,10 +14,9 @@
  */
 
 import { create } from "zustand";
-import { mockCatalog } from "@/catalog/data/mock";
+import { catalog as mockCatalog } from "@/catalog/data/catalog";
 import type { Direction, Group } from "@/catalog/types";
-import { detectStorage, load, save } from "@/lib/persistence";
-import type { StorageMode } from "@/lib/persistence";
+import { detectStorage, load, save, type StorageMode } from "@/lib/persistence";
 import { reinsertRandom, shuffle } from "@/lib/shuffle";
 
 const STORAGE_KEY = "vocab1000.progress";

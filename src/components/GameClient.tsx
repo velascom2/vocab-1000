@@ -1,84 +1,77 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
-import { mockCatalog } from "@/catalog/data/mock";
-import type { Direction, Group } from "@/catalog/types";
-import { reinsertRandom, shuffle } from "@/lib/shuffle";
+import { useEffect, useState } from "react";
+import type { Direction } from "@/catalog/types";
+import { useHydrated } from "@/lib/use-hydrated";
+import { useGameStore } from "@/store/game";
 import { Acepciones } from "./Acepciones";
 import { Button } from "./Button";
+import { DirectionSwitch } from "./DirectionSwitch";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Modal } from "./Modal";
-import { ProgressDual } from "./ProgressDual";
 import { WordDisplay } from "./WordDisplay";
 import styles from "./GameClient.module.css";
 
 type GameClientProps = {
-  direction: Direction;
+  initialDirection: Direction;
 };
-
-type Phase = "prompt" | "revealed" | "finished";
 
 const DIRECTION_LABEL: Record<Direction, { from: string; to: string; destLang: "es" | "en" }> = {
   en_es: { from: "Inglés", to: "Español", destLang: "es" },
   es_en: { from: "Español", to: "Inglés", destLang: "en" },
 };
 
-function initialPending(direction: Direction): Group[] {
-  const groups = direction === "en_es" ? mockCatalog.en_es : mockCatalog.es_en;
-  return shuffle([...groups]);
-}
+export function GameClient({ initialDirection }: GameClientProps) {
+  const hydrated = useHydrated();
 
-export function GameClient({ direction }: GameClientProps) {
-  const label = DIRECTION_LABEL[direction];
+  const activeDirection = useGameStore((s) => s.activeDirection);
+  const directions = useGameStore((s) => s.directions);
+  const phase = useGameStore((s) => s.phase);
+  const startDirection = useGameStore((s) => s.startDirection);
+  const reveal = useGameStore((s) => s.reveal);
+  const markAcerte = useGameStore((s) => s.markAcerte);
+  const markFalle = useGameStore((s) => s.markFalle);
+  const resetDirection = useGameStore((s) => s.resetDirection);
+  const currentGroupFn = useGameStore((s) => s.currentGroup);
+  const totalFor = useGameStore((s) => s.totalForDirection);
 
-  const [pending, setPending] = useState<Group[]>(() => initialPending(direction));
-  const [acertadas, setAcertadas] = useState<Group[]>([]);
-  const [turnos, setTurnos] = useState(0);
-  const [phase, setPhase] = useState<Phase>("prompt");
   const [resetModalOpen, setResetModalOpen] = useState(false);
 
-  const total = useMemo(
-    () => (direction === "en_es" ? mockCatalog.en_es.length : mockCatalog.es_en.length),
-    [direction],
-  );
-  const current = pending[0];
+  // Tras hydrate: si la dirección activa no coincide con la URL, inicializa la URL.
+  useEffect(() => {
+    if (!hydrated) return;
+    if (activeDirection !== initialDirection) {
+      startDirection(initialDirection);
+    }
+  }, [hydrated, activeDirection, initialDirection, startDirection]);
 
-  function handleReveal() {
-    if (phase === "prompt") setPhase("revealed");
+  if (!hydrated) {
+    return (
+      <div className={styles.app}>
+        <Header variant="turno" />
+        <main className={styles.turnoMain}>
+          <p className={styles.loading}>Cargando…</p>
+        </main>
+        <Footer />
+      </div>
+    );
   }
 
-  function handleAcerte() {
-    if (!current) return;
-    const nextPending = pending.slice(1);
-    const nextAcertadas = [...acertadas, current];
-    const nextTurnos = turnos + 1;
-    setAcertadas(nextAcertadas);
-    setTurnos(nextTurnos);
-    setPending(nextPending);
-    setPhase(nextPending.length === 0 ? "finished" : "prompt");
-  }
+  if (!activeDirection) return null; // Aún inicializando
 
-  function handleFalle() {
-    if (!current) return;
-    const rest = pending.slice(1);
-    const nextPending = reinsertRandom(rest, current);
-    setTurnos(turnos + 1);
-    setPending(nextPending);
-    setPhase("prompt");
-  }
+  const label = DIRECTION_LABEL[activeDirection];
+  const directionState = directions[activeDirection];
+  const total = totalFor(activeDirection);
+  const correct = directionState?.correct.length ?? 0;
+  const turns = directionState?.turns ?? 0;
+  const current = currentGroupFn();
+  const finished = directionState !== undefined && directionState.pending.length === 0;
 
-  function reset() {
-    setPending(initialPending(direction));
-    setAcertadas([]);
-    setTurnos(0);
-    setPhase("prompt");
-    setResetModalOpen(false);
-  }
-
-  if (phase === "finished") {
-    const porcentajeAciertos = ((acertadas.length / Math.max(turnos, 1)) * 100).toFixed(1);
+  // Fin de ronda
+  if (finished) {
+    const porcentajeAciertos = ((correct / Math.max(turns, 1)) * 100).toFixed(1);
     return (
       <div className={styles.app}>
         <Header variant="turno" />
@@ -93,10 +86,10 @@ export function GameClient({ direction }: GameClientProps) {
           </h2>
           <div className={styles.finStats}>
             <p>
-              <strong>{acertadas.length}</strong> palabras acertadas
+              <strong>{correct}</strong> palabras acertadas
             </p>
             <p>
-              <strong>{turnos}</strong> turnos jugados
+              <strong>{turns}</strong> turnos jugados
             </p>
             <p>
               <strong>{porcentajeAciertos}%</strong> de aciertos
@@ -104,7 +97,12 @@ export function GameClient({ direction }: GameClientProps) {
             </p>
           </div>
           <div className={styles.finActions}>
-            <Button variant="primary" fullWidth icon="↻" onClick={reset}>
+            <Button
+              variant="primary"
+              fullWidth
+              icon="↻"
+              onClick={() => resetDirection(activeDirection)}
+            >
               Volver a empezar
             </Button>
             <Link href="/" className={styles.linkButton}>
@@ -118,17 +116,22 @@ export function GameClient({ direction }: GameClientProps) {
   }
 
   if (!current) {
-    return <div className={styles.app}>Cargando…</div>;
+    return (
+      <div className={styles.app}>
+        <Header variant="turno" />
+        <main className={styles.turnoMain}>
+          <p className={styles.loading}>Cargando…</p>
+        </main>
+        <Footer />
+      </div>
+    );
   }
 
   return (
     <div className={styles.app}>
       <Header variant="turno" />
       <div className={styles.turnoHeader}>
-        <span className={styles.directionLabel}>
-          {label.from} <span aria-hidden="true">→</span> {label.to}
-        </span>
-        <ProgressDual acertadas={acertadas.length} total={total} turnos={turnos} />
+        <DirectionSwitch />
         <button
           type="button"
           className={styles.resetIcon}
@@ -149,15 +152,15 @@ export function GameClient({ direction }: GameClientProps) {
 
         <div className={styles.actions}>
           {phase === "prompt" ? (
-            <Button variant="primary" fullWidth onClick={handleReveal}>
+            <Button variant="primary" fullWidth onClick={reveal}>
               Mostrar traducción
             </Button>
           ) : (
             <div className={styles.evalButtons}>
-              <Button variant="success" icon="✓" onClick={handleAcerte} fullWidth>
+              <Button variant="success" icon="✓" onClick={markAcerte} fullWidth>
                 Acerté
               </Button>
-              <Button variant="danger" icon="✗" onClick={handleFalle} fullWidth>
+              <Button variant="danger" icon="✗" onClick={markFalle} fullWidth>
                 Fallé
               </Button>
             </div>
@@ -172,13 +175,16 @@ export function GameClient({ direction }: GameClientProps) {
         title={`¿Reiniciar la ronda de ${label.from} → ${label.to}?`}
         body={
           <>
-            Tu progreso actual (<strong>{acertadas.length} / {total}</strong>) se perderá. La otra
+            Tu progreso actual (<strong>{correct} / {total}</strong>) se perderá. La otra
             dirección no se toca.
           </>
         }
         confirmLabel="Sí, reiniciar"
         confirmVariant="danger"
-        onConfirm={reset}
+        onConfirm={() => {
+          resetDirection(activeDirection);
+          setResetModalOpen(false);
+        }}
         onCancel={() => setResetModalOpen(false)}
       />
     </div>

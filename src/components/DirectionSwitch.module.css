@@ -1,0 +1,64 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.active {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+.dirShort {
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.switchBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  background: transparent;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  font-family: inherit;
+  min-height: 32px;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.switchBtn:hover {
+  background: var(--color-surface-elevated);
+  border-color: var(--color-text-faint);
+  color: var(--color-text);
+}
+
+.switchBtn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.swapIcon {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.otherInfo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.miniProgress {
+  color: var(--color-text-faint);
+  font-size: var(--font-size-sm);
+  font-variant-numeric: tabular-nums;
+}

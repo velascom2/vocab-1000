@@ -43,10 +43,15 @@
   letter-spacing: 0.02em;
 }
 
-.directions {
+.directions,
+.cards {
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+}
+
+.cards {
+  gap: var(--space-4);
 }
 
 @media (min-width: 600px) {

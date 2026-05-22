@@ -24,5 +24,5 @@ export default async function JugarPage({
   if (!direction || !DIRECTIONS.includes(direction)) {
     notFound();
   }
-  return <GameClient direction={direction} />;
+  return <GameClient initialDirection={direction} />;
 }

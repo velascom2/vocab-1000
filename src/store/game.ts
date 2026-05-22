@@ -16,7 +16,8 @@
 import { create } from "zustand";
 import { mockCatalog } from "@/catalog/data/mock";
 import type { Direction, Group } from "@/catalog/types";
-import { load, save } from "@/lib/persistence";
+import { detectStorage, load, save } from "@/lib/persistence";
+import type { StorageMode } from "@/lib/persistence";
 import { reinsertRandom, shuffle } from "@/lib/shuffle";
 
 const STORAGE_KEY = "vocab1000.progress";
@@ -80,6 +81,7 @@ interface GameStore {
   // Estado no persistido (UI)
   hydrated: boolean;
   phase: Phase;
+  storageMode: StorageMode | null;
 
   // Acciones
   bootstrap: () => Promise<void>;
@@ -119,9 +121,11 @@ export const useGameStore = create<GameStore>((set, get) => ({
   ...EMPTY_PROGRESS,
   hydrated: false,
   phase: "prompt",
+  storageMode: null,
 
   bootstrap: async () => {
     if (get().hydrated) return;
+    const mode = await detectStorage();
     const loaded = await load<PersistedProgress>(STORAGE_KEY, EMPTY_PROGRESS);
     // Migración / invalidación si el catálogo cambió
     const valid =
@@ -134,6 +138,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
       lastModified: loaded.lastModified,
       hydrated: true,
       phase: "prompt",
+      storageMode: mode,
     });
   },
 

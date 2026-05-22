@@ -32,6 +32,8 @@
   --color-danger: #B91C1C;         /* red-700 */
   --color-danger-hover: #991B1B;   /* red-800 */
   --color-warning-soft: #B45309;   /* amber-700 */
+  --color-warning-bg: #FFFBEB;     /* amber-50 — fondo banner memory-only */
+  --color-warning-border: #FCD34D; /* amber-300 — borde banner memory-only */
 
   /* Bordes */
   --color-border: #E2E8F0;         /* slate-200 */

@@ -36,10 +36,16 @@ export const catalog: Catalog = {
       "es": "hacer"
     },
     {
-      "id": "modal-will-(futuro)",
-      "pos": "modal",
+      "id": "noun-will-voluntad",
+      "pos": "noun",
       "en": "will",
-      "es": "(futuro)"
+      "es": "voluntad"
+    },
+    {
+      "id": "noun-will-testamento",
+      "pos": "noun",
+      "en": "will",
+      "es": "testamento"
     },
     {
       "id": "verb-say-decir",
@@ -72,10 +78,16 @@ export const catalog: Catalog = {
       "es": "uno"
     },
     {
-      "id": "modal-would-(condicional)",
+      "id": "modal-would-condicional",
       "pos": "modal",
       "en": "would",
-      "es": "(condicional)"
+      "es": "condicional"
+    },
+    {
+      "id": "modal-would-hipotético",
+      "pos": "modal",
+      "en": "would",
+      "es": "hipotético"
     },
     {
       "id": "modal-can-poder",
@@ -282,10 +294,10 @@ export const catalog: Catalog = {
       "es": "llegar"
     },
     {
-      "id": "modal-could-poder_(pasado)",
+      "id": "modal-could-podía",
       "pos": "modal",
       "en": "could",
-      "es": "poder (pasado)"
+      "es": "podía"
     },
     {
       "id": "verb-work-trabajar",
@@ -312,10 +324,10 @@ export const catalog: Catalog = {
       "es": "utilizar"
     },
     {
-      "id": "conjunction-than-que_(comparativo)",
+      "id": "conjunction-than-que",
       "pos": "conjunction",
       "en": "than",
-      "es": "que (comparativo)"
+      "es": "que"
     },
     {
       "id": "verb-look-mirar",
@@ -504,10 +516,10 @@ export const catalog: Catalog = {
       "es": "querer decir"
     },
     {
-      "id": "modal-may-poder_(posibilidad)",
+      "id": "modal-may-puede",
       "pos": "modal",
       "en": "may",
-      "es": "poder (posibilidad)"
+      "es": "puede"
     },
     {
       "id": "adjective-last-último",
@@ -900,10 +912,10 @@ export const catalog: Catalog = {
       "es": "otro"
     },
     {
-      "id": "determiner-another-un(a)_más",
+      "id": "determiner-another-otra",
       "pos": "determiner",
       "en": "another",
-      "es": "un(a) más"
+      "es": "otra"
     },
     {
       "id": "verb-become-convertirse",
@@ -1062,16 +1074,16 @@ export const catalog: Catalog = {
       "es": "jugar"
     },
     {
-      "id": "verb-play-tocar_(instrumento)",
+      "id": "verb-play-tocar",
       "pos": "verb",
       "en": "play",
-      "es": "tocar (instrumento)"
+      "es": "tocar"
     },
     {
-      "id": "modal-might-poder_(posibilidad)",
+      "id": "modal-might-podría",
       "pos": "modal",
       "en": "might",
-      "es": "poder (posibilidad)"
+      "es": "podría"
     },
     {
       "id": "modal-must-deber",
@@ -1962,10 +1974,10 @@ export const catalog: Catalog = {
       "es": "gastar"
     },
     {
-      "id": "verb-spend-pasar_(tiempo)",
+      "id": "verb-spend-pasar",
       "pos": "verb",
       "en": "spend",
-      "es": "pasar (tiempo)"
+      "es": "pasar"
     },
     {
       "id": "noun-head-cabeza",
@@ -3084,10 +3096,10 @@ export const catalog: Catalog = {
       "es": "futuro"
     },
     {
-      "id": "adverb-ago-hace_(tiempo)",
+      "id": "adverb-ago-hace",
       "pos": "adverb",
       "en": "ago",
-      "es": "hace (tiempo)"
+      "es": "hace"
     },
     {
       "id": "preposition-per-por",
@@ -7446,10 +7458,10 @@ export const catalog: Catalog = {
       "es": "pérdida"
     },
     {
-      "id": "modal-shall-(futuro_formal)",
+      "id": "modal-shall-deber",
       "pos": "modal",
       "en": "shall",
-      "es": "(futuro formal)"
+      "es": "deber"
     },
     {
       "id": "adjective-modern-moderno",
@@ -8658,10 +8670,10 @@ export const catalog: Catalog = {
       "es": "de acuerdo"
     },
     {
-      "id": "verb-earn-ganar_(dinero)",
+      "id": "verb-earn-ganar",
       "pos": "verb",
       "en": "earn",
-      "es": "ganar (dinero)"
+      "es": "ganar"
     },
     {
       "id": "verb-earn-merecer",
@@ -10497,14 +10509,16 @@ export const catalog: Catalog = {
       ]
     },
     {
-      "groupId": "en_es:modal:will",
-      "pos": "modal",
+      "groupId": "en_es:noun:will",
+      "pos": "noun",
       "prompt": "will",
       "answers": [
-        "(futuro)"
+        "voluntad",
+        "testamento"
       ],
       "senseIds": [
-        "modal-will-(futuro)"
+        "noun-will-voluntad",
+        "noun-will-testamento"
       ]
     },
     {
@@ -10549,10 +10563,12 @@ export const catalog: Catalog = {
       "pos": "modal",
       "prompt": "would",
       "answers": [
-        "(condicional)"
+        "condicional",
+        "hipotético"
       ],
       "senseIds": [
-        "modal-would-(condicional)"
+        "modal-would-condicional",
+        "modal-would-hipotético"
       ]
     },
     {
@@ -10781,10 +10797,10 @@ export const catalog: Catalog = {
       "pos": "modal",
       "prompt": "could",
       "answers": [
-        "poder (pasado)"
+        "podía"
       ],
       "senseIds": [
-        "modal-could-poder_(pasado)"
+        "modal-could-podía"
       ]
     },
     {
@@ -10818,10 +10834,10 @@ export const catalog: Catalog = {
       "pos": "conjunction",
       "prompt": "than",
       "answers": [
-        "que (comparativo)"
+        "que"
       ],
       "senseIds": [
-        "conjunction-than-que_(comparativo)"
+        "conjunction-than-que"
       ]
     },
     {
@@ -11035,10 +11051,10 @@ export const catalog: Catalog = {
       "pos": "modal",
       "prompt": "may",
       "answers": [
-        "poder (posibilidad)"
+        "puede"
       ],
       "senseIds": [
-        "modal-may-poder_(posibilidad)"
+        "modal-may-puede"
       ]
     },
     {
@@ -11472,11 +11488,11 @@ export const catalog: Catalog = {
       "prompt": "another",
       "answers": [
         "otro",
-        "un(a) más"
+        "otra"
       ],
       "senseIds": [
         "determiner-another-otro",
-        "determiner-another-un(a)_más"
+        "determiner-another-otra"
       ]
     },
     {
@@ -11661,11 +11677,11 @@ export const catalog: Catalog = {
       "prompt": "play",
       "answers": [
         "jugar",
-        "tocar (instrumento)"
+        "tocar"
       ],
       "senseIds": [
         "verb-play-jugar",
-        "verb-play-tocar_(instrumento)"
+        "verb-play-tocar"
       ]
     },
     {
@@ -11673,10 +11689,10 @@ export const catalog: Catalog = {
       "pos": "modal",
       "prompt": "might",
       "answers": [
-        "poder (posibilidad)"
+        "podría"
       ],
       "senseIds": [
-        "modal-might-poder_(posibilidad)"
+        "modal-might-podría"
       ]
     },
     {
@@ -12735,11 +12751,11 @@ export const catalog: Catalog = {
       "prompt": "spend",
       "answers": [
         "gastar",
-        "pasar (tiempo)"
+        "pasar"
       ],
       "senseIds": [
         "verb-spend-gastar",
-        "verb-spend-pasar_(tiempo)"
+        "verb-spend-pasar"
       ]
     },
     {
@@ -14064,10 +14080,10 @@ export const catalog: Catalog = {
       "pos": "adverb",
       "prompt": "ago",
       "answers": [
-        "hace (tiempo)"
+        "hace"
       ],
       "senseIds": [
-        "adverb-ago-hace_(tiempo)"
+        "adverb-ago-hace"
       ]
     },
     {
@@ -19325,10 +19341,10 @@ export const catalog: Catalog = {
       "pos": "modal",
       "prompt": "shall",
       "answers": [
-        "(futuro formal)"
+        "deber"
       ],
       "senseIds": [
-        "modal-shall-(futuro_formal)"
+        "modal-shall-deber"
       ]
     },
     {
@@ -20782,11 +20798,11 @@ export const catalog: Catalog = {
       "pos": "verb",
       "prompt": "earn",
       "answers": [
-        "ganar (dinero)",
+        "ganar",
         "merecer"
       ],
       "senseIds": [
-        "verb-earn-ganar_(dinero)",
+        "verb-earn-ganar",
         "verb-earn-merecer"
       ]
     },
@@ -23005,14 +23021,25 @@ export const catalog: Catalog = {
       ]
     },
     {
-      "groupId": "es_en:modal:(futuro)",
-      "pos": "modal",
-      "prompt": "(futuro)",
+      "groupId": "es_en:noun:voluntad",
+      "pos": "noun",
+      "prompt": "voluntad",
       "answers": [
         "will"
       ],
       "senseIds": [
-        "modal-will-(futuro)"
+        "noun-will-voluntad"
+      ]
+    },
+    {
+      "groupId": "es_en:noun:testamento",
+      "pos": "noun",
+      "prompt": "testamento",
+      "answers": [
+        "will"
+      ],
+      "senseIds": [
+        "noun-will-testamento"
       ]
     },
     {
@@ -23075,14 +23102,25 @@ export const catalog: Catalog = {
       ]
     },
     {
-      "groupId": "es_en:modal:(condicional)",
+      "groupId": "es_en:modal:condicional",
       "pos": "modal",
-      "prompt": "(condicional)",
+      "prompt": "condicional",
       "answers": [
         "would"
       ],
       "senseIds": [
-        "modal-would-(condicional)"
+        "modal-would-condicional"
+      ]
+    },
+    {
+      "groupId": "es_en:modal:hipotético",
+      "pos": "modal",
+      "prompt": "hipotético",
+      "answers": [
+        "would"
+      ],
+      "senseIds": [
+        "modal-would-hipotético"
       ]
     },
     {
@@ -23478,14 +23516,14 @@ export const catalog: Catalog = {
       ]
     },
     {
-      "groupId": "es_en:modal:poder (pasado)",
+      "groupId": "es_en:modal:podía",
       "pos": "modal",
-      "prompt": "poder (pasado)",
+      "prompt": "podía",
       "answers": [
         "could"
       ],
       "senseIds": [
-        "modal-could-poder_(pasado)"
+        "modal-could-podía"
       ]
     },
     {
@@ -23539,14 +23577,14 @@ export const catalog: Catalog = {
       ]
     },
     {
-      "groupId": "es_en:conjunction:que (comparativo)",
+      "groupId": "es_en:conjunction:que",
       "pos": "conjunction",
-      "prompt": "que (comparativo)",
+      "prompt": "que",
       "answers": [
         "than"
       ],
       "senseIds": [
-        "conjunction-than-que_(comparativo)"
+        "conjunction-than-que"
       ]
     },
     {
@@ -23799,11 +23837,13 @@ export const catalog: Catalog = {
       "prompt": "deber",
       "answers": [
         "should",
-        "must"
+        "must",
+        "shall"
       ],
       "senseIds": [
         "modal-should-deber",
-        "modal-must-deber"
+        "modal-must-deber",
+        "modal-shall-deber"
       ]
     },
     {
@@ -23923,16 +23963,14 @@ export const catalog: Catalog = {
       ]
     },
     {
-      "groupId": "es_en:modal:poder (posibilidad)",
+      "groupId": "es_en:modal:puede",
       "pos": "modal",
-      "prompt": "poder (posibilidad)",
+      "prompt": "puede",
       "answers": [
-        "may",
-        "might"
+        "may"
       ],
       "senseIds": [
-        "modal-may-poder_(posibilidad)",
-        "modal-might-poder_(posibilidad)"
+        "modal-may-puede"
       ]
     },
     {
@@ -24691,14 +24729,14 @@ export const catalog: Catalog = {
       ]
     },
     {
-      "groupId": "es_en:determiner:un(a) más",
+      "groupId": "es_en:determiner:otra",
       "pos": "determiner",
-      "prompt": "un(a) más",
+      "prompt": "otra",
       "answers": [
         "another"
       ],
       "senseIds": [
-        "determiner-another-un(a)_más"
+        "determiner-another-otra"
       ]
     },
     {
@@ -24998,14 +25036,27 @@ export const catalog: Catalog = {
       ]
     },
     {
-      "groupId": "es_en:verb:tocar (instrumento)",
+      "groupId": "es_en:verb:tocar",
       "pos": "verb",
-      "prompt": "tocar (instrumento)",
+      "prompt": "tocar",
       "answers": [
-        "play"
+        "play",
+        "touch"
       ],
       "senseIds": [
-        "verb-play-tocar_(instrumento)"
+        "verb-play-tocar",
+        "verb-touch-tocar"
+      ]
+    },
+    {
+      "groupId": "es_en:modal:podría",
+      "pos": "modal",
+      "prompt": "podría",
+      "answers": [
+        "might"
+      ],
+      "senseIds": [
+        "modal-might-podría"
       ]
     },
     {
@@ -25231,14 +25282,12 @@ export const catalog: Catalog = {
       "answers": [
         "kind",
         "sort",
-        "type",
-        "guy"
+        "type"
       ],
       "senseIds": [
         "noun-kind-tipo",
         "noun-sort-tipo",
-        "noun-type-tipo",
-        "noun-guy-tipo"
+        "noun-type-tipo"
       ]
     },
     {
@@ -25248,14 +25297,12 @@ export const catalog: Catalog = {
       "answers": [
         "kind",
         "sort",
-        "class",
-        "type"
+        "class"
       ],
       "senseIds": [
         "noun-kind-clase",
         "noun-sort-clase",
-        "noun-class-clase",
-        "noun-type-clase"
+        "noun-class-clase"
       ]
     },
     {
@@ -25389,14 +25436,12 @@ export const catalog: Catalog = {
       "answers": [
         "set",
         "establish",
-        "determine",
-        "define"
+        "determine"
       ],
       "senseIds": [
         "verb-set-establecer",
         "verb-establish-establecer",
-        "verb-determine-establecer",
-        "verb-define-establecer"
+        "verb-determine-establecer"
       ]
     },
     {
@@ -26114,10 +26159,12 @@ export const catalog: Catalog = {
       "prompt": "pasar",
       "answers": [
         "happen",
+        "spend",
         "pass"
       ],
       "senseIds": [
         "verb-happen-pasar",
+        "verb-spend-pasar",
         "verb-pass-pasar"
       ]
     },
@@ -26478,17 +26525,6 @@ export const catalog: Catalog = {
       ],
       "senseIds": [
         "verb-spend-gastar"
-      ]
-    },
-    {
-      "groupId": "es_en:verb:pasar (tiempo)",
-      "pos": "verb",
-      "prompt": "pasar (tiempo)",
-      "answers": [
-        "spend"
-      ],
-      "senseIds": [
-        "verb-spend-pasar_(tiempo)"
       ]
     },
     {
@@ -27504,14 +27540,12 @@ export const catalog: Catalog = {
       "answers": [
         "deal",
         "accord",
-        "contract",
-        "agreement"
+        "contract"
       ],
       "senseIds": [
         "noun-deal-acuerdo",
         "noun-accord-acuerdo",
-        "noun-contract-acuerdo",
-        "noun-agreement-acuerdo"
+        "noun-contract-acuerdo"
       ]
     },
     {
@@ -28338,14 +28372,14 @@ export const catalog: Catalog = {
       ]
     },
     {
-      "groupId": "es_en:adverb:hace (tiempo)",
+      "groupId": "es_en:adverb:hace",
       "pos": "adverb",
-      "prompt": "hace (tiempo)",
+      "prompt": "hace",
       "answers": [
         "ago"
       ],
       "senseIds": [
-        "adverb-ago-hace_(tiempo)"
+        "adverb-ago-hace"
       ]
     },
     {
@@ -28409,11 +28443,13 @@ export const catalog: Catalog = {
       "prompt": "ganar",
       "answers": [
         "win",
-        "gain"
+        "gain",
+        "earn"
       ],
       "senseIds": [
         "verb-win-ganar",
-        "verb-gain-ganar"
+        "verb-gain-ganar",
+        "verb-earn-ganar"
       ]
     },
     {
@@ -29282,14 +29318,12 @@ export const catalog: Catalog = {
       "answers": [
         "major",
         "main",
-        "central",
-        "primary"
+        "central"
       ],
       "senseIds": [
         "adjective-major-principal",
         "adjective-main-principal",
-        "adjective-central-principal",
-        "adjective-primary-principal"
+        "adjective-central-principal"
       ]
     },
     {
@@ -34045,14 +34079,12 @@ export const catalog: Catalog = {
       "answers": [
         "purpose",
         "aim",
-        "target",
-        "goal"
+        "target"
       ],
       "senseIds": [
         "noun-purpose-objetivo",
         "noun-aim-objetivo",
-        "noun-target-objetivo",
-        "noun-goal-objetivo"
+        "noun-target-objetivo"
       ]
     },
     {
@@ -34993,17 +35025,6 @@ export const catalog: Catalog = {
       ]
     },
     {
-      "groupId": "es_en:modal:(futuro formal)",
-      "pos": "modal",
-      "prompt": "(futuro formal)",
-      "answers": [
-        "shall"
-      ],
-      "senseIds": [
-        "modal-shall-(futuro_formal)"
-      ]
-    },
-    {
       "groupId": "es_en:adjective:moderno",
       "pos": "adjective",
       "prompt": "moderno",
@@ -35344,17 +35365,6 @@ export const catalog: Catalog = {
       "senseIds": [
         "noun-trouble-dificultad",
         "noun-difficulty-dificultad"
-      ]
-    },
-    {
-      "groupId": "es_en:verb:tocar",
-      "pos": "verb",
-      "prompt": "tocar",
-      "answers": [
-        "touch"
-      ],
-      "senseIds": [
-        "verb-touch-tocar"
       ]
     },
     {
@@ -36768,17 +36778,6 @@ export const catalog: Catalog = {
       ],
       "senseIds": [
         "adjective-okay-de_acuerdo"
-      ]
-    },
-    {
-      "groupId": "es_en:verb:ganar (dinero)",
-      "pos": "verb",
-      "prompt": "ganar (dinero)",
-      "answers": [
-        "earn"
-      ],
-      "senseIds": [
-        "verb-earn-ganar_(dinero)"
       ]
     },
     {

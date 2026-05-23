@@ -44,7 +44,7 @@ for (const entry of raw) {
       (g) => g.groupId === `es_en:${pos}:${es}`
     );
     if (existingGroup) {
-      if (!existingGroup.answers.includes(lemma)) {
+      if (!existingGroup.answers.includes(lemma) && existingGroup.answers.length < 3) {
         existingGroup.answers.push(lemma);
         existingGroup.senseIds.push(senseId);
       }

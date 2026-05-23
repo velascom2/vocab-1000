@@ -1,1002 +1,7746 @@
 [
-  {"l":"be","p":"verb","e":["ser","estar"]},
-  {"l":"have","p":"verb","e":["tener","haber"]},
-  {"l":"do","p":"verb","e":["hacer"]},
-  {"l":"will","p":"modal","e":["(futuro)"]},
-  {"l":"say","p":"verb","e":["decir","afirmar"]},
-  {"l":"go","p":"verb","e":["ir","irse"]},
-  {"l":"one","p":"numeral","e":["uno"]},
-  {"l":"would","p":"modal","e":["(condicional)"]},
-  {"l":"can","p":"modal","e":["poder"]},
-  {"l":"know","p":"verb","e":["saber","conocer"]},
-  {"l":"get","p":"verb","e":["obtener","conseguir","llegar"]},
-  {"l":"like","p":"verb","e":["gustar","agradar"]},
-  {"l":"think","p":"verb","e":["pensar","creer"]},
-  {"l":"make","p":"verb","e":["hacer","fabricar"]},
-  {"l":"time","p":"noun","e":["tiempo","vez","momento"]},
-  {"l":"see","p":"verb","e":["ver","entender"]},
-  {"l":"up","p":"adverb","e":["arriba","hacia arriba"]},
-  {"l":"other","p":"adjective","e":["otro","demás"]},
-  {"l":"out","p":"adverb","e":["fuera","afuera"]},
-  {"l":"good","p":"adjective","e":["bueno","bien"]},
-  {"l":"people","p":"noun","e":["gente","personas"]},
-  {"l":"year","p":"noun","e":["año"]},
-  {"l":"take","p":"verb","e":["tomar","coger","llevar"]},
-  {"l":"well","p":"adverb","e":["bien"]},
-  {"l":"come","p":"verb","e":["venir","llegar"]},
-  {"l":"could","p":"modal","e":["poder (pasado)"]},
-  {"l":"work","p":"verb","e":["trabajar","funcionar"]},
-  {"l":"use","p":"verb","e":["usar","utilizar"]},
-  {"l":"than","p":"conjunction","e":["que (comparativo)"]},
-  {"l":"look","p":"verb","e":["mirar","parecer"]},
-  {"l":"want","p":"verb","e":["querer","desear"]},
-  {"l":"give","p":"verb","e":["dar","entregar"]},
-  {"l":"first","p":"adjective","e":["primero","inicial"]},
-  {"l":"new","p":"adjective","e":["nuevo","reciente"]},
-  {"l":"way","p":"noun","e":["manera","camino","modo"]},
-  {"l":"find","p":"verb","e":["encontrar","hallar"]},
-  {"l":"day","p":"noun","e":["día"]},
-  {"l":"where","p":"adverb","e":["donde","dónde"]},
-  {"l":"thing","p":"noun","e":["cosa","asunto"]},
-  {"l":"should","p":"modal","e":["deber","debería"]},
-  {"l":"need","p":"verb","e":["necesitar"]},
-  {"l":"right","p":"adjective","e":["correcto","derecho"]},
-  {"l":"how","p":"adverb","e":["cómo","de qué manera"]},
-  {"l":"back","p":"noun","e":["espalda","atrás"]},
-  {"l":"mean","p":"verb","e":["significar","querer decir"]},
-  {"l":"may","p":"modal","e":["poder (posibilidad)"]},
-  {"l":"last","p":"adjective","e":["último","pasado"]},
-  {"l":"child","p":"noun","e":["niño","hijo"]},
-  {"l":"tell","p":"verb","e":["decir","contar"]},
-  {"l":"really","p":"adverb","e":["realmente","de verdad"]},
-  {"l":"call","p":"verb","e":["llamar"]},
-  {"l":"company","p":"noun","e":["empresa","compañía"]},
-  {"l":"down","p":"adverb","e":["abajo","hacia abajo"]},
-  {"l":"show","p":"verb","e":["mostrar","demostrar"]},
-  {"l":"life","p":"noun","e":["vida"]},
-  {"l":"man","p":"noun","e":["hombre","varón"]},
-  {"l":"change","p":"verb","e":["cambiar","modificar"]},
-  {"l":"place","p":"noun","e":["lugar","sitio"]},
-  {"l":"long","p":"adjective","e":["largo","prolongado"]},
-  {"l":"feel","p":"verb","e":["sentir","sentirse"]},
-  {"l":"problem","p":"noun","e":["problema"]},
-  {"l":"write","p":"verb","e":["escribir","redactar"]},
-  {"l":"same","p":"adjective","e":["mismo","igual"]},
-  {"l":"lot","p":"noun","e":["lote","mucho"]},
-  {"l":"great","p":"adjective","e":["genial","excelente","grande"]},
-  {"l":"try","p":"verb","e":["intentar","tratar"]},
-  {"l":"leave","p":"verb","e":["salir","dejar","abandonar"]},
-  {"l":"number","p":"noun","e":["número","cifra"]},
-  {"l":"own","p":"adjective","e":["propio","particular"]},
-  {"l":"part","p":"noun","e":["parte","porción"]},
-  {"l":"point","p":"noun","e":["punto","aspecto"]},
-  {"l":"little","p":"adjective","e":["pequeño","poco"]},
-  {"l":"help","p":"verb","e":["ayudar","asistir"]},
-  {"l":"ask","p":"verb","e":["preguntar","pedir"]},
-  {"l":"meet","p":"verb","e":["conocer","reunirse"]},
-  {"l":"start","p":"verb","e":["empezar","comenzar"]},
-  {"l":"talk","p":"verb","e":["hablar","conversar"]},
-  {"l":"something","p":"pronoun","e":["algo"]},
-  {"l":"put","p":"verb","e":["poner","colocar"]},
-  {"l":"another","p":"determiner","e":["otro","un(a) más"]},
-  {"l":"become","p":"verb","e":["convertirse","llegar a ser"]},
-  {"l":"interest","p":"noun","e":["interés"]},
-  {"l":"country","p":"noun","e":["país","nación"]},
-  {"l":"old","p":"adjective","e":["viejo","antiguo"]},
-  {"l":"school","p":"noun","e":["escuela","colegio"]},
-  {"l":"late","p":"adjective","e":["tarde","tardío"]},
-  {"l":"high","p":"adjective","e":["alto","elevado"]},
-  {"l":"different","p":"adjective","e":["diferente","distinto"]},
-  {"l":"next","p":"adjective","e":["siguiente","próximo"]},
-  {"l":"end","p":"noun","e":["fin","final","extremo"]},
-  {"l":"live","p":"verb","e":["vivir","residir"]},
-  {"l":"why","p":"adverb","e":["por qué"]},
-  {"l":"world","p":"noun","e":["mundo"]},
-  {"l":"week","p":"noun","e":["semana"]},
-  {"l":"play","p":"verb","e":["jugar","tocar (instrumento)"]},
-  {"l":"might","p":"modal","e":["poder (posibilidad)"]},
-  {"l":"must","p":"modal","e":["deber","tener que"]},
-  {"l":"home","p":"noun","e":["casa","hogar"]},
-  {"l":"include","p":"verb","e":["incluir","abarcar"]},
-  {"l":"course","p":"noun","e":["curso","rumbo"]},
-  {"l":"house","p":"noun","e":["casa","vivienda"]},
-  {"l":"report","p":"noun","e":["informe","reporte"]},
-  {"l":"group","p":"noun","e":["grupo"]},
-  {"l":"case","p":"noun","e":["caso","situación"]},
-  {"l":"woman","p":"noun","e":["mujer"]},
-  {"l":"book","p":"noun","e":["libro"]},
-  {"l":"family","p":"noun","e":["familia"]},
-  {"l":"seem","p":"verb","e":["parecer","aparentar"]},
-  {"l":"let","p":"verb","e":["dejar","permitir"]},
-  {"l":"kind","p":"noun","e":["tipo","clase","especie"]},
-  {"l":"keep","p":"verb","e":["mantener","guardar","conservar"]},
-  {"l":"hear","p":"verb","e":["escuchar","oír"]},
-  {"l":"system","p":"noun","e":["sistema"]},
-  {"l":"question","p":"noun","e":["pregunta","cuestión"]},
-  {"l":"always","p":"adverb","e":["siempre"]},
-  {"l":"big","p":"adjective","e":["grande"]},
-  {"l":"set","p":"verb","e":["establecer","fijar"]},
-  {"l":"small","p":"adjective","e":["pequeño","reducido"]},
-  {"l":"study","p":"verb","e":["estudiar","investigar"]},
-  {"l":"follow","p":"verb","e":["seguir","continuar"]},
-  {"l":"begin","p":"verb","e":["comenzar","empezar"]},
-  {"l":"important","p":"adjective","e":["importante","relevante"]},
-  {"l":"run","p":"verb","e":["correr","funcionar"]},
-  {"l":"turn","p":"verb","e":["girar","voltear"]},
-  {"l":"bring","p":"verb","e":["traer","llevar"]},
-  {"l":"early","p":"adjective","e":["temprano","pronto"]},
-  {"l":"hand","p":"noun","e":["mano"]},
-  {"l":"state","p":"noun","e":["estado","nación"]},
-  {"l":"move","p":"verb","e":["mover","trasladar"]},
-  {"l":"money","p":"noun","e":["dinero"]},
-  {"l":"fact","p":"noun","e":["hecho","dato"]},
-  {"l":"area","p":"noun","e":["área","zona","región"]},
-  {"l":"provide","p":"verb","e":["proveer","proporcionar"]},
-  {"l":"name","p":"noun","e":["nombre"]},
-  {"l":"read","p":"verb","e":["leer"]},
-  {"l":"friend","p":"noun","e":["amigo","amiga"]},
-  {"l":"month","p":"noun","e":["mes"]},
-  {"l":"large","p":"adjective","e":["grande","amplio"]},
-  {"l":"business","p":"noun","e":["negocio","empresa"]},
-  {"l":"information","p":"noun","e":["información"]},
-  {"l":"open","p":"adjective","e":["abierto"]},
-  {"l":"order","p":"noun","e":["orden","pedido"]},
-  {"l":"government","p":"noun","e":["gobierno"]},
-  {"l":"word","p":"noun","e":["palabra","término"]},
-  {"l":"issue","p":"noun","e":["tema","cuestión","número"]},
-  {"l":"market","p":"noun","e":["mercado"]},
-  {"l":"pay","p":"verb","e":["pagar"]},
-  {"l":"build","p":"verb","e":["construir","edificar"]},
-  {"l":"hold","p":"verb","e":["sostener","tener","mantener"]},
-  {"l":"service","p":"noun","e":["servicio"]},
-  {"l":"believe","p":"verb","e":["creer","pensar"]},
-  {"l":"second","p":"adjective","e":["segundo"]},
-  {"l":"yes","p":"adverb","e":["sí"]},
-  {"l":"love","p":"verb","e":["amar","querer"]},
-  {"l":"increase","p":"verb","e":["aumentar","incrementar"]},
-  {"l":"job","p":"noun","e":["trabajo","empleo"]},
-  {"l":"plan","p":"noun","e":["plan","proyecto"]},
-  {"l":"result","p":"noun","e":["resultado","consecuencia"]},
-  {"l":"away","p":"adverb","e":["lejos","fuera"]},
-  {"l":"example","p":"noun","e":["ejemplo"]},
-  {"l":"happen","p":"verb","e":["ocurrir","pasar","suceder"]},
-  {"l":"offer","p":"verb","e":["ofrecer","proponer"]},
-  {"l":"young","p":"adjective","e":["joven"]},
-  {"l":"close","p":"verb","e":["cerrar"]},
-  {"l":"program","p":"noun","e":["programa"]},
-  {"l":"lead","p":"verb","e":["liderar","guiar"]},
-  {"l":"buy","p":"verb","e":["comprar","adquirir"]},
-  {"l":"understand","p":"verb","e":["entender","comprender"]},
-  {"l":"thank","p":"verb","e":["agradecer"]},
-  {"l":"far","p":"adverb","e":["lejos","distante"]},
-  {"l":"today","p":"adverb","e":["hoy"]},
-  {"l":"hour","p":"noun","e":["hora"]},
-  {"l":"student","p":"noun","e":["estudiante","alumno"]},
-  {"l":"face","p":"noun","e":["cara","rostro"]},
-  {"l":"hope","p":"verb","e":["esperar","desear"]},
-  {"l":"idea","p":"noun","e":["idea","concepto"]},
-  {"l":"cost","p":"noun","e":["costo","precio"]},
-  {"l":"room","p":"noun","e":["habitación","sala"]},
-  {"l":"reason","p":"noun","e":["razón","motivo"]},
-  {"l":"form","p":"noun","e":["forma","formulario"]},
-  {"l":"spend","p":"verb","e":["gastar","pasar (tiempo)"]},
-  {"l":"head","p":"noun","e":["cabeza","jefe"]},
-  {"l":"car","p":"noun","e":["coche","auto"]},
-  {"l":"learn","p":"verb","e":["aprender"]},
-  {"l":"level","p":"noun","e":["nivel"]},
-  {"l":"person","p":"noun","e":["persona"]},
-  {"l":"experience","p":"noun","e":["experiencia"]},
-  {"l":"once","p":"adverb","e":["una vez","alguna vez"]},
-  {"l":"member","p":"noun","e":["miembro","integrante"]},
-  {"l":"enough","p":"adjective","e":["suficiente","bastante"]},
-  {"l":"bad","p":"adjective","e":["malo","pésimo"]},
-  {"l":"city","p":"noun","e":["ciudad"]},
-  {"l":"night","p":"noun","e":["noche"]},
-  {"l":"able","p":"adjective","e":["capaz","hábil"]},
-  {"l":"support","p":"verb","e":["apoyar","respaldar"]},
-  {"l":"line","p":"noun","e":["línea","fila"]},
-  {"l":"present","p":"adjective","e":["presente","actual"]},
-  {"l":"side","p":"noun","e":["lado","costado"]},
-  {"l":"quite","p":"adverb","e":["bastante","muy"]},
-  {"l":"sure","p":"adjective","e":["seguro","cierto"]},
-  {"l":"term","p":"noun","e":["término","plazo"]},
-  {"l":"least","p":"adjective","e":["mínimo","menor"]},
-  {"l":"age","p":"noun","e":["edad","época"]},
-  {"l":"low","p":"adjective","e":["bajo","reducido"]},
-  {"l":"speak","p":"verb","e":["hablar"]},
-  {"l":"process","p":"noun","e":["proceso","procedimiento"]},
-  {"l":"public","p":"adjective","e":["público"]},
-  {"l":"often","p":"adverb","e":["frecuentemente","a menudo"]},
-  {"l":"train","p":"noun","e":["tren"]},
-  {"l":"possible","p":"adjective","e":["posible","factible"]},
-  {"l":"actually","p":"adverb","e":["en realidad","realmente"]},
-  {"l":"rather","p":"adverb","e":["bastante","más bien"]},
-  {"l":"view","p":"noun","e":["vista","opinión"]},
-  {"l":"together","p":"adverb","e":["juntos","en conjunto"]},
-  {"l":"consider","p":"verb","e":["considerar","tener en cuenta"]},
-  {"l":"price","p":"noun","e":["precio"]},
-  {"l":"parent","p":"noun","e":["padre","madre"]},
-  {"l":"hard","p":"adjective","e":["duro","difícil"]},
-  {"l":"party","p":"noun","e":["fiesta","partido"]},
-  {"l":"local","p":"adjective","e":["local","regional"]},
-  {"l":"control","p":"noun","e":["control"]},
-  {"l":"concern","p":"noun","e":["preocupación","asunto"]},
-  {"l":"product","p":"noun","e":["producto"]},
-  {"l":"lose","p":"verb","e":["perder"]},
-  {"l":"story","p":"noun","e":["historia","cuento","relato"]},
-  {"l":"almost","p":"adverb","e":["casi"]},
-  {"l":"continue","p":"verb","e":["continuar","seguir"]},
-  {"l":"stand","p":"verb","e":["estar de pie","soportar"]},
-  {"l":"whole","p":"adjective","e":["entero","completo"]},
-  {"l":"rate","p":"noun","e":["tasa","tarifa","índice"]},
-  {"l":"care","p":"verb","e":["cuidar","importar"]},
-  {"l":"expect","p":"verb","e":["esperar","anticipar"]},
-  {"l":"effect","p":"noun","e":["efecto","resultado"]},
-  {"l":"sort","p":"noun","e":["tipo","clase"]},
-  {"l":"anything","p":"pronoun","e":["cualquier cosa","algo"]},
-  {"l":"cause","p":"verb","e":["causar","provocar"]},
-  {"l":"fall","p":"verb","e":["caer"]},
-  {"l":"deal","p":"noun","e":["trato","acuerdo"]},
-  {"l":"water","p":"noun","e":["agua"]},
-  {"l":"send","p":"verb","e":["enviar","mandar"]},
-  {"l":"allow","p":"verb","e":["permitir","dejar"]},
-  {"l":"soon","p":"adverb","e":["pronto","en breve"]},
-  {"l":"watch","p":"verb","e":["ver","observar","vigilar"]},
-  {"l":"base","p":"noun","e":["base","fundamento"]},
-  {"l":"probably","p":"adverb","e":["probablemente"]},
-  {"l":"suggest","p":"verb","e":["sugerir","proponer"]},
-  {"l":"past","p":"adjective","e":["pasado","anterior"]},
-  {"l":"power","p":"noun","e":["poder","energía"]},
-  {"l":"test","p":"noun","e":["prueba","examen"]},
-  {"l":"visit","p":"verb","e":["visitar"]},
-  {"l":"center","p":"noun","e":["centro"]},
-  {"l":"grow","p":"verb","e":["crecer","desarrollar"]},
-  {"l":"nothing","p":"pronoun","e":["nada"]},
-  {"l":"return","p":"verb","e":["volver","regresar"]},
-  {"l":"mother","p":"noun","e":["madre"]},
-  {"l":"walk","p":"verb","e":["caminar","andar"]},
-  {"l":"matter","p":"verb","e":["importar"]},
-  {"l":"mind","p":"noun","e":["mente","cabeza"]},
-  {"l":"value","p":"noun","e":["valor","precio"]},
-  {"l":"office","p":"noun","e":["oficina","despacho"]},
-  {"l":"record","p":"noun","e":["récord","registro","grabación"]},
-  {"l":"stay","p":"verb","e":["quedarse","permanecer"]},
-  {"l":"force","p":"noun","e":["fuerza"]},
-  {"l":"stop","p":"verb","e":["parar","detener"]},
-  {"l":"light","p":"noun","e":["luz"]},
-  {"l":"develop","p":"verb","e":["desarrollar","elaborar"]},
-  {"l":"remember","p":"verb","e":["recordar","acordarse de"]},
-  {"l":"bit","p":"noun","e":["poco","trozo"]},
-  {"l":"share","p":"verb","e":["compartir","repartir"]},
-  {"l":"real","p":"adjective","e":["real","verdadero"]},
-  {"l":"answer","p":"noun","e":["respuesta"]},
-  {"l":"sit","p":"verb","e":["sentarse"]},
-  {"l":"figure","p":"noun","e":["figura","número","cifra"]},
-  {"l":"letter","p":"noun","e":["carta","letra"]},
-  {"l":"decide","p":"verb","e":["decidir","resolver"]},
-  {"l":"language","p":"noun","e":["idioma","lengua"]},
-  {"l":"subject","p":"noun","e":["tema","asignatura"]},
-  {"l":"class","p":"noun","e":["clase","categoría"]},
-  {"l":"development","p":"noun","e":["desarrollo","crecimiento"]},
-  {"l":"town","p":"noun","e":["pueblo","ciudad pequeña"]},
-  {"l":"half","p":"noun","e":["mitad"]},
-  {"l":"minute","p":"noun","e":["minuto"]},
-  {"l":"food","p":"noun","e":["comida","alimento"]},
-  {"l":"break","p":"verb","e":["romper","quebrar"]},
-  {"l":"clear","p":"adjective","e":["claro","evidente"]},
-  {"l":"future","p":"noun","e":["futuro"]},
-  {"l":"ago","p":"adverb","e":["hace (tiempo)"]},
-  {"l":"per","p":"preposition","e":["por","cada"]},
-  {"l":"remain","p":"verb","e":["quedar","permanecer"]},
-  {"l":"top","p":"noun","e":["parte superior","cima"]},
-  {"l":"win","p":"verb","e":["ganar","vencer"]},
-  {"l":"color","p":"noun","e":["color"]},
-  {"l":"involve","p":"verb","e":["involucrar","implicar"]},
-  {"l":"reach","p":"verb","e":["alcanzar","llegar a"]},
-  {"l":"social","p":"adjective","e":["social"]},
-  {"l":"period","p":"noun","e":["período","época"]},
-  {"l":"note","p":"noun","e":["nota","apunte"]},
-  {"l":"history","p":"noun","e":["historia"]},
-  {"l":"create","p":"verb","e":["crear","generar"]},
-  {"l":"drive","p":"verb","e":["conducir","manejar"]},
-  {"l":"along","p":"preposition","e":["a lo largo de","junto a"]},
-  {"l":"type","p":"noun","e":["tipo","clase"]},
-  {"l":"sound","p":"noun","e":["sonido"]},
-  {"l":"eye","p":"noun","e":["ojo"]},
-  {"l":"music","p":"noun","e":["música"]},
-  {"l":"game","p":"noun","e":["juego","partido"]},
-  {"l":"political","p":"adjective","e":["político"]},
-  {"l":"free","p":"adjective","e":["libre","gratuito"]},
-  {"l":"receive","p":"verb","e":["recibir","obtener"]},
-  {"l":"moment","p":"noun","e":["momento"]},
-  {"l":"sale","p":"noun","e":["venta"]},
-  {"l":"policy","p":"noun","e":["política","normativa"]},
-  {"l":"further","p":"adverb","e":["además","más lejos"]},
-  {"l":"body","p":"noun","e":["cuerpo"]},
-  {"l":"require","p":"verb","e":["requerir","necesitar"]},
-  {"l":"wait","p":"verb","e":["esperar"]},
-  {"l":"general","p":"adjective","e":["general"]},
-  {"l":"appear","p":"verb","e":["aparecer","parecer"]},
-  {"l":"toward","p":"preposition","e":["hacia"]},
-  {"l":"team","p":"noun","e":["equipo"]},
-  {"l":"easy","p":"adjective","e":["fácil","sencillo"]},
-  {"l":"individual","p":"noun","e":["individuo","persona"]},
-  {"l":"full","p":"adjective","e":["lleno","completo"]},
-  {"l":"black","p":"adjective","e":["negro"]},
-  {"l":"sense","p":"noun","e":["sentido","sensación"]},
-  {"l":"add","p":"verb","e":["añadir","agregar"]},
-  {"l":"rule","p":"noun","e":["regla","norma"]},
-  {"l":"pass","p":"verb","e":["pasar","aprobar"]},
-  {"l":"produce","p":"verb","e":["producir","generar"]},
-  {"l":"sell","p":"verb","e":["vender"]},
-  {"l":"short","p":"adjective","e":["corto","breve"]},
-  {"l":"agree","p":"verb","e":["estar de acuerdo","acordar"]},
-  {"l":"law","p":"noun","e":["ley","derecho"]},
-  {"l":"everything","p":"pronoun","e":["todo"]},
-  {"l":"research","p":"noun","e":["investigación","estudio"]},
-  {"l":"cover","p":"verb","e":["cubrir","abarcar"]},
-  {"l":"paper","p":"noun","e":["papel","artículo"]},
-  {"l":"position","p":"noun","e":["posición","puesto"]},
-  {"l":"human","p":"adjective","e":["humano"]},
-  {"l":"computer","p":"noun","e":["computadora","ordenador"]},
-  {"l":"situation","p":"noun","e":["situación"]},
-  {"l":"staff","p":"noun","e":["personal","plantilla"]},
-  {"l":"activity","p":"noun","e":["actividad"]},
-  {"l":"film","p":"noun","e":["película","film"]},
-  {"l":"morning","p":"noun","e":["mañana"]},
-  {"l":"war","p":"noun","e":["guerra"]},
-  {"l":"account","p":"noun","e":["cuenta","relato"]},
-  {"l":"shop","p":"noun","e":["tienda"]},
-  {"l":"major","p":"adjective","e":["principal","mayor"]},
-  {"l":"someone","p":"pronoun","e":["alguien"]},
-  {"l":"design","p":"noun","e":["diseño"]},
-  {"l":"event","p":"noun","e":["evento","suceso"]},
-  {"l":"special","p":"adjective","e":["especial"]},
-  {"l":"sometimes","p":"adverb","e":["a veces"]},
-  {"l":"condition","p":"noun","e":["condición","estado"]},
-  {"l":"carry","p":"verb","e":["llevar","cargar"]},
-  {"l":"choose","p":"verb","e":["elegir","escoger"]},
-  {"l":"father","p":"noun","e":["padre"]},
-  {"l":"decision","p":"noun","e":["decisión"]},
-  {"l":"table","p":"noun","e":["mesa","tabla"]},
-  {"l":"certain","p":"adjective","e":["cierto","seguro"]},
-  {"l":"forward","p":"adverb","e":["adelante","hacia adelante"]},
-  {"l":"main","p":"adjective","e":["principal","fundamental"]},
-  {"l":"die","p":"verb","e":["morir","fallecer"]},
-  {"l":"bear","p":"verb","e":["soportar","aguantar"]},
-  {"l":"cut","p":"verb","e":["cortar"]},
-  {"l":"describe","p":"verb","e":["describir"]},
-  {"l":"himself","p":"pronoun","e":["él mismo"]},
-  {"l":"available","p":"adjective","e":["disponible","accesible"]},
-  {"l":"especially","p":"adverb","e":["especialmente","sobre todo"]},
-  {"l":"strong","p":"adjective","e":["fuerte","sólido"]},
-  {"l":"rise","p":"verb","e":["subir","levantarse"]},
-  {"l":"girl","p":"noun","e":["chica","niña"]},
-  {"l":"community","p":"noun","e":["comunidad"]},
-  {"l":"else","p":"adverb","e":["más","de lo contrario"]},
-  {"l":"particular","p":"adjective","e":["particular","específico"]},
-  {"l":"role","p":"noun","e":["papel","rol"]},
-  {"l":"join","p":"verb","e":["unirse","incorporarse"]},
-  {"l":"difficult","p":"adjective","e":["difícil","complicado"]},
-  {"l":"please","p":"adverb","e":["por favor"]},
-  {"l":"detail","p":"noun","e":["detalle"]},
-  {"l":"difference","p":"noun","e":["diferencia"]},
-  {"l":"action","p":"noun","e":["acción","medida"]},
-  {"l":"health","p":"noun","e":["salud"]},
-  {"l":"eat","p":"verb","e":["comer"]},
-  {"l":"step","p":"noun","e":["paso","escalón"]},
-  {"l":"true","p":"adjective","e":["verdadero","cierto"]},
-  {"l":"phone","p":"noun","e":["teléfono"]},
-  {"l":"themselves","p":"pronoun","e":["ellos mismos","ellas mismas"]},
-  {"l":"draw","p":"verb","e":["dibujar","atraer"]},
-  {"l":"white","p":"adjective","e":["blanco"]},
-  {"l":"date","p":"noun","e":["fecha","cita"]},
-  {"l":"practice","p":"noun","e":["práctica","ejercicio"]},
-  {"l":"model","p":"noun","e":["modelo"]},
-  {"l":"raise","p":"verb","e":["levantar","aumentar","criar"]},
-  {"l":"customer","p":"noun","e":["cliente"]},
-  {"l":"front","p":"noun","e":["frente","parte delantera"]},
-  {"l":"explain","p":"verb","e":["explicar","aclarar"]},
-  {"l":"door","p":"noun","e":["puerta"]},
-  {"l":"outside","p":"adverb","e":["fuera","afuera"]},
-  {"l":"economic","p":"adjective","e":["económico"]},
-  {"l":"site","p":"noun","e":["sitio","lugar"]},
-  {"l":"approach","p":"noun","e":["enfoque","método"]},
-  {"l":"teacher","p":"noun","e":["profesor","maestro"]},
-  {"l":"land","p":"noun","e":["tierra","terreno"]},
-  {"l":"charge","p":"noun","e":["cargo","cobro"]},
-  {"l":"finally","p":"adverb","e":["finalmente","por fin"]},
-  {"l":"sign","p":"noun","e":["señal","letrero"]},
-  {"l":"claim","p":"verb","e":["reclamar","afirmar"]},
-  {"l":"relationship","p":"noun","e":["relación"]},
-  {"l":"travel","p":"verb","e":["viajar"]},
-  {"l":"enjoy","p":"verb","e":["disfrutar"]},
-  {"l":"death","p":"noun","e":["muerte"]},
-  {"l":"nice","p":"adjective","e":["agradable","simpático"]},
-  {"l":"amount","p":"noun","e":["cantidad","suma"]},
-  {"l":"improve","p":"verb","e":["mejorar","perfeccionar"]},
-  {"l":"picture","p":"noun","e":["imagen","foto","cuadro"]},
-  {"l":"boy","p":"noun","e":["chico","niño"]},
-  {"l":"regard","p":"noun","e":["respeto","consideración"]},
-  {"l":"organization","p":"noun","e":["organización"]},
-  {"l":"happy","p":"adjective","e":["feliz","contento"]},
-  {"l":"couple","p":"noun","e":["pareja","par"]},
-  {"l":"act","p":"verb","e":["actuar","comportarse"]},
-  {"l":"range","p":"noun","e":["gama","rango","variedad"]},
-  {"l":"quality","p":"noun","e":["calidad"]},
-  {"l":"project","p":"noun","e":["proyecto"]},
-  {"l":"round","p":"adjective","e":["redondo","circular"]},
-  {"l":"opportunity","p":"noun","e":["oportunidad"]},
-  {"l":"road","p":"noun","e":["carretera","camino"]},
-  {"l":"accord","p":"noun","e":["acuerdo"]},
-  {"l":"list","p":"noun","e":["lista"]},
-  {"l":"wish","p":"verb","e":["desear","querer"]},
-  {"l":"wear","p":"verb","e":["llevar puesto","usar"]},
-  {"l":"fund","p":"noun","e":["fondo","capital"]},
-  {"l":"rest","p":"verb","e":["descansar","reposar"]},
-  {"l":"kid","p":"noun","e":["niño","crío"]},
-  {"l":"industry","p":"noun","e":["industria","sector"]},
-  {"l":"education","p":"noun","e":["educación","formación"]},
-  {"l":"measure","p":"noun","e":["medida","magnitud"]},
-  {"l":"kill","p":"verb","e":["matar","eliminar"]},
-  {"l":"serve","p":"verb","e":["servir","atender"]},
-  {"l":"likely","p":"adjective","e":["probable"]},
-  {"l":"certainly","p":"adverb","e":["ciertamente","sin duda"]},
-  {"l":"national","p":"adjective","e":["nacional"]},
-  {"l":"itself","p":"pronoun","e":["en sí mismo"]},
-  {"l":"teach","p":"verb","e":["enseñar","instruir"]},
-  {"l":"field","p":"noun","e":["campo","ámbito"]},
-  {"l":"security","p":"noun","e":["seguridad"]},
-  {"l":"air","p":"noun","e":["aire","atmósfera"]},
-  {"l":"benefit","p":"noun","e":["beneficio","ventaja"]},
-  {"l":"trade","p":"noun","e":["comercio","intercambio"]},
-  {"l":"risk","p":"noun","e":["riesgo","peligro"]},
-  {"l":"news","p":"noun","e":["noticia","noticias"]},
-  {"l":"standard","p":"noun","e":["estándar","norma"]},
-  {"l":"vote","p":"noun","e":["voto","sufragio"]},
-  {"l":"percent","p":"noun","e":["porcentaje","por ciento"]},
-  {"l":"focus","p":"noun","e":["enfoque","foco"]},
-  {"l":"stage","p":"noun","e":["etapa","escenario"]},
-  {"l":"space","p":"noun","e":["espacio"]},
-  {"l":"realize","p":"verb","e":["darse cuenta de","realizar"]},
-  {"l":"usually","p":"adverb","e":["normalmente","usualmente"]},
-  {"l":"data","p":"noun","e":["datos","información"]},
-  {"l":"single","p":"adjective","e":["único","soltero"]},
-  {"l":"address","p":"noun","e":["dirección","domicilio"]},
-  {"l":"performance","p":"noun","e":["actuación","rendimiento"]},
-  {"l":"chance","p":"noun","e":["oportunidad","posibilidad"]},
-  {"l":"accept","p":"verb","e":["aceptar","admitir"]},
-  {"l":"society","p":"noun","e":["sociedad"]},
-  {"l":"technology","p":"noun","e":["tecnología"]},
-  {"l":"mention","p":"verb","e":["mencionar","citar"]},
-  {"l":"choice","p":"noun","e":["elección","opción"]},
-  {"l":"save","p":"verb","e":["guardar","salvar","ahorrar"]},
-  {"l":"common","p":"adjective","e":["común","corriente"]},
-  {"l":"culture","p":"noun","e":["cultura"]},
-  {"l":"total","p":"noun","e":["total","suma"]},
-  {"l":"demand","p":"noun","e":["demanda","exigencia"]},
-  {"l":"material","p":"noun","e":["material"]},
-  {"l":"limit","p":"noun","e":["límite"]},
-  {"l":"listen","p":"verb","e":["escuchar","oír"]},
-  {"l":"due","p":"adjective","e":["previsto","debido"]},
-  {"l":"wrong","p":"adjective","e":["equivocado","incorrecto"]},
-  {"l":"foot","p":"noun","e":["pie","pata"]},
-  {"l":"effort","p":"noun","e":["esfuerzo"]},
-  {"l":"attention","p":"noun","e":["atención"]},
-  {"l":"check","p":"verb","e":["comprobar","verificar"]},
-  {"l":"complete","p":"adjective","e":["completo","total"]},
-  {"l":"lie","p":"verb","e":["mentir","yacer"]},
-  {"l":"pick","p":"verb","e":["elegir","recoger"]},
-  {"l":"reduce","p":"verb","e":["reducir","disminuir"]},
-  {"l":"personal","p":"adjective","e":["personal","íntimo"]},
-  {"l":"ground","p":"noun","e":["suelo","tierra"]},
-  {"l":"animal","p":"noun","e":["animal"]},
-  {"l":"arrive","p":"verb","e":["llegar","arribar"]},
-  {"l":"patient","p":"noun","e":["paciente"]},
-  {"l":"current","p":"adjective","e":["actual","corriente"]},
-  {"l":"century","p":"noun","e":["siglo"]},
-  {"l":"evidence","p":"noun","e":["evidencia","prueba"]},
-  {"l":"exist","p":"verb","e":["existir"]},
-  {"l":"similar","p":"adjective","e":["similar","parecido"]},
-  {"l":"fight","p":"verb","e":["luchar","pelear"]},
-  {"l":"leader","p":"noun","e":["líder","dirigente"]},
-  {"l":"fine","p":"adjective","e":["bien","estupendo"]},
-  {"l":"street","p":"noun","e":["calle"]},
-  {"l":"former","p":"adjective","e":["anterior","antiguo"]},
-  {"l":"contact","p":"noun","e":["contacto"]},
-  {"l":"particularly","p":"adverb","e":["particularmente","en especial"]},
-  {"l":"wife","p":"noun","e":["esposa","mujer"]},
-  {"l":"sport","p":"noun","e":["deporte"]},
-  {"l":"prepare","p":"verb","e":["preparar","organizar"]},
-  {"l":"discuss","p":"verb","e":["discutir","debatir"]},
-  {"l":"response","p":"noun","e":["respuesta","reacción"]},
-  {"l":"voice","p":"noun","e":["voz"]},
-  {"l":"piece","p":"noun","e":["pieza","trozo","parte"]},
-  {"l":"finish","p":"verb","e":["terminar","acabar"]},
-  {"l":"suppose","p":"verb","e":["suponer","imaginar"]},
-  {"l":"apply","p":"verb","e":["aplicar","solicitar"]},
-  {"l":"president","p":"noun","e":["presidente"]},
-  {"l":"fire","p":"noun","e":["fuego","incendio"]},
-  {"l":"compare","p":"verb","e":["comparar"]},
-  {"l":"court","p":"noun","e":["tribunal","cancha","juzgado"]},
-  {"l":"police","p":"noun","e":["policía"]},
-  {"l":"store","p":"noun","e":["tienda","almacén"]},
-  {"l":"poor","p":"adjective","e":["pobre","escaso"]},
-  {"l":"knowledge","p":"noun","e":["conocimiento","saber"]},
-  {"l":"laugh","p":"verb","e":["reír","reírse"]},
-  {"l":"arm","p":"noun","e":["brazo"]},
-  {"l":"heart","p":"noun","e":["corazón"]},
-  {"l":"source","p":"noun","e":["fuente","origen"]},
-  {"l":"employee","p":"noun","e":["empleado","trabajador"]},
-  {"l":"manage","p":"verb","e":["gestionar","administrar"]},
-  {"l":"simply","p":"adverb","e":["simplemente","sencillamente"]},
-  {"l":"bank","p":"noun","e":["banco","orilla"]},
-  {"l":"firm","p":"noun","e":["empresa","firma"]},
-  {"l":"cell","p":"noun","e":["célula","celda"]},
-  {"l":"article","p":"noun","e":["artículo"]},
-  {"l":"fast","p":"adjective","e":["rápido","veloz"]},
-  {"l":"attack","p":"noun","e":["ataque","agresión"]},
-  {"l":"foreign","p":"adjective","e":["extranjero","exterior"]},
-  {"l":"surprise","p":"noun","e":["sorpresa"]},
-  {"l":"feature","p":"noun","e":["característica","rasgo"]},
-  {"l":"factor","p":"noun","e":["factor","elemento"]},
-  {"l":"pretty","p":"adjective","e":["bonito","guapo"]},
-  {"l":"recently","p":"adverb","e":["recientemente","últimamente"]},
-  {"l":"affect","p":"verb","e":["afectar","influir en"]},
-  {"l":"drop","p":"verb","e":["caer","bajar"]},
-  {"l":"recent","p":"adjective","e":["reciente"]},
-  {"l":"relate","p":"verb","e":["relacionar","vincular"]},
-  {"l":"official","p":"noun","e":["funcionario","oficial"]},
-  {"l":"financial","p":"adjective","e":["financiero","económico"]},
-  {"l":"miss","p":"verb","e":["echar de menos","perder"]},
-  {"l":"art","p":"noun","e":["arte"]},
-  {"l":"campaign","p":"noun","e":["campaña"]},
-  {"l":"private","p":"adjective","e":["privado","íntimo"]},
-  {"l":"pause","p":"verb","e":["pausar","hacer una pausa"]},
-  {"l":"everyone","p":"pronoun","e":["todos","todo el mundo"]},
-  {"l":"forget","p":"verb","e":["olvidar","olvidarse de"]},
-  {"l":"page","p":"noun","e":["página"]},
-  {"l":"worry","p":"verb","e":["preocupar","inquietar"]},
-  {"l":"summer","p":"noun","e":["verano"]},
-  {"l":"drink","p":"verb","e":["beber","tomar"]},
-  {"l":"opinion","p":"noun","e":["opinión","punto de vista"]},
-  {"l":"park","p":"noun","e":["parque"]},
-  {"l":"represent","p":"verb","e":["representar"]},
-  {"l":"key","p":"noun","e":["llave","clave"]},
-  {"l":"inside","p":"adverb","e":["dentro","en el interior"]},
-  {"l":"manager","p":"noun","e":["gerente","director"]},
-  {"l":"international","p":"adjective","e":["internacional"]},
-  {"l":"contain","p":"verb","e":["contener","incluir"]},
-  {"l":"notice","p":"verb","e":["notar","darse cuenta de"]},
-  {"l":"wonder","p":"verb","e":["preguntarse","maravillarse"]},
-  {"l":"nature","p":"noun","e":["naturaleza"]},
-  {"l":"structure","p":"noun","e":["estructura"]},
-  {"l":"section","p":"noun","e":["sección","apartado"]},
-  {"l":"myself","p":"pronoun","e":["yo mismo"]},
-  {"l":"exactly","p":"adverb","e":["exactamente","precisamente"]},
-  {"l":"plant","p":"noun","e":["planta"]},
-  {"l":"paint","p":"verb","e":["pintar"]},
-  {"l":"worker","p":"noun","e":["trabajador","obrero"]},
-  {"l":"press","p":"noun","e":["prensa","medios"]},
-  {"l":"whatever","p":"pronoun","e":["lo que sea","cualquier cosa"]},
-  {"l":"necessary","p":"adjective","e":["necesario","imprescindible"]},
-  {"l":"region","p":"noun","e":["región","zona"]},
-  {"l":"growth","p":"noun","e":["crecimiento","aumento"]},
-  {"l":"evening","p":"noun","e":["tarde","noche"]},
-  {"l":"influence","p":"noun","e":["influencia"]},
-  {"l":"respect","p":"noun","e":["respeto"]},
-  {"l":"various","p":"adjective","e":["varios","diverso"]},
-  {"l":"catch","p":"verb","e":["atrapar","coger"]},
-  {"l":"skill","p":"noun","e":["habilidad","destreza"]},
-  {"l":"attempt","p":"noun","e":["intento","esfuerzo"]},
-  {"l":"son","p":"noun","e":["hijo"]},
-  {"l":"simple","p":"adjective","e":["simple","sencillo"]},
-  {"l":"medium","p":"adjective","e":["mediano","medio"]},
-  {"l":"average","p":"noun","e":["promedio","media"]},
-  {"l":"stock","p":"noun","e":["acciones","existencias"]},
-  {"l":"management","p":"noun","e":["gestión","dirección"]},
-  {"l":"character","p":"noun","e":["carácter","personaje"]},
-  {"l":"bed","p":"noun","e":["cama"]},
-  {"l":"hit","p":"verb","e":["golpear","chocar"]},
-  {"l":"establish","p":"verb","e":["establecer","crear"]},
-  {"l":"indeed","p":"adverb","e":["en efecto","realmente"]},
-  {"l":"final","p":"adjective","e":["final","último"]},
-  {"l":"economy","p":"noun","e":["economía"]},
-  {"l":"fit","p":"adjective","e":["en forma","adecuado"]},
-  {"l":"guy","p":"noun","e":["tipo","chico","tío"]},
-  {"l":"function","p":"noun","e":["función","tarea"]},
-  {"l":"yesterday","p":"adverb","e":["ayer"]},
-  {"l":"image","p":"noun","e":["imagen"]},
-  {"l":"size","p":"noun","e":["tamaño","talla"]},
-  {"l":"behavior","p":"noun","e":["comportamiento","conducta"]},
-  {"l":"addition","p":"noun","e":["adición","suma"]},
-  {"l":"determine","p":"verb","e":["determinar","establecer"]},
-  {"l":"station","p":"noun","e":["estación","comisaría"]},
-  {"l":"population","p":"noun","e":["población"]},
-  {"l":"fail","p":"verb","e":["fallar","fracasar"]},
-  {"l":"environment","p":"noun","e":["entorno","ambiente","medioambiente"]},
-  {"l":"production","p":"noun","e":["producción"]},
-  {"l":"contract","p":"noun","e":["contrato","acuerdo"]},
-  {"l":"player","p":"noun","e":["jugador","reproductor"]},
-  {"l":"comment","p":"noun","e":["comentario","observación"]},
-  {"l":"enter","p":"verb","e":["entrar","ingresar"]},
-  {"l":"occur","p":"verb","e":["ocurrir","suceder"]},
-  {"l":"alone","p":"adjective","e":["solo","solitario"]},
-  {"l":"significant","p":"adjective","e":["significativo","importante"]},
-  {"l":"drug","p":"noun","e":["droga","medicamento"]},
-  {"l":"wall","p":"noun","e":["pared","muro"]},
-  {"l":"series","p":"noun","e":["serie"]},
-  {"l":"direct","p":"adjective","e":["directo","inmediato"]},
-  {"l":"success","p":"noun","e":["éxito","logro"]},
-  {"l":"tomorrow","p":"adverb","e":["mañana"]},
-  {"l":"director","p":"noun","e":["director"]},
-  {"l":"clearly","p":"adverb","e":["claramente","evidentemente"]},
-  {"l":"lack","p":"noun","e":["falta","carencia"]},
-  {"l":"review","p":"noun","e":["revisión","análisis"]},
-  {"l":"depend","p":"verb","e":["depender"]},
-  {"l":"race","p":"noun","e":["raza","carrera"]},
-  {"l":"recognize","p":"verb","e":["reconocer","identificar"]},
-  {"l":"window","p":"noun","e":["ventana"]},
-  {"l":"purpose","p":"noun","e":["propósito","objetivo"]},
-  {"l":"department","p":"noun","e":["departamento","sección"]},
-  {"l":"gain","p":"verb","e":["ganar","obtener"]},
-  {"l":"tree","p":"noun","e":["árbol"]},
-  {"l":"college","p":"noun","e":["universidad","facultad"]},
-  {"l":"argue","p":"verb","e":["argumentar","debatir"]},
-  {"l":"board","p":"noun","e":["tablero","junta directiva"]},
-  {"l":"holiday","p":"noun","e":["vacaciones","festivo"]},
-  {"l":"mark","p":"noun","e":["marca","señal"]},
-  {"l":"church","p":"noun","e":["iglesia"]},
-  {"l":"machine","p":"noun","e":["máquina"]},
-  {"l":"achieve","p":"verb","e":["lograr","alcanzar"]},
-  {"l":"item","p":"noun","e":["artículo","elemento"]},
-  {"l":"prove","p":"verb","e":["probar","demostrar"]},
-  {"l":"cent","p":"noun","e":["centavo","céntimo"]},
-  {"l":"season","p":"noun","e":["temporada","estación"]},
-  {"l":"floor","p":"noun","e":["suelo","piso"]},
-  {"l":"stuff","p":"noun","e":["cosas","material"]},
-  {"l":"wide","p":"adjective","e":["ancho","amplio"]},
-  {"l":"anyone","p":"pronoun","e":["alguien","cualquiera"]},
-  {"l":"method","p":"noun","e":["método","procedimiento"]},
-  {"l":"analysis","p":"noun","e":["análisis"]},
-  {"l":"election","p":"noun","e":["elección","votación"]},
-  {"l":"military","p":"adjective","e":["militar"]},
-  {"l":"hotel","p":"noun","e":["hotel"]},
-  {"l":"club","p":"noun","e":["club","palo"]},
-  {"l":"movie","p":"noun","e":["película","film"]},
-  {"l":"doctor","p":"noun","e":["médico","doctor"]},
-  {"l":"discussion","p":"noun","e":["discusión","debate"]},
-  {"l":"sorry","p":"adjective","e":["lo siento","arrepentido"]},
-  {"l":"challenge","p":"noun","e":["reto","desafío"]},
-  {"l":"nation","p":"noun","e":["nación","país"]},
-  {"l":"nearly","p":"adverb","e":["casi","aproximadamente"]},
-  {"l":"statement","p":"noun","e":["declaración","afirmación"]},
-  {"l":"link","p":"noun","e":["enlace","vínculo"]},
-  {"l":"despite","p":"preposition","e":["a pesar de"]},
-  {"l":"introduce","p":"verb","e":["presentar","introducir"]},
-  {"l":"advantage","p":"noun","e":["ventaja"]},
-  {"l":"ready","p":"adjective","e":["listo","preparado"]},
-  {"l":"marry","p":"verb","e":["casarse","contraer matrimonio"]},
-  {"l":"strike","p":"verb","e":["golpear","hacer huelga"]},
-  {"l":"mile","p":"noun","e":["milla"]},
-  {"l":"seek","p":"verb","e":["buscar","solicitar"]},
-  {"l":"ability","p":"noun","e":["capacidad","habilidad"]},
-  {"l":"unit","p":"noun","e":["unidad"]},
-  {"l":"card","p":"noun","e":["tarjeta","carta"]},
-  {"l":"hospital","p":"noun","e":["hospital"]},
-  {"l":"quickly","p":"adverb","e":["rápidamente","pronto"]},
-  {"l":"interview","p":"noun","e":["entrevista"]},
-  {"l":"agreement","p":"noun","e":["acuerdo","convenio"]},
-  {"l":"release","p":"verb","e":["liberar","lanzar"]},
-  {"l":"tax","p":"noun","e":["impuesto","tributo"]},
-  {"l":"solution","p":"noun","e":["solución"]},
-  {"l":"capital","p":"noun","e":["capital"]},
-  {"l":"popular","p":"adjective","e":["popular","conocido"]},
-  {"l":"specific","p":"adjective","e":["específico","concreto"]},
-  {"l":"beautiful","p":"adjective","e":["hermoso","bello"]},
-  {"l":"fear","p":"noun","e":["miedo","temor"]},
-  {"l":"aim","p":"noun","e":["objetivo","meta"]},
-  {"l":"television","p":"noun","e":["televisión","tele"]},
-  {"l":"serious","p":"adjective","e":["serio","grave"]},
-  {"l":"target","p":"noun","e":["objetivo","meta"]},
-  {"l":"degree","p":"noun","e":["grado","título"]},
-  {"l":"pull","p":"verb","e":["tirar","jalar"]},
-  {"l":"red","p":"adjective","e":["rojo"]},
-  {"l":"husband","p":"noun","e":["marido","esposo"]},
-  {"l":"access","p":"noun","e":["acceso"]},
-  {"l":"movement","p":"noun","e":["movimiento"]},
-  {"l":"treat","p":"verb","e":["tratar","atender"]},
-  {"l":"identify","p":"verb","e":["identificar","reconocer"]},
-  {"l":"loss","p":"noun","e":["pérdida"]},
-  {"l":"shall","p":"modal","e":["(futuro formal)"]},
-  {"l":"modern","p":"adjective","e":["moderno","actual"]},
-  {"l":"pressure","p":"noun","e":["presión"]},
-  {"l":"bus","p":"noun","e":["autobús","bus"]},
-  {"l":"treatment","p":"noun","e":["tratamiento","trato"]},
-  {"l":"conference","p":"noun","e":["conferencia","congreso"]},
-  {"l":"yourself","p":"pronoun","e":["tú mismo"]},
-  {"l":"supply","p":"noun","e":["suministro","oferta"]},
-  {"l":"village","p":"noun","e":["pueblo","aldea"]},
-  {"l":"worth","p":"adjective","e":["que vale","valioso"]},
-  {"l":"natural","p":"adjective","e":["natural"]},
-  {"l":"express","p":"verb","e":["expresar","manifestar"]},
-  {"l":"indicate","p":"verb","e":["indicar","señalar"]},
-  {"l":"attend","p":"verb","e":["asistir","atender"]},
-  {"l":"brother","p":"noun","e":["hermano"]},
-  {"l":"investment","p":"noun","e":["inversión"]},
-  {"l":"score","p":"noun","e":["puntuación","marcador"]},
-  {"l":"organize","p":"verb","e":["organizar","coordinar"]},
-  {"l":"trip","p":"noun","e":["viaje","excursión"]},
-  {"l":"sleep","p":"verb","e":["dormir"]},
-  {"l":"fish","p":"noun","e":["pez","pescado"]},
-  {"l":"promise","p":"noun","e":["promesa"]},
-  {"l":"potential","p":"noun","e":["potencial"]},
-  {"l":"energy","p":"noun","e":["energía"]},
-  {"l":"trouble","p":"noun","e":["problema","dificultad"]},
-  {"l":"relation","p":"noun","e":["relación","vínculo"]},
-  {"l":"touch","p":"verb","e":["tocar"]},
-  {"l":"file","p":"noun","e":["archivo","expediente"]},
-  {"l":"middle","p":"noun","e":["medio","centro"]},
-  {"l":"bar","p":"noun","e":["barra","bar"]},
-  {"l":"suffer","p":"verb","e":["sufrir","padecer"]},
-  {"l":"strategy","p":"noun","e":["estrategia"]},
-  {"l":"deep","p":"adjective","e":["profundo","hondo"]},
-  {"l":"except","p":"preposition","e":["excepto","salvo"]},
-  {"l":"clean","p":"adjective","e":["limpio","aseado"]},
-  {"l":"tend","p":"verb","e":["tender","soler"]},
-  {"l":"advance","p":"noun","e":["avance","adelanto"]},
-  {"l":"fill","p":"verb","e":["llenar","rellenar"]},
-  {"l":"star","p":"noun","e":["estrella"]},
-  {"l":"network","p":"noun","e":["red"]},
-  {"l":"generally","p":"adverb","e":["generalmente","en general"]},
-  {"l":"operation","p":"noun","e":["operación"]},
-  {"l":"match","p":"noun","e":["partido","coincidencia"]},
-  {"l":"avoid","p":"verb","e":["evitar"]},
-  {"l":"seat","p":"noun","e":["asiento","silla"]},
-  {"l":"throw","p":"verb","e":["lanzar","tirar"]},
-  {"l":"task","p":"noun","e":["tarea","encargo"]},
-  {"l":"normal","p":"adjective","e":["normal","habitual"]},
-  {"l":"goal","p":"noun","e":["objetivo","gol","meta"]},
-  {"l":"associate","p":"verb","e":["asociar","relacionar"]},
-  {"l":"blue","p":"adjective","e":["azul"]},
-  {"l":"positive","p":"adjective","e":["positivo"]},
-  {"l":"option","p":"noun","e":["opción","alternativa"]},
-  {"l":"box","p":"noun","e":["caja","cajón"]},
-  {"l":"huge","p":"adjective","e":["enorme","inmenso"]},
-  {"l":"message","p":"noun","e":["mensaje"]},
-  {"l":"instance","p":"noun","e":["instancia","ejemplo","caso"]},
-  {"l":"style","p":"noun","e":["estilo"]},
-  {"l":"refer","p":"verb","e":["referir","remitir"]},
-  {"l":"cold","p":"adjective","e":["frío","helado"]},
-  {"l":"push","p":"verb","e":["empujar","presionar"]},
-  {"l":"quarter","p":"noun","e":["cuarto","trimestre"]},
-  {"l":"assume","p":"verb","e":["asumir","suponer"]},
-  {"l":"baby","p":"noun","e":["bebé"]},
-  {"l":"successful","p":"adjective","e":["exitoso","con éxito"]},
-  {"l":"sing","p":"verb","e":["cantar"]},
-  {"l":"doubt","p":"noun","e":["duda"]},
-  {"l":"competition","p":"noun","e":["competencia","competición"]},
-  {"l":"theory","p":"noun","e":["teoría"]},
-  {"l":"propose","p":"verb","e":["proponer","sugerir"]},
-  {"l":"reference","p":"noun","e":["referencia"]},
-  {"l":"argument","p":"noun","e":["argumento","discusión"]},
-  {"l":"adult","p":"noun","e":["adulto"]},
-  {"l":"fly","p":"verb","e":["volar"]},
-  {"l":"document","p":"noun","e":["documento"]},
-  {"l":"pattern","p":"noun","e":["patrón","modelo"]},
-  {"l":"application","p":"noun","e":["aplicación","solicitud"]},
-  {"l":"hot","p":"adjective","e":["caliente","caluroso"]},
-  {"l":"obviously","p":"adverb","e":["obviamente","claramente"]},
-  {"l":"unclear","p":"adjective","e":["poco claro","confuso"]},
-  {"l":"bill","p":"noun","e":["factura","cuenta","proyecto de ley"]},
-  {"l":"search","p":"noun","e":["búsqueda"]},
-  {"l":"separate","p":"adjective","e":["separado","distinto"]},
-  {"l":"central","p":"adjective","e":["central","principal"]},
-  {"l":"career","p":"noun","e":["carrera","trayectoria"]},
-  {"l":"anyway","p":"adverb","e":["de todos modos","en cualquier caso"]},
-  {"l":"speech","p":"noun","e":["discurso","habla"]},
-  {"l":"dog","p":"noun","e":["perro"]},
-  {"l":"officer","p":"noun","e":["oficial","agente"]},
-  {"l":"oil","p":"noun","e":["aceite","petróleo"]},
-  {"l":"dress","p":"noun","e":["vestido","ropa"]},
-  {"l":"profit","p":"noun","e":["beneficio","ganancia"]},
-  {"l":"guess","p":"verb","e":["adivinar","suponer"]},
-  {"l":"fun","p":"noun","e":["diversión","entretenimiento"]},
-  {"l":"protect","p":"verb","e":["proteger","defender"]},
-  {"l":"resource","p":"noun","e":["recurso"]},
-  {"l":"science","p":"noun","e":["ciencia"]},
-  {"l":"disease","p":"noun","e":["enfermedad"]},
-  {"l":"balance","p":"noun","e":["equilibrio","balance"]},
-  {"l":"damage","p":"noun","e":["daño","perjuicio"]},
-  {"l":"basis","p":"noun","e":["base","fundamento"]},
-  {"l":"author","p":"noun","e":["autor","escritor"]},
-  {"l":"basic","p":"adjective","e":["básico","fundamental"]},
-  {"l":"encourage","p":"verb","e":["alentar","animar"]},
-  {"l":"hair","p":"noun","e":["cabello","pelo"]},
-  {"l":"male","p":"adjective","e":["masculino","varonil"]},
-  {"l":"operate","p":"verb","e":["operar","funcionar"]},
-  {"l":"reflect","p":"verb","e":["reflejar","reflexionar"]},
-  {"l":"exercise","p":"noun","e":["ejercicio"]},
-  {"l":"useful","p":"adjective","e":["útil","práctico"]},
-  {"l":"restaurant","p":"noun","e":["restaurante"]},
-  {"l":"income","p":"noun","e":["ingresos","renta"]},
-  {"l":"property","p":"noun","e":["propiedad","inmueble"]},
-  {"l":"previous","p":"adjective","e":["anterior","previo"]},
-  {"l":"dark","p":"adjective","e":["oscuro","tenebroso"]},
-  {"l":"imagine","p":"verb","e":["imaginar","concebir"]},
-  {"l":"okay","p":"adjective","e":["bien","de acuerdo"]},
-  {"l":"earn","p":"verb","e":["ganar (dinero)","merecer"]},
-  {"l":"daughter","p":"noun","e":["hija"]},
-  {"l":"post","p":"noun","e":["publicación","puesto"]},
-  {"l":"newspaper","p":"noun","e":["periódico","diario"]},
-  {"l":"define","p":"verb","e":["definir","establecer"]},
-  {"l":"conclusion","p":"noun","e":["conclusión"]},
-  {"l":"clock","p":"noun","e":["reloj"]},
-  {"l":"everybody","p":"pronoun","e":["todo el mundo","todos"]},
-  {"l":"weekend","p":"noun","e":["fin de semana"]},
-  {"l":"perform","p":"verb","e":["actuar","realizar"]},
-  {"l":"professional","p":"adjective","e":["profesional"]},
-  {"l":"mine","p":"pronoun","e":["mío","mía"]},
-  {"l":"debate","p":"noun","e":["debate","discusión"]},
-  {"l":"memory","p":"noun","e":["memoria","recuerdo"]},
-  {"l":"green","p":"adjective","e":["verde"]},
-  {"l":"song","p":"noun","e":["canción"]},
-  {"l":"object","p":"noun","e":["objeto","cosa"]},
-  {"l":"maintain","p":"verb","e":["mantener","conservar"]},
-  {"l":"credit","p":"noun","e":["crédito","reconocimiento"]},
-  {"l":"ring","p":"noun","e":["anillo","timbre"]},
-  {"l":"discover","p":"verb","e":["descubrir","hallar"]},
-  {"l":"dead","p":"adjective","e":["muerto","fallecido"]},
-  {"l":"afternoon","p":"noun","e":["tarde"]},
-  {"l":"prefer","p":"verb","e":["preferir"]},
-  {"l":"extend","p":"verb","e":["extender","ampliar"]},
-  {"l":"possibility","p":"noun","e":["posibilidad"]},
-  {"l":"direction","p":"noun","e":["dirección","rumbo"]},
-  {"l":"facility","p":"noun","e":["instalación","facilidad"]},
-  {"l":"variety","p":"noun","e":["variedad","diversidad"]},
-  {"l":"daily","p":"adjective","e":["diario","cotidiano"]},
-  {"l":"clothes","p":"noun","e":["ropa","vestimenta"]},
-  {"l":"screen","p":"noun","e":["pantalla","monitor"]},
-  {"l":"track","p":"noun","e":["pista","rastro"]},
-  {"l":"dance","p":"verb","e":["bailar"]},
-  {"l":"completely","p":"adverb","e":["completamente","totalmente"]},
-  {"l":"female","p":"adjective","e":["femenino","hembra"]},
-  {"l":"responsibility","p":"noun","e":["responsabilidad"]},
-  {"l":"original","p":"adjective","e":["original"]},
-  {"l":"sister","p":"noun","e":["hermana"]},
-  {"l":"rock","p":"noun","e":["roca","piedra"]},
-  {"l":"dream","p":"noun","e":["sueño","ilusión"]},
-  {"l":"nor","p":"conjunction","e":["ni","tampoco"]},
-  {"l":"university","p":"noun","e":["universidad"]},
-  {"l":"easily","p":"adverb","e":["fácilmente","sin dificultad"]},
-  {"l":"agency","p":"noun","e":["agencia"]},
-  {"l":"dollar","p":"noun","e":["dólar"]},
-  {"l":"garden","p":"noun","e":["jardín"]},
-  {"l":"fix","p":"verb","e":["arreglar","reparar"]},
-  {"l":"ahead","p":"adverb","e":["adelante","por delante"]},
-  {"l":"cross","p":"verb","e":["cruzar","atravesar"]},
-  {"l":"yeah","p":"adverb","e":["sí","ya"]},
-  {"l":"candidate","p":"noun","e":["candidato","aspirante"]},
-  {"l":"weight","p":"noun","e":["peso"]},
-  {"l":"legal","p":"adjective","e":["legal","jurídico"]},
-  {"l":"proposal","p":"noun","e":["propuesta"]},
-  {"l":"version","p":"noun","e":["versión"]},
-  {"l":"conversation","p":"noun","e":["conversación","diálogo"]},
-  {"l":"somebody","p":"pronoun","e":["alguien"]},
-  {"l":"pound","p":"noun","e":["libra"]},
-  {"l":"magazine","p":"noun","e":["revista"]},
-  {"l":"shape","p":"noun","e":["forma","figura"]},
-  {"l":"sea","p":"noun","e":["mar","océano"]},
-  {"l":"immediately","p":"adverb","e":["inmediatamente","de inmediato"]},
-  {"l":"welcome","p":"adjective","e":["bienvenido"]},
-  {"l":"smile","p":"noun","e":["sonrisa"]},
-  {"l":"communication","p":"noun","e":["comunicación"]},
-  {"l":"agent","p":"noun","e":["agente","representante"]},
-  {"l":"traditional","p":"adjective","e":["tradicional"]},
-  {"l":"replace","p":"verb","e":["reemplazar","sustituir"]},
-  {"l":"judge","p":"noun","e":["juez","árbitro"]},
-  {"l":"herself","p":"pronoun","e":["ella misma"]},
-  {"l":"suddenly","p":"adverb","e":["de repente","repentinamente"]},
-  {"l":"generation","p":"noun","e":["generación"]},
-  {"l":"estimate","p":"noun","e":["estimación","cálculo"]},
-  {"l":"favorite","p":"adjective","e":["favorito","preferido"]},
-  {"l":"difficulty","p":"noun","e":["dificultad","obstáculo"]},
-  {"l":"purchase","p":"noun","e":["compra"]},
-  {"l":"shoot","p":"verb","e":["disparar","fotografiar"]},
-  {"l":"announce","p":"verb","e":["anunciar","comunicar"]},
-  {"l":"independent","p":"adjective","e":["independiente"]},
-  {"l":"recommend","p":"verb","e":["recomendar"]},
-  {"l":"survey","p":"noun","e":["encuesta","estudio"]},
-  {"l":"majority","p":"noun","e":["mayoría"]},
-  {"l":"stick","p":"noun","e":["palo","palito"]},
-  {"l":"request","p":"noun","e":["solicitud","petición"]},
-  {"l":"rich","p":"adjective","e":["rico","adinerado"]},
-  {"l":"wind","p":"noun","e":["viento","brisa"]},
-  {"l":"none","p":"pronoun","e":["ninguno","ninguna"]},
-  {"l":"exchange","p":"noun","e":["intercambio","cambio"]},
-  {"l":"budget","p":"noun","e":["presupuesto"]},
-  {"l":"famous","p":"adjective","e":["famoso","célebre"]},
-  {"l":"blood","p":"noun","e":["sangre"]},
-  {"l":"appropriate","p":"adjective","e":["apropiado","adecuado"]},
-  {"l":"block","p":"noun","e":["bloque","manzana"]},
-  {"l":"warm","p":"adjective","e":["cálido","templado"]},
-  {"l":"count","p":"verb","e":["contar"]},
-  {"l":"scene","p":"noun","e":["escena","lugar"]},
-  {"l":"writer","p":"noun","e":["escritor","redactor"]},
-  {"l":"content","p":"noun","e":["contenido"]},
-  {"l":"prevent","p":"verb","e":["prevenir","evitar"]},
-  {"l":"safe","p":"adjective","e":["seguro","salvo"]},
-  {"l":"invite","p":"verb","e":["invitar"]},
-  {"l":"mix","p":"verb","e":["mezclar","combinar"]},
-  {"l":"element","p":"noun","e":["elemento","componente"]},
-  {"l":"effective","p":"adjective","e":["efectivo","eficaz"]},
-  {"l":"correct","p":"adjective","e":["correcto","exacto"]},
-  {"l":"medical","p":"adjective","e":["médico","sanitario"]},
-  {"l":"admit","p":"verb","e":["admitir","reconocer"]},
-  {"l":"beat","p":"verb","e":["golpear","latir"]},
-  {"l":"telephone","p":"noun","e":["teléfono"]},
-  {"l":"copy","p":"noun","e":["copia"]},
-  {"l":"committee","p":"noun","e":["comité","comisión"]},
-  {"l":"aware","p":"adjective","e":["consciente","al tanto"]},
-  {"l":"advice","p":"noun","e":["consejo","recomendación"]},
-  {"l":"handle","p":"verb","e":["manejar","gestionar"]},
-  {"l":"glass","p":"noun","e":["vaso","vidrio","cristal"]},
-  {"l":"trial","p":"noun","e":["juicio","prueba","ensayo"]},
-  {"l":"stress","p":"noun","e":["estrés","tensión"]},
-  {"l":"radio","p":"noun","e":["radio"]},
-  {"l":"administration","p":"noun","e":["administración","gestión"]},
-  {"l":"complex","p":"adjective","e":["complejo","complicado"]},
-  {"l":"text","p":"noun","e":["texto"]},
-  {"l":"context","p":"noun","e":["contexto"]},
-  {"l":"ride","p":"verb","e":["montar","viajar en"]},
-  {"l":"directly","p":"adverb","e":["directamente"]},
-  {"l":"heavy","p":"adjective","e":["pesado","denso"]},
-  {"l":"remove","p":"verb","e":["quitar","eliminar"]},
-  {"l":"conduct","p":"noun","e":["conducta","comportamiento"]},
-  {"l":"equipment","p":"noun","e":["equipamiento","equipo"]},
-  {"l":"title","p":"noun","e":["título"]},
-  {"l":"extra","p":"adjective","e":["extra","adicional"]},
-  {"l":"executive","p":"noun","e":["ejecutivo","directivo"]},
-  {"l":"chair","p":"noun","e":["silla","sillón"]},
-  {"l":"expensive","p":"adjective","e":["caro","costoso"]},
-  {"l":"sample","p":"noun","e":["muestra","ejemplo"]},
-  {"l":"sex","p":"noun","e":["sexo"]},
-  {"l":"deliver","p":"verb","e":["entregar","repartir"]},
-  {"l":"video","p":"noun","e":["vídeo","video"]},
-  {"l":"connection","p":"noun","e":["conexión","vínculo"]},
-  {"l":"primary","p":"adjective","e":["primario","principal"]},
-  {"l":"weather","p":"noun","e":["tiempo","clima"]},
-  {"l":"collect","p":"verb","e":["recoger","coleccionar"]},
-  {"l":"inform","p":"verb","e":["informar","comunicar"]},
-  {"l":"principle","p":"noun","e":["principio","norma"]},
-  {"l":"straight","p":"adjective","e":["recto","derecho"]},
-  {"l":"appeal","p":"noun","e":["apelación","atractivo"]},
-  {"l":"highly","p":"adverb","e":["altamente","muy"]},
-  {"l":"trust","p":"noun","e":["confianza","fe"]},
-  {"l":"wonderful","p":"adjective","e":["maravilloso","estupendo"]},
-  {"l":"flat","p":"adjective","e":["plano","liso"]},
-  {"l":"absolutely","p":"adverb","e":["absolutamente","totalmente"]},
-  {"l":"flow","p":"noun","e":["flujo","corriente"]},
-  {"l":"fair","p":"adjective","e":["justo","imparcial"]},
-  {"l":"additional","p":"adjective","e":["adicional","extra"]},
-  {"l":"responsible","p":"adjective","e":["responsable"]},
-  {"l":"farm","p":"noun","e":["granja","finca"]},
-  {"l":"collection","p":"noun","e":["colección"]},
-  {"l":"hang","p":"verb","e":["colgar","suspender"]},
-  {"l":"negative","p":"adjective","e":["negativo"]},
-  {"l":"band","p":"noun","e":["banda","grupo"]},
-  {"l":"relative","p":"noun","e":["pariente","familiar"]},
-  {"l":"tour","p":"noun","e":["gira","tour","visita"]},
-  {"l":"alternative","p":"noun","e":["alternativa","opción"]},
-  {"l":"software","p":"noun","e":["software","programa"]},
-  {"l":"pair","p":"noun","e":["par","pareja"]},
-  {"l":"ship","p":"noun","e":["barco","nave"]},
-  {"l":"attitude","p":"noun","e":["actitud","postura"]},
-  {"l":"cheap","p":"adjective","e":["barato","económico"]},
-  {"l":"double","p":"adjective","e":["doble"]},
-  {"l":"leg","p":"noun","e":["pierna","pata"]},
-  {"l":"observe","p":"verb","e":["observar","notar"]},
-  {"l":"sentence","p":"noun","e":["oración","sentencia"]},
-  {"l":"print","p":"verb","e":["imprimir","publicar"]},
-  {"l":"progress","p":"noun","e":["progreso","avance"]}
+  {
+    "l": "be",
+    "p": "verb",
+    "e": [
+      "ser",
+      "estar"
+    ]
+  },
+  {
+    "l": "have",
+    "p": "verb",
+    "e": [
+      "tener",
+      "haber"
+    ]
+  },
+  {
+    "l": "do",
+    "p": "verb",
+    "e": [
+      "hacer"
+    ]
+  },
+  {
+    "l": "will",
+    "p": "noun",
+    "e": [
+      "voluntad",
+      "testamento"
+    ]
+  },
+  {
+    "l": "say",
+    "p": "verb",
+    "e": [
+      "decir",
+      "afirmar"
+    ]
+  },
+  {
+    "l": "go",
+    "p": "verb",
+    "e": [
+      "ir",
+      "irse"
+    ]
+  },
+  {
+    "l": "one",
+    "p": "numeral",
+    "e": [
+      "uno"
+    ]
+  },
+  {
+    "l": "would",
+    "p": "modal",
+    "e": [
+      "condicional",
+      "hipotético"
+    ]
+  },
+  {
+    "l": "can",
+    "p": "modal",
+    "e": [
+      "poder"
+    ]
+  },
+  {
+    "l": "know",
+    "p": "verb",
+    "e": [
+      "saber",
+      "conocer"
+    ]
+  },
+  {
+    "l": "get",
+    "p": "verb",
+    "e": [
+      "obtener",
+      "conseguir",
+      "llegar"
+    ]
+  },
+  {
+    "l": "like",
+    "p": "verb",
+    "e": [
+      "gustar",
+      "agradar"
+    ]
+  },
+  {
+    "l": "think",
+    "p": "verb",
+    "e": [
+      "pensar",
+      "creer"
+    ]
+  },
+  {
+    "l": "make",
+    "p": "verb",
+    "e": [
+      "hacer",
+      "fabricar"
+    ]
+  },
+  {
+    "l": "time",
+    "p": "noun",
+    "e": [
+      "tiempo",
+      "vez",
+      "momento"
+    ]
+  },
+  {
+    "l": "see",
+    "p": "verb",
+    "e": [
+      "ver",
+      "entender"
+    ]
+  },
+  {
+    "l": "up",
+    "p": "adverb",
+    "e": [
+      "arriba",
+      "hacia arriba"
+    ]
+  },
+  {
+    "l": "other",
+    "p": "adjective",
+    "e": [
+      "otro",
+      "demás"
+    ]
+  },
+  {
+    "l": "out",
+    "p": "adverb",
+    "e": [
+      "fuera",
+      "afuera"
+    ]
+  },
+  {
+    "l": "good",
+    "p": "adjective",
+    "e": [
+      "bueno",
+      "bien"
+    ]
+  },
+  {
+    "l": "people",
+    "p": "noun",
+    "e": [
+      "gente",
+      "personas"
+    ]
+  },
+  {
+    "l": "year",
+    "p": "noun",
+    "e": [
+      "año"
+    ]
+  },
+  {
+    "l": "take",
+    "p": "verb",
+    "e": [
+      "tomar",
+      "coger",
+      "llevar"
+    ]
+  },
+  {
+    "l": "well",
+    "p": "adverb",
+    "e": [
+      "bien"
+    ]
+  },
+  {
+    "l": "come",
+    "p": "verb",
+    "e": [
+      "venir",
+      "llegar"
+    ]
+  },
+  {
+    "l": "could",
+    "p": "modal",
+    "e": [
+      "podía"
+    ]
+  },
+  {
+    "l": "work",
+    "p": "verb",
+    "e": [
+      "trabajar",
+      "funcionar"
+    ]
+  },
+  {
+    "l": "use",
+    "p": "verb",
+    "e": [
+      "usar",
+      "utilizar"
+    ]
+  },
+  {
+    "l": "than",
+    "p": "conjunction",
+    "e": [
+      "que"
+    ]
+  },
+  {
+    "l": "look",
+    "p": "verb",
+    "e": [
+      "mirar",
+      "parecer"
+    ]
+  },
+  {
+    "l": "want",
+    "p": "verb",
+    "e": [
+      "querer",
+      "desear"
+    ]
+  },
+  {
+    "l": "give",
+    "p": "verb",
+    "e": [
+      "dar",
+      "entregar"
+    ]
+  },
+  {
+    "l": "first",
+    "p": "adjective",
+    "e": [
+      "primero",
+      "inicial"
+    ]
+  },
+  {
+    "l": "new",
+    "p": "adjective",
+    "e": [
+      "nuevo",
+      "reciente"
+    ]
+  },
+  {
+    "l": "way",
+    "p": "noun",
+    "e": [
+      "manera",
+      "camino",
+      "modo"
+    ]
+  },
+  {
+    "l": "find",
+    "p": "verb",
+    "e": [
+      "encontrar",
+      "hallar"
+    ]
+  },
+  {
+    "l": "day",
+    "p": "noun",
+    "e": [
+      "día"
+    ]
+  },
+  {
+    "l": "where",
+    "p": "adverb",
+    "e": [
+      "donde",
+      "dónde"
+    ]
+  },
+  {
+    "l": "thing",
+    "p": "noun",
+    "e": [
+      "cosa",
+      "asunto"
+    ]
+  },
+  {
+    "l": "should",
+    "p": "modal",
+    "e": [
+      "deber",
+      "debería"
+    ]
+  },
+  {
+    "l": "need",
+    "p": "verb",
+    "e": [
+      "necesitar"
+    ]
+  },
+  {
+    "l": "right",
+    "p": "adjective",
+    "e": [
+      "correcto",
+      "derecho"
+    ]
+  },
+  {
+    "l": "how",
+    "p": "adverb",
+    "e": [
+      "cómo",
+      "de qué manera"
+    ]
+  },
+  {
+    "l": "back",
+    "p": "noun",
+    "e": [
+      "espalda",
+      "atrás"
+    ]
+  },
+  {
+    "l": "mean",
+    "p": "verb",
+    "e": [
+      "significar",
+      "querer decir"
+    ]
+  },
+  {
+    "l": "may",
+    "p": "modal",
+    "e": [
+      "puede"
+    ]
+  },
+  {
+    "l": "last",
+    "p": "adjective",
+    "e": [
+      "último",
+      "pasado"
+    ]
+  },
+  {
+    "l": "child",
+    "p": "noun",
+    "e": [
+      "niño",
+      "hijo"
+    ]
+  },
+  {
+    "l": "tell",
+    "p": "verb",
+    "e": [
+      "decir",
+      "contar"
+    ]
+  },
+  {
+    "l": "really",
+    "p": "adverb",
+    "e": [
+      "realmente",
+      "de verdad"
+    ]
+  },
+  {
+    "l": "call",
+    "p": "verb",
+    "e": [
+      "llamar"
+    ]
+  },
+  {
+    "l": "company",
+    "p": "noun",
+    "e": [
+      "empresa",
+      "compañía"
+    ]
+  },
+  {
+    "l": "down",
+    "p": "adverb",
+    "e": [
+      "abajo",
+      "hacia abajo"
+    ]
+  },
+  {
+    "l": "show",
+    "p": "verb",
+    "e": [
+      "mostrar",
+      "demostrar"
+    ]
+  },
+  {
+    "l": "life",
+    "p": "noun",
+    "e": [
+      "vida"
+    ]
+  },
+  {
+    "l": "man",
+    "p": "noun",
+    "e": [
+      "hombre",
+      "varón"
+    ]
+  },
+  {
+    "l": "change",
+    "p": "verb",
+    "e": [
+      "cambiar",
+      "modificar"
+    ]
+  },
+  {
+    "l": "place",
+    "p": "noun",
+    "e": [
+      "lugar",
+      "sitio"
+    ]
+  },
+  {
+    "l": "long",
+    "p": "adjective",
+    "e": [
+      "largo",
+      "prolongado"
+    ]
+  },
+  {
+    "l": "feel",
+    "p": "verb",
+    "e": [
+      "sentir",
+      "sentirse"
+    ]
+  },
+  {
+    "l": "problem",
+    "p": "noun",
+    "e": [
+      "problema"
+    ]
+  },
+  {
+    "l": "write",
+    "p": "verb",
+    "e": [
+      "escribir",
+      "redactar"
+    ]
+  },
+  {
+    "l": "same",
+    "p": "adjective",
+    "e": [
+      "mismo",
+      "igual"
+    ]
+  },
+  {
+    "l": "lot",
+    "p": "noun",
+    "e": [
+      "lote",
+      "mucho"
+    ]
+  },
+  {
+    "l": "great",
+    "p": "adjective",
+    "e": [
+      "genial",
+      "excelente",
+      "grande"
+    ]
+  },
+  {
+    "l": "try",
+    "p": "verb",
+    "e": [
+      "intentar",
+      "tratar"
+    ]
+  },
+  {
+    "l": "leave",
+    "p": "verb",
+    "e": [
+      "salir",
+      "dejar",
+      "abandonar"
+    ]
+  },
+  {
+    "l": "number",
+    "p": "noun",
+    "e": [
+      "número",
+      "cifra"
+    ]
+  },
+  {
+    "l": "own",
+    "p": "adjective",
+    "e": [
+      "propio",
+      "particular"
+    ]
+  },
+  {
+    "l": "part",
+    "p": "noun",
+    "e": [
+      "parte",
+      "porción"
+    ]
+  },
+  {
+    "l": "point",
+    "p": "noun",
+    "e": [
+      "punto",
+      "aspecto"
+    ]
+  },
+  {
+    "l": "little",
+    "p": "adjective",
+    "e": [
+      "pequeño",
+      "poco"
+    ]
+  },
+  {
+    "l": "help",
+    "p": "verb",
+    "e": [
+      "ayudar",
+      "asistir"
+    ]
+  },
+  {
+    "l": "ask",
+    "p": "verb",
+    "e": [
+      "preguntar",
+      "pedir"
+    ]
+  },
+  {
+    "l": "meet",
+    "p": "verb",
+    "e": [
+      "conocer",
+      "reunirse"
+    ]
+  },
+  {
+    "l": "start",
+    "p": "verb",
+    "e": [
+      "empezar",
+      "comenzar"
+    ]
+  },
+  {
+    "l": "talk",
+    "p": "verb",
+    "e": [
+      "hablar",
+      "conversar"
+    ]
+  },
+  {
+    "l": "something",
+    "p": "pronoun",
+    "e": [
+      "algo"
+    ]
+  },
+  {
+    "l": "put",
+    "p": "verb",
+    "e": [
+      "poner",
+      "colocar"
+    ]
+  },
+  {
+    "l": "another",
+    "p": "determiner",
+    "e": [
+      "otro",
+      "otra"
+    ]
+  },
+  {
+    "l": "become",
+    "p": "verb",
+    "e": [
+      "convertirse",
+      "llegar a ser"
+    ]
+  },
+  {
+    "l": "interest",
+    "p": "noun",
+    "e": [
+      "interés"
+    ]
+  },
+  {
+    "l": "country",
+    "p": "noun",
+    "e": [
+      "país",
+      "nación"
+    ]
+  },
+  {
+    "l": "old",
+    "p": "adjective",
+    "e": [
+      "viejo",
+      "antiguo"
+    ]
+  },
+  {
+    "l": "school",
+    "p": "noun",
+    "e": [
+      "escuela",
+      "colegio"
+    ]
+  },
+  {
+    "l": "late",
+    "p": "adjective",
+    "e": [
+      "tarde",
+      "tardío"
+    ]
+  },
+  {
+    "l": "high",
+    "p": "adjective",
+    "e": [
+      "alto",
+      "elevado"
+    ]
+  },
+  {
+    "l": "different",
+    "p": "adjective",
+    "e": [
+      "diferente",
+      "distinto"
+    ]
+  },
+  {
+    "l": "next",
+    "p": "adjective",
+    "e": [
+      "siguiente",
+      "próximo"
+    ]
+  },
+  {
+    "l": "end",
+    "p": "noun",
+    "e": [
+      "fin",
+      "final",
+      "extremo"
+    ]
+  },
+  {
+    "l": "live",
+    "p": "verb",
+    "e": [
+      "vivir",
+      "residir"
+    ]
+  },
+  {
+    "l": "why",
+    "p": "adverb",
+    "e": [
+      "por qué"
+    ]
+  },
+  {
+    "l": "world",
+    "p": "noun",
+    "e": [
+      "mundo"
+    ]
+  },
+  {
+    "l": "week",
+    "p": "noun",
+    "e": [
+      "semana"
+    ]
+  },
+  {
+    "l": "play",
+    "p": "verb",
+    "e": [
+      "jugar",
+      "tocar"
+    ]
+  },
+  {
+    "l": "might",
+    "p": "modal",
+    "e": [
+      "podría"
+    ]
+  },
+  {
+    "l": "must",
+    "p": "modal",
+    "e": [
+      "deber",
+      "tener que"
+    ]
+  },
+  {
+    "l": "home",
+    "p": "noun",
+    "e": [
+      "casa",
+      "hogar"
+    ]
+  },
+  {
+    "l": "include",
+    "p": "verb",
+    "e": [
+      "incluir",
+      "abarcar"
+    ]
+  },
+  {
+    "l": "course",
+    "p": "noun",
+    "e": [
+      "curso",
+      "rumbo"
+    ]
+  },
+  {
+    "l": "house",
+    "p": "noun",
+    "e": [
+      "casa",
+      "vivienda"
+    ]
+  },
+  {
+    "l": "report",
+    "p": "noun",
+    "e": [
+      "informe",
+      "reporte"
+    ]
+  },
+  {
+    "l": "group",
+    "p": "noun",
+    "e": [
+      "grupo"
+    ]
+  },
+  {
+    "l": "case",
+    "p": "noun",
+    "e": [
+      "caso",
+      "situación"
+    ]
+  },
+  {
+    "l": "woman",
+    "p": "noun",
+    "e": [
+      "mujer"
+    ]
+  },
+  {
+    "l": "book",
+    "p": "noun",
+    "e": [
+      "libro"
+    ]
+  },
+  {
+    "l": "family",
+    "p": "noun",
+    "e": [
+      "familia"
+    ]
+  },
+  {
+    "l": "seem",
+    "p": "verb",
+    "e": [
+      "parecer",
+      "aparentar"
+    ]
+  },
+  {
+    "l": "let",
+    "p": "verb",
+    "e": [
+      "dejar",
+      "permitir"
+    ]
+  },
+  {
+    "l": "kind",
+    "p": "noun",
+    "e": [
+      "tipo",
+      "clase",
+      "especie"
+    ]
+  },
+  {
+    "l": "keep",
+    "p": "verb",
+    "e": [
+      "mantener",
+      "guardar",
+      "conservar"
+    ]
+  },
+  {
+    "l": "hear",
+    "p": "verb",
+    "e": [
+      "escuchar",
+      "oír"
+    ]
+  },
+  {
+    "l": "system",
+    "p": "noun",
+    "e": [
+      "sistema"
+    ]
+  },
+  {
+    "l": "question",
+    "p": "noun",
+    "e": [
+      "pregunta",
+      "cuestión"
+    ]
+  },
+  {
+    "l": "always",
+    "p": "adverb",
+    "e": [
+      "siempre"
+    ]
+  },
+  {
+    "l": "big",
+    "p": "adjective",
+    "e": [
+      "grande"
+    ]
+  },
+  {
+    "l": "set",
+    "p": "verb",
+    "e": [
+      "establecer",
+      "fijar"
+    ]
+  },
+  {
+    "l": "small",
+    "p": "adjective",
+    "e": [
+      "pequeño",
+      "reducido"
+    ]
+  },
+  {
+    "l": "study",
+    "p": "verb",
+    "e": [
+      "estudiar",
+      "investigar"
+    ]
+  },
+  {
+    "l": "follow",
+    "p": "verb",
+    "e": [
+      "seguir",
+      "continuar"
+    ]
+  },
+  {
+    "l": "begin",
+    "p": "verb",
+    "e": [
+      "comenzar",
+      "empezar"
+    ]
+  },
+  {
+    "l": "important",
+    "p": "adjective",
+    "e": [
+      "importante",
+      "relevante"
+    ]
+  },
+  {
+    "l": "run",
+    "p": "verb",
+    "e": [
+      "correr",
+      "funcionar"
+    ]
+  },
+  {
+    "l": "turn",
+    "p": "verb",
+    "e": [
+      "girar",
+      "voltear"
+    ]
+  },
+  {
+    "l": "bring",
+    "p": "verb",
+    "e": [
+      "traer",
+      "llevar"
+    ]
+  },
+  {
+    "l": "early",
+    "p": "adjective",
+    "e": [
+      "temprano",
+      "pronto"
+    ]
+  },
+  {
+    "l": "hand",
+    "p": "noun",
+    "e": [
+      "mano"
+    ]
+  },
+  {
+    "l": "state",
+    "p": "noun",
+    "e": [
+      "estado",
+      "nación"
+    ]
+  },
+  {
+    "l": "move",
+    "p": "verb",
+    "e": [
+      "mover",
+      "trasladar"
+    ]
+  },
+  {
+    "l": "money",
+    "p": "noun",
+    "e": [
+      "dinero"
+    ]
+  },
+  {
+    "l": "fact",
+    "p": "noun",
+    "e": [
+      "hecho",
+      "dato"
+    ]
+  },
+  {
+    "l": "area",
+    "p": "noun",
+    "e": [
+      "área",
+      "zona",
+      "región"
+    ]
+  },
+  {
+    "l": "provide",
+    "p": "verb",
+    "e": [
+      "proveer",
+      "proporcionar"
+    ]
+  },
+  {
+    "l": "name",
+    "p": "noun",
+    "e": [
+      "nombre"
+    ]
+  },
+  {
+    "l": "read",
+    "p": "verb",
+    "e": [
+      "leer"
+    ]
+  },
+  {
+    "l": "friend",
+    "p": "noun",
+    "e": [
+      "amigo",
+      "amiga"
+    ]
+  },
+  {
+    "l": "month",
+    "p": "noun",
+    "e": [
+      "mes"
+    ]
+  },
+  {
+    "l": "large",
+    "p": "adjective",
+    "e": [
+      "grande",
+      "amplio"
+    ]
+  },
+  {
+    "l": "business",
+    "p": "noun",
+    "e": [
+      "negocio",
+      "empresa"
+    ]
+  },
+  {
+    "l": "information",
+    "p": "noun",
+    "e": [
+      "información"
+    ]
+  },
+  {
+    "l": "open",
+    "p": "adjective",
+    "e": [
+      "abierto"
+    ]
+  },
+  {
+    "l": "order",
+    "p": "noun",
+    "e": [
+      "orden",
+      "pedido"
+    ]
+  },
+  {
+    "l": "government",
+    "p": "noun",
+    "e": [
+      "gobierno"
+    ]
+  },
+  {
+    "l": "word",
+    "p": "noun",
+    "e": [
+      "palabra",
+      "término"
+    ]
+  },
+  {
+    "l": "issue",
+    "p": "noun",
+    "e": [
+      "tema",
+      "cuestión",
+      "número"
+    ]
+  },
+  {
+    "l": "market",
+    "p": "noun",
+    "e": [
+      "mercado"
+    ]
+  },
+  {
+    "l": "pay",
+    "p": "verb",
+    "e": [
+      "pagar"
+    ]
+  },
+  {
+    "l": "build",
+    "p": "verb",
+    "e": [
+      "construir",
+      "edificar"
+    ]
+  },
+  {
+    "l": "hold",
+    "p": "verb",
+    "e": [
+      "sostener",
+      "tener",
+      "mantener"
+    ]
+  },
+  {
+    "l": "service",
+    "p": "noun",
+    "e": [
+      "servicio"
+    ]
+  },
+  {
+    "l": "believe",
+    "p": "verb",
+    "e": [
+      "creer",
+      "pensar"
+    ]
+  },
+  {
+    "l": "second",
+    "p": "adjective",
+    "e": [
+      "segundo"
+    ]
+  },
+  {
+    "l": "yes",
+    "p": "adverb",
+    "e": [
+      "sí"
+    ]
+  },
+  {
+    "l": "love",
+    "p": "verb",
+    "e": [
+      "amar",
+      "querer"
+    ]
+  },
+  {
+    "l": "increase",
+    "p": "verb",
+    "e": [
+      "aumentar",
+      "incrementar"
+    ]
+  },
+  {
+    "l": "job",
+    "p": "noun",
+    "e": [
+      "trabajo",
+      "empleo"
+    ]
+  },
+  {
+    "l": "plan",
+    "p": "noun",
+    "e": [
+      "plan",
+      "proyecto"
+    ]
+  },
+  {
+    "l": "result",
+    "p": "noun",
+    "e": [
+      "resultado",
+      "consecuencia"
+    ]
+  },
+  {
+    "l": "away",
+    "p": "adverb",
+    "e": [
+      "lejos",
+      "fuera"
+    ]
+  },
+  {
+    "l": "example",
+    "p": "noun",
+    "e": [
+      "ejemplo"
+    ]
+  },
+  {
+    "l": "happen",
+    "p": "verb",
+    "e": [
+      "ocurrir",
+      "pasar",
+      "suceder"
+    ]
+  },
+  {
+    "l": "offer",
+    "p": "verb",
+    "e": [
+      "ofrecer",
+      "proponer"
+    ]
+  },
+  {
+    "l": "young",
+    "p": "adjective",
+    "e": [
+      "joven"
+    ]
+  },
+  {
+    "l": "close",
+    "p": "verb",
+    "e": [
+      "cerrar"
+    ]
+  },
+  {
+    "l": "program",
+    "p": "noun",
+    "e": [
+      "programa"
+    ]
+  },
+  {
+    "l": "lead",
+    "p": "verb",
+    "e": [
+      "liderar",
+      "guiar"
+    ]
+  },
+  {
+    "l": "buy",
+    "p": "verb",
+    "e": [
+      "comprar",
+      "adquirir"
+    ]
+  },
+  {
+    "l": "understand",
+    "p": "verb",
+    "e": [
+      "entender",
+      "comprender"
+    ]
+  },
+  {
+    "l": "thank",
+    "p": "verb",
+    "e": [
+      "agradecer"
+    ]
+  },
+  {
+    "l": "far",
+    "p": "adverb",
+    "e": [
+      "lejos",
+      "distante"
+    ]
+  },
+  {
+    "l": "today",
+    "p": "adverb",
+    "e": [
+      "hoy"
+    ]
+  },
+  {
+    "l": "hour",
+    "p": "noun",
+    "e": [
+      "hora"
+    ]
+  },
+  {
+    "l": "student",
+    "p": "noun",
+    "e": [
+      "estudiante",
+      "alumno"
+    ]
+  },
+  {
+    "l": "face",
+    "p": "noun",
+    "e": [
+      "cara",
+      "rostro"
+    ]
+  },
+  {
+    "l": "hope",
+    "p": "verb",
+    "e": [
+      "esperar",
+      "desear"
+    ]
+  },
+  {
+    "l": "idea",
+    "p": "noun",
+    "e": [
+      "idea",
+      "concepto"
+    ]
+  },
+  {
+    "l": "cost",
+    "p": "noun",
+    "e": [
+      "costo",
+      "precio"
+    ]
+  },
+  {
+    "l": "room",
+    "p": "noun",
+    "e": [
+      "habitación",
+      "sala"
+    ]
+  },
+  {
+    "l": "reason",
+    "p": "noun",
+    "e": [
+      "razón",
+      "motivo"
+    ]
+  },
+  {
+    "l": "form",
+    "p": "noun",
+    "e": [
+      "forma",
+      "formulario"
+    ]
+  },
+  {
+    "l": "spend",
+    "p": "verb",
+    "e": [
+      "gastar",
+      "pasar"
+    ]
+  },
+  {
+    "l": "head",
+    "p": "noun",
+    "e": [
+      "cabeza",
+      "jefe"
+    ]
+  },
+  {
+    "l": "car",
+    "p": "noun",
+    "e": [
+      "coche",
+      "auto"
+    ]
+  },
+  {
+    "l": "learn",
+    "p": "verb",
+    "e": [
+      "aprender"
+    ]
+  },
+  {
+    "l": "level",
+    "p": "noun",
+    "e": [
+      "nivel"
+    ]
+  },
+  {
+    "l": "person",
+    "p": "noun",
+    "e": [
+      "persona"
+    ]
+  },
+  {
+    "l": "experience",
+    "p": "noun",
+    "e": [
+      "experiencia"
+    ]
+  },
+  {
+    "l": "once",
+    "p": "adverb",
+    "e": [
+      "una vez",
+      "alguna vez"
+    ]
+  },
+  {
+    "l": "member",
+    "p": "noun",
+    "e": [
+      "miembro",
+      "integrante"
+    ]
+  },
+  {
+    "l": "enough",
+    "p": "adjective",
+    "e": [
+      "suficiente",
+      "bastante"
+    ]
+  },
+  {
+    "l": "bad",
+    "p": "adjective",
+    "e": [
+      "malo",
+      "pésimo"
+    ]
+  },
+  {
+    "l": "city",
+    "p": "noun",
+    "e": [
+      "ciudad"
+    ]
+  },
+  {
+    "l": "night",
+    "p": "noun",
+    "e": [
+      "noche"
+    ]
+  },
+  {
+    "l": "able",
+    "p": "adjective",
+    "e": [
+      "capaz",
+      "hábil"
+    ]
+  },
+  {
+    "l": "support",
+    "p": "verb",
+    "e": [
+      "apoyar",
+      "respaldar"
+    ]
+  },
+  {
+    "l": "line",
+    "p": "noun",
+    "e": [
+      "línea",
+      "fila"
+    ]
+  },
+  {
+    "l": "present",
+    "p": "adjective",
+    "e": [
+      "presente",
+      "actual"
+    ]
+  },
+  {
+    "l": "side",
+    "p": "noun",
+    "e": [
+      "lado",
+      "costado"
+    ]
+  },
+  {
+    "l": "quite",
+    "p": "adverb",
+    "e": [
+      "bastante",
+      "muy"
+    ]
+  },
+  {
+    "l": "sure",
+    "p": "adjective",
+    "e": [
+      "seguro",
+      "cierto"
+    ]
+  },
+  {
+    "l": "term",
+    "p": "noun",
+    "e": [
+      "término",
+      "plazo"
+    ]
+  },
+  {
+    "l": "least",
+    "p": "adjective",
+    "e": [
+      "mínimo",
+      "menor"
+    ]
+  },
+  {
+    "l": "age",
+    "p": "noun",
+    "e": [
+      "edad",
+      "época"
+    ]
+  },
+  {
+    "l": "low",
+    "p": "adjective",
+    "e": [
+      "bajo",
+      "reducido"
+    ]
+  },
+  {
+    "l": "speak",
+    "p": "verb",
+    "e": [
+      "hablar"
+    ]
+  },
+  {
+    "l": "process",
+    "p": "noun",
+    "e": [
+      "proceso",
+      "procedimiento"
+    ]
+  },
+  {
+    "l": "public",
+    "p": "adjective",
+    "e": [
+      "público"
+    ]
+  },
+  {
+    "l": "often",
+    "p": "adverb",
+    "e": [
+      "frecuentemente",
+      "a menudo"
+    ]
+  },
+  {
+    "l": "train",
+    "p": "noun",
+    "e": [
+      "tren"
+    ]
+  },
+  {
+    "l": "possible",
+    "p": "adjective",
+    "e": [
+      "posible",
+      "factible"
+    ]
+  },
+  {
+    "l": "actually",
+    "p": "adverb",
+    "e": [
+      "en realidad",
+      "realmente"
+    ]
+  },
+  {
+    "l": "rather",
+    "p": "adverb",
+    "e": [
+      "bastante",
+      "más bien"
+    ]
+  },
+  {
+    "l": "view",
+    "p": "noun",
+    "e": [
+      "vista",
+      "opinión"
+    ]
+  },
+  {
+    "l": "together",
+    "p": "adverb",
+    "e": [
+      "juntos",
+      "en conjunto"
+    ]
+  },
+  {
+    "l": "consider",
+    "p": "verb",
+    "e": [
+      "considerar",
+      "tener en cuenta"
+    ]
+  },
+  {
+    "l": "price",
+    "p": "noun",
+    "e": [
+      "precio"
+    ]
+  },
+  {
+    "l": "parent",
+    "p": "noun",
+    "e": [
+      "padre",
+      "madre"
+    ]
+  },
+  {
+    "l": "hard",
+    "p": "adjective",
+    "e": [
+      "duro",
+      "difícil"
+    ]
+  },
+  {
+    "l": "party",
+    "p": "noun",
+    "e": [
+      "fiesta",
+      "partido"
+    ]
+  },
+  {
+    "l": "local",
+    "p": "adjective",
+    "e": [
+      "local",
+      "regional"
+    ]
+  },
+  {
+    "l": "control",
+    "p": "noun",
+    "e": [
+      "control"
+    ]
+  },
+  {
+    "l": "concern",
+    "p": "noun",
+    "e": [
+      "preocupación",
+      "asunto"
+    ]
+  },
+  {
+    "l": "product",
+    "p": "noun",
+    "e": [
+      "producto"
+    ]
+  },
+  {
+    "l": "lose",
+    "p": "verb",
+    "e": [
+      "perder"
+    ]
+  },
+  {
+    "l": "story",
+    "p": "noun",
+    "e": [
+      "historia",
+      "cuento",
+      "relato"
+    ]
+  },
+  {
+    "l": "almost",
+    "p": "adverb",
+    "e": [
+      "casi"
+    ]
+  },
+  {
+    "l": "continue",
+    "p": "verb",
+    "e": [
+      "continuar",
+      "seguir"
+    ]
+  },
+  {
+    "l": "stand",
+    "p": "verb",
+    "e": [
+      "estar de pie",
+      "soportar"
+    ]
+  },
+  {
+    "l": "whole",
+    "p": "adjective",
+    "e": [
+      "entero",
+      "completo"
+    ]
+  },
+  {
+    "l": "rate",
+    "p": "noun",
+    "e": [
+      "tasa",
+      "tarifa",
+      "índice"
+    ]
+  },
+  {
+    "l": "care",
+    "p": "verb",
+    "e": [
+      "cuidar",
+      "importar"
+    ]
+  },
+  {
+    "l": "expect",
+    "p": "verb",
+    "e": [
+      "esperar",
+      "anticipar"
+    ]
+  },
+  {
+    "l": "effect",
+    "p": "noun",
+    "e": [
+      "efecto",
+      "resultado"
+    ]
+  },
+  {
+    "l": "sort",
+    "p": "noun",
+    "e": [
+      "tipo",
+      "clase"
+    ]
+  },
+  {
+    "l": "anything",
+    "p": "pronoun",
+    "e": [
+      "cualquier cosa",
+      "algo"
+    ]
+  },
+  {
+    "l": "cause",
+    "p": "verb",
+    "e": [
+      "causar",
+      "provocar"
+    ]
+  },
+  {
+    "l": "fall",
+    "p": "verb",
+    "e": [
+      "caer"
+    ]
+  },
+  {
+    "l": "deal",
+    "p": "noun",
+    "e": [
+      "trato",
+      "acuerdo"
+    ]
+  },
+  {
+    "l": "water",
+    "p": "noun",
+    "e": [
+      "agua"
+    ]
+  },
+  {
+    "l": "send",
+    "p": "verb",
+    "e": [
+      "enviar",
+      "mandar"
+    ]
+  },
+  {
+    "l": "allow",
+    "p": "verb",
+    "e": [
+      "permitir",
+      "dejar"
+    ]
+  },
+  {
+    "l": "soon",
+    "p": "adverb",
+    "e": [
+      "pronto",
+      "en breve"
+    ]
+  },
+  {
+    "l": "watch",
+    "p": "verb",
+    "e": [
+      "ver",
+      "observar",
+      "vigilar"
+    ]
+  },
+  {
+    "l": "base",
+    "p": "noun",
+    "e": [
+      "base",
+      "fundamento"
+    ]
+  },
+  {
+    "l": "probably",
+    "p": "adverb",
+    "e": [
+      "probablemente"
+    ]
+  },
+  {
+    "l": "suggest",
+    "p": "verb",
+    "e": [
+      "sugerir",
+      "proponer"
+    ]
+  },
+  {
+    "l": "past",
+    "p": "adjective",
+    "e": [
+      "pasado",
+      "anterior"
+    ]
+  },
+  {
+    "l": "power",
+    "p": "noun",
+    "e": [
+      "poder",
+      "energía"
+    ]
+  },
+  {
+    "l": "test",
+    "p": "noun",
+    "e": [
+      "prueba",
+      "examen"
+    ]
+  },
+  {
+    "l": "visit",
+    "p": "verb",
+    "e": [
+      "visitar"
+    ]
+  },
+  {
+    "l": "center",
+    "p": "noun",
+    "e": [
+      "centro"
+    ]
+  },
+  {
+    "l": "grow",
+    "p": "verb",
+    "e": [
+      "crecer",
+      "desarrollar"
+    ]
+  },
+  {
+    "l": "nothing",
+    "p": "pronoun",
+    "e": [
+      "nada"
+    ]
+  },
+  {
+    "l": "return",
+    "p": "verb",
+    "e": [
+      "volver",
+      "regresar"
+    ]
+  },
+  {
+    "l": "mother",
+    "p": "noun",
+    "e": [
+      "madre"
+    ]
+  },
+  {
+    "l": "walk",
+    "p": "verb",
+    "e": [
+      "caminar",
+      "andar"
+    ]
+  },
+  {
+    "l": "matter",
+    "p": "verb",
+    "e": [
+      "importar"
+    ]
+  },
+  {
+    "l": "mind",
+    "p": "noun",
+    "e": [
+      "mente",
+      "cabeza"
+    ]
+  },
+  {
+    "l": "value",
+    "p": "noun",
+    "e": [
+      "valor",
+      "precio"
+    ]
+  },
+  {
+    "l": "office",
+    "p": "noun",
+    "e": [
+      "oficina",
+      "despacho"
+    ]
+  },
+  {
+    "l": "record",
+    "p": "noun",
+    "e": [
+      "récord",
+      "registro",
+      "grabación"
+    ]
+  },
+  {
+    "l": "stay",
+    "p": "verb",
+    "e": [
+      "quedarse",
+      "permanecer"
+    ]
+  },
+  {
+    "l": "force",
+    "p": "noun",
+    "e": [
+      "fuerza"
+    ]
+  },
+  {
+    "l": "stop",
+    "p": "verb",
+    "e": [
+      "parar",
+      "detener"
+    ]
+  },
+  {
+    "l": "light",
+    "p": "noun",
+    "e": [
+      "luz"
+    ]
+  },
+  {
+    "l": "develop",
+    "p": "verb",
+    "e": [
+      "desarrollar",
+      "elaborar"
+    ]
+  },
+  {
+    "l": "remember",
+    "p": "verb",
+    "e": [
+      "recordar",
+      "acordarse de"
+    ]
+  },
+  {
+    "l": "bit",
+    "p": "noun",
+    "e": [
+      "poco",
+      "trozo"
+    ]
+  },
+  {
+    "l": "share",
+    "p": "verb",
+    "e": [
+      "compartir",
+      "repartir"
+    ]
+  },
+  {
+    "l": "real",
+    "p": "adjective",
+    "e": [
+      "real",
+      "verdadero"
+    ]
+  },
+  {
+    "l": "answer",
+    "p": "noun",
+    "e": [
+      "respuesta"
+    ]
+  },
+  {
+    "l": "sit",
+    "p": "verb",
+    "e": [
+      "sentarse"
+    ]
+  },
+  {
+    "l": "figure",
+    "p": "noun",
+    "e": [
+      "figura",
+      "número",
+      "cifra"
+    ]
+  },
+  {
+    "l": "letter",
+    "p": "noun",
+    "e": [
+      "carta",
+      "letra"
+    ]
+  },
+  {
+    "l": "decide",
+    "p": "verb",
+    "e": [
+      "decidir",
+      "resolver"
+    ]
+  },
+  {
+    "l": "language",
+    "p": "noun",
+    "e": [
+      "idioma",
+      "lengua"
+    ]
+  },
+  {
+    "l": "subject",
+    "p": "noun",
+    "e": [
+      "tema",
+      "asignatura"
+    ]
+  },
+  {
+    "l": "class",
+    "p": "noun",
+    "e": [
+      "clase",
+      "categoría"
+    ]
+  },
+  {
+    "l": "development",
+    "p": "noun",
+    "e": [
+      "desarrollo",
+      "crecimiento"
+    ]
+  },
+  {
+    "l": "town",
+    "p": "noun",
+    "e": [
+      "pueblo",
+      "ciudad pequeña"
+    ]
+  },
+  {
+    "l": "half",
+    "p": "noun",
+    "e": [
+      "mitad"
+    ]
+  },
+  {
+    "l": "minute",
+    "p": "noun",
+    "e": [
+      "minuto"
+    ]
+  },
+  {
+    "l": "food",
+    "p": "noun",
+    "e": [
+      "comida",
+      "alimento"
+    ]
+  },
+  {
+    "l": "break",
+    "p": "verb",
+    "e": [
+      "romper",
+      "quebrar"
+    ]
+  },
+  {
+    "l": "clear",
+    "p": "adjective",
+    "e": [
+      "claro",
+      "evidente"
+    ]
+  },
+  {
+    "l": "future",
+    "p": "noun",
+    "e": [
+      "futuro"
+    ]
+  },
+  {
+    "l": "ago",
+    "p": "adverb",
+    "e": [
+      "hace"
+    ]
+  },
+  {
+    "l": "per",
+    "p": "preposition",
+    "e": [
+      "por",
+      "cada"
+    ]
+  },
+  {
+    "l": "remain",
+    "p": "verb",
+    "e": [
+      "quedar",
+      "permanecer"
+    ]
+  },
+  {
+    "l": "top",
+    "p": "noun",
+    "e": [
+      "parte superior",
+      "cima"
+    ]
+  },
+  {
+    "l": "win",
+    "p": "verb",
+    "e": [
+      "ganar",
+      "vencer"
+    ]
+  },
+  {
+    "l": "color",
+    "p": "noun",
+    "e": [
+      "color"
+    ]
+  },
+  {
+    "l": "involve",
+    "p": "verb",
+    "e": [
+      "involucrar",
+      "implicar"
+    ]
+  },
+  {
+    "l": "reach",
+    "p": "verb",
+    "e": [
+      "alcanzar",
+      "llegar a"
+    ]
+  },
+  {
+    "l": "social",
+    "p": "adjective",
+    "e": [
+      "social"
+    ]
+  },
+  {
+    "l": "period",
+    "p": "noun",
+    "e": [
+      "período",
+      "época"
+    ]
+  },
+  {
+    "l": "note",
+    "p": "noun",
+    "e": [
+      "nota",
+      "apunte"
+    ]
+  },
+  {
+    "l": "history",
+    "p": "noun",
+    "e": [
+      "historia"
+    ]
+  },
+  {
+    "l": "create",
+    "p": "verb",
+    "e": [
+      "crear",
+      "generar"
+    ]
+  },
+  {
+    "l": "drive",
+    "p": "verb",
+    "e": [
+      "conducir",
+      "manejar"
+    ]
+  },
+  {
+    "l": "along",
+    "p": "preposition",
+    "e": [
+      "a lo largo de",
+      "junto a"
+    ]
+  },
+  {
+    "l": "type",
+    "p": "noun",
+    "e": [
+      "tipo",
+      "clase"
+    ]
+  },
+  {
+    "l": "sound",
+    "p": "noun",
+    "e": [
+      "sonido"
+    ]
+  },
+  {
+    "l": "eye",
+    "p": "noun",
+    "e": [
+      "ojo"
+    ]
+  },
+  {
+    "l": "music",
+    "p": "noun",
+    "e": [
+      "música"
+    ]
+  },
+  {
+    "l": "game",
+    "p": "noun",
+    "e": [
+      "juego",
+      "partido"
+    ]
+  },
+  {
+    "l": "political",
+    "p": "adjective",
+    "e": [
+      "político"
+    ]
+  },
+  {
+    "l": "free",
+    "p": "adjective",
+    "e": [
+      "libre",
+      "gratuito"
+    ]
+  },
+  {
+    "l": "receive",
+    "p": "verb",
+    "e": [
+      "recibir",
+      "obtener"
+    ]
+  },
+  {
+    "l": "moment",
+    "p": "noun",
+    "e": [
+      "momento"
+    ]
+  },
+  {
+    "l": "sale",
+    "p": "noun",
+    "e": [
+      "venta"
+    ]
+  },
+  {
+    "l": "policy",
+    "p": "noun",
+    "e": [
+      "política",
+      "normativa"
+    ]
+  },
+  {
+    "l": "further",
+    "p": "adverb",
+    "e": [
+      "además",
+      "más lejos"
+    ]
+  },
+  {
+    "l": "body",
+    "p": "noun",
+    "e": [
+      "cuerpo"
+    ]
+  },
+  {
+    "l": "require",
+    "p": "verb",
+    "e": [
+      "requerir",
+      "necesitar"
+    ]
+  },
+  {
+    "l": "wait",
+    "p": "verb",
+    "e": [
+      "esperar"
+    ]
+  },
+  {
+    "l": "general",
+    "p": "adjective",
+    "e": [
+      "general"
+    ]
+  },
+  {
+    "l": "appear",
+    "p": "verb",
+    "e": [
+      "aparecer",
+      "parecer"
+    ]
+  },
+  {
+    "l": "toward",
+    "p": "preposition",
+    "e": [
+      "hacia"
+    ]
+  },
+  {
+    "l": "team",
+    "p": "noun",
+    "e": [
+      "equipo"
+    ]
+  },
+  {
+    "l": "easy",
+    "p": "adjective",
+    "e": [
+      "fácil",
+      "sencillo"
+    ]
+  },
+  {
+    "l": "individual",
+    "p": "noun",
+    "e": [
+      "individuo",
+      "persona"
+    ]
+  },
+  {
+    "l": "full",
+    "p": "adjective",
+    "e": [
+      "lleno",
+      "completo"
+    ]
+  },
+  {
+    "l": "black",
+    "p": "adjective",
+    "e": [
+      "negro"
+    ]
+  },
+  {
+    "l": "sense",
+    "p": "noun",
+    "e": [
+      "sentido",
+      "sensación"
+    ]
+  },
+  {
+    "l": "add",
+    "p": "verb",
+    "e": [
+      "añadir",
+      "agregar"
+    ]
+  },
+  {
+    "l": "rule",
+    "p": "noun",
+    "e": [
+      "regla",
+      "norma"
+    ]
+  },
+  {
+    "l": "pass",
+    "p": "verb",
+    "e": [
+      "pasar",
+      "aprobar"
+    ]
+  },
+  {
+    "l": "produce",
+    "p": "verb",
+    "e": [
+      "producir",
+      "generar"
+    ]
+  },
+  {
+    "l": "sell",
+    "p": "verb",
+    "e": [
+      "vender"
+    ]
+  },
+  {
+    "l": "short",
+    "p": "adjective",
+    "e": [
+      "corto",
+      "breve"
+    ]
+  },
+  {
+    "l": "agree",
+    "p": "verb",
+    "e": [
+      "estar de acuerdo",
+      "acordar"
+    ]
+  },
+  {
+    "l": "law",
+    "p": "noun",
+    "e": [
+      "ley",
+      "derecho"
+    ]
+  },
+  {
+    "l": "everything",
+    "p": "pronoun",
+    "e": [
+      "todo"
+    ]
+  },
+  {
+    "l": "research",
+    "p": "noun",
+    "e": [
+      "investigación",
+      "estudio"
+    ]
+  },
+  {
+    "l": "cover",
+    "p": "verb",
+    "e": [
+      "cubrir",
+      "abarcar"
+    ]
+  },
+  {
+    "l": "paper",
+    "p": "noun",
+    "e": [
+      "papel",
+      "artículo"
+    ]
+  },
+  {
+    "l": "position",
+    "p": "noun",
+    "e": [
+      "posición",
+      "puesto"
+    ]
+  },
+  {
+    "l": "human",
+    "p": "adjective",
+    "e": [
+      "humano"
+    ]
+  },
+  {
+    "l": "computer",
+    "p": "noun",
+    "e": [
+      "computadora",
+      "ordenador"
+    ]
+  },
+  {
+    "l": "situation",
+    "p": "noun",
+    "e": [
+      "situación"
+    ]
+  },
+  {
+    "l": "staff",
+    "p": "noun",
+    "e": [
+      "personal",
+      "plantilla"
+    ]
+  },
+  {
+    "l": "activity",
+    "p": "noun",
+    "e": [
+      "actividad"
+    ]
+  },
+  {
+    "l": "film",
+    "p": "noun",
+    "e": [
+      "película",
+      "film"
+    ]
+  },
+  {
+    "l": "morning",
+    "p": "noun",
+    "e": [
+      "mañana"
+    ]
+  },
+  {
+    "l": "war",
+    "p": "noun",
+    "e": [
+      "guerra"
+    ]
+  },
+  {
+    "l": "account",
+    "p": "noun",
+    "e": [
+      "cuenta",
+      "relato"
+    ]
+  },
+  {
+    "l": "shop",
+    "p": "noun",
+    "e": [
+      "tienda"
+    ]
+  },
+  {
+    "l": "major",
+    "p": "adjective",
+    "e": [
+      "principal",
+      "mayor"
+    ]
+  },
+  {
+    "l": "someone",
+    "p": "pronoun",
+    "e": [
+      "alguien"
+    ]
+  },
+  {
+    "l": "design",
+    "p": "noun",
+    "e": [
+      "diseño"
+    ]
+  },
+  {
+    "l": "event",
+    "p": "noun",
+    "e": [
+      "evento",
+      "suceso"
+    ]
+  },
+  {
+    "l": "special",
+    "p": "adjective",
+    "e": [
+      "especial"
+    ]
+  },
+  {
+    "l": "sometimes",
+    "p": "adverb",
+    "e": [
+      "a veces"
+    ]
+  },
+  {
+    "l": "condition",
+    "p": "noun",
+    "e": [
+      "condición",
+      "estado"
+    ]
+  },
+  {
+    "l": "carry",
+    "p": "verb",
+    "e": [
+      "llevar",
+      "cargar"
+    ]
+  },
+  {
+    "l": "choose",
+    "p": "verb",
+    "e": [
+      "elegir",
+      "escoger"
+    ]
+  },
+  {
+    "l": "father",
+    "p": "noun",
+    "e": [
+      "padre"
+    ]
+  },
+  {
+    "l": "decision",
+    "p": "noun",
+    "e": [
+      "decisión"
+    ]
+  },
+  {
+    "l": "table",
+    "p": "noun",
+    "e": [
+      "mesa",
+      "tabla"
+    ]
+  },
+  {
+    "l": "certain",
+    "p": "adjective",
+    "e": [
+      "cierto",
+      "seguro"
+    ]
+  },
+  {
+    "l": "forward",
+    "p": "adverb",
+    "e": [
+      "adelante",
+      "hacia adelante"
+    ]
+  },
+  {
+    "l": "main",
+    "p": "adjective",
+    "e": [
+      "principal",
+      "fundamental"
+    ]
+  },
+  {
+    "l": "die",
+    "p": "verb",
+    "e": [
+      "morir",
+      "fallecer"
+    ]
+  },
+  {
+    "l": "bear",
+    "p": "verb",
+    "e": [
+      "soportar",
+      "aguantar"
+    ]
+  },
+  {
+    "l": "cut",
+    "p": "verb",
+    "e": [
+      "cortar"
+    ]
+  },
+  {
+    "l": "describe",
+    "p": "verb",
+    "e": [
+      "describir"
+    ]
+  },
+  {
+    "l": "himself",
+    "p": "pronoun",
+    "e": [
+      "él mismo"
+    ]
+  },
+  {
+    "l": "available",
+    "p": "adjective",
+    "e": [
+      "disponible",
+      "accesible"
+    ]
+  },
+  {
+    "l": "especially",
+    "p": "adverb",
+    "e": [
+      "especialmente",
+      "sobre todo"
+    ]
+  },
+  {
+    "l": "strong",
+    "p": "adjective",
+    "e": [
+      "fuerte",
+      "sólido"
+    ]
+  },
+  {
+    "l": "rise",
+    "p": "verb",
+    "e": [
+      "subir",
+      "levantarse"
+    ]
+  },
+  {
+    "l": "girl",
+    "p": "noun",
+    "e": [
+      "chica",
+      "niña"
+    ]
+  },
+  {
+    "l": "community",
+    "p": "noun",
+    "e": [
+      "comunidad"
+    ]
+  },
+  {
+    "l": "else",
+    "p": "adverb",
+    "e": [
+      "más",
+      "de lo contrario"
+    ]
+  },
+  {
+    "l": "particular",
+    "p": "adjective",
+    "e": [
+      "particular",
+      "específico"
+    ]
+  },
+  {
+    "l": "role",
+    "p": "noun",
+    "e": [
+      "papel",
+      "rol"
+    ]
+  },
+  {
+    "l": "join",
+    "p": "verb",
+    "e": [
+      "unirse",
+      "incorporarse"
+    ]
+  },
+  {
+    "l": "difficult",
+    "p": "adjective",
+    "e": [
+      "difícil",
+      "complicado"
+    ]
+  },
+  {
+    "l": "please",
+    "p": "adverb",
+    "e": [
+      "por favor"
+    ]
+  },
+  {
+    "l": "detail",
+    "p": "noun",
+    "e": [
+      "detalle"
+    ]
+  },
+  {
+    "l": "difference",
+    "p": "noun",
+    "e": [
+      "diferencia"
+    ]
+  },
+  {
+    "l": "action",
+    "p": "noun",
+    "e": [
+      "acción",
+      "medida"
+    ]
+  },
+  {
+    "l": "health",
+    "p": "noun",
+    "e": [
+      "salud"
+    ]
+  },
+  {
+    "l": "eat",
+    "p": "verb",
+    "e": [
+      "comer"
+    ]
+  },
+  {
+    "l": "step",
+    "p": "noun",
+    "e": [
+      "paso",
+      "escalón"
+    ]
+  },
+  {
+    "l": "true",
+    "p": "adjective",
+    "e": [
+      "verdadero",
+      "cierto"
+    ]
+  },
+  {
+    "l": "phone",
+    "p": "noun",
+    "e": [
+      "teléfono"
+    ]
+  },
+  {
+    "l": "themselves",
+    "p": "pronoun",
+    "e": [
+      "ellos mismos",
+      "ellas mismas"
+    ]
+  },
+  {
+    "l": "draw",
+    "p": "verb",
+    "e": [
+      "dibujar",
+      "atraer"
+    ]
+  },
+  {
+    "l": "white",
+    "p": "adjective",
+    "e": [
+      "blanco"
+    ]
+  },
+  {
+    "l": "date",
+    "p": "noun",
+    "e": [
+      "fecha",
+      "cita"
+    ]
+  },
+  {
+    "l": "practice",
+    "p": "noun",
+    "e": [
+      "práctica",
+      "ejercicio"
+    ]
+  },
+  {
+    "l": "model",
+    "p": "noun",
+    "e": [
+      "modelo"
+    ]
+  },
+  {
+    "l": "raise",
+    "p": "verb",
+    "e": [
+      "levantar",
+      "aumentar",
+      "criar"
+    ]
+  },
+  {
+    "l": "customer",
+    "p": "noun",
+    "e": [
+      "cliente"
+    ]
+  },
+  {
+    "l": "front",
+    "p": "noun",
+    "e": [
+      "frente",
+      "parte delantera"
+    ]
+  },
+  {
+    "l": "explain",
+    "p": "verb",
+    "e": [
+      "explicar",
+      "aclarar"
+    ]
+  },
+  {
+    "l": "door",
+    "p": "noun",
+    "e": [
+      "puerta"
+    ]
+  },
+  {
+    "l": "outside",
+    "p": "adverb",
+    "e": [
+      "fuera",
+      "afuera"
+    ]
+  },
+  {
+    "l": "economic",
+    "p": "adjective",
+    "e": [
+      "económico"
+    ]
+  },
+  {
+    "l": "site",
+    "p": "noun",
+    "e": [
+      "sitio",
+      "lugar"
+    ]
+  },
+  {
+    "l": "approach",
+    "p": "noun",
+    "e": [
+      "enfoque",
+      "método"
+    ]
+  },
+  {
+    "l": "teacher",
+    "p": "noun",
+    "e": [
+      "profesor",
+      "maestro"
+    ]
+  },
+  {
+    "l": "land",
+    "p": "noun",
+    "e": [
+      "tierra",
+      "terreno"
+    ]
+  },
+  {
+    "l": "charge",
+    "p": "noun",
+    "e": [
+      "cargo",
+      "cobro"
+    ]
+  },
+  {
+    "l": "finally",
+    "p": "adverb",
+    "e": [
+      "finalmente",
+      "por fin"
+    ]
+  },
+  {
+    "l": "sign",
+    "p": "noun",
+    "e": [
+      "señal",
+      "letrero"
+    ]
+  },
+  {
+    "l": "claim",
+    "p": "verb",
+    "e": [
+      "reclamar",
+      "afirmar"
+    ]
+  },
+  {
+    "l": "relationship",
+    "p": "noun",
+    "e": [
+      "relación"
+    ]
+  },
+  {
+    "l": "travel",
+    "p": "verb",
+    "e": [
+      "viajar"
+    ]
+  },
+  {
+    "l": "enjoy",
+    "p": "verb",
+    "e": [
+      "disfrutar"
+    ]
+  },
+  {
+    "l": "death",
+    "p": "noun",
+    "e": [
+      "muerte"
+    ]
+  },
+  {
+    "l": "nice",
+    "p": "adjective",
+    "e": [
+      "agradable",
+      "simpático"
+    ]
+  },
+  {
+    "l": "amount",
+    "p": "noun",
+    "e": [
+      "cantidad",
+      "suma"
+    ]
+  },
+  {
+    "l": "improve",
+    "p": "verb",
+    "e": [
+      "mejorar",
+      "perfeccionar"
+    ]
+  },
+  {
+    "l": "picture",
+    "p": "noun",
+    "e": [
+      "imagen",
+      "foto",
+      "cuadro"
+    ]
+  },
+  {
+    "l": "boy",
+    "p": "noun",
+    "e": [
+      "chico",
+      "niño"
+    ]
+  },
+  {
+    "l": "regard",
+    "p": "noun",
+    "e": [
+      "respeto",
+      "consideración"
+    ]
+  },
+  {
+    "l": "organization",
+    "p": "noun",
+    "e": [
+      "organización"
+    ]
+  },
+  {
+    "l": "happy",
+    "p": "adjective",
+    "e": [
+      "feliz",
+      "contento"
+    ]
+  },
+  {
+    "l": "couple",
+    "p": "noun",
+    "e": [
+      "pareja",
+      "par"
+    ]
+  },
+  {
+    "l": "act",
+    "p": "verb",
+    "e": [
+      "actuar",
+      "comportarse"
+    ]
+  },
+  {
+    "l": "range",
+    "p": "noun",
+    "e": [
+      "gama",
+      "rango",
+      "variedad"
+    ]
+  },
+  {
+    "l": "quality",
+    "p": "noun",
+    "e": [
+      "calidad"
+    ]
+  },
+  {
+    "l": "project",
+    "p": "noun",
+    "e": [
+      "proyecto"
+    ]
+  },
+  {
+    "l": "round",
+    "p": "adjective",
+    "e": [
+      "redondo",
+      "circular"
+    ]
+  },
+  {
+    "l": "opportunity",
+    "p": "noun",
+    "e": [
+      "oportunidad"
+    ]
+  },
+  {
+    "l": "road",
+    "p": "noun",
+    "e": [
+      "carretera",
+      "camino"
+    ]
+  },
+  {
+    "l": "accord",
+    "p": "noun",
+    "e": [
+      "acuerdo"
+    ]
+  },
+  {
+    "l": "list",
+    "p": "noun",
+    "e": [
+      "lista"
+    ]
+  },
+  {
+    "l": "wish",
+    "p": "verb",
+    "e": [
+      "desear",
+      "querer"
+    ]
+  },
+  {
+    "l": "wear",
+    "p": "verb",
+    "e": [
+      "llevar puesto",
+      "usar"
+    ]
+  },
+  {
+    "l": "fund",
+    "p": "noun",
+    "e": [
+      "fondo",
+      "capital"
+    ]
+  },
+  {
+    "l": "rest",
+    "p": "verb",
+    "e": [
+      "descansar",
+      "reposar"
+    ]
+  },
+  {
+    "l": "kid",
+    "p": "noun",
+    "e": [
+      "niño",
+      "crío"
+    ]
+  },
+  {
+    "l": "industry",
+    "p": "noun",
+    "e": [
+      "industria",
+      "sector"
+    ]
+  },
+  {
+    "l": "education",
+    "p": "noun",
+    "e": [
+      "educación",
+      "formación"
+    ]
+  },
+  {
+    "l": "measure",
+    "p": "noun",
+    "e": [
+      "medida",
+      "magnitud"
+    ]
+  },
+  {
+    "l": "kill",
+    "p": "verb",
+    "e": [
+      "matar",
+      "eliminar"
+    ]
+  },
+  {
+    "l": "serve",
+    "p": "verb",
+    "e": [
+      "servir",
+      "atender"
+    ]
+  },
+  {
+    "l": "likely",
+    "p": "adjective",
+    "e": [
+      "probable"
+    ]
+  },
+  {
+    "l": "certainly",
+    "p": "adverb",
+    "e": [
+      "ciertamente",
+      "sin duda"
+    ]
+  },
+  {
+    "l": "national",
+    "p": "adjective",
+    "e": [
+      "nacional"
+    ]
+  },
+  {
+    "l": "itself",
+    "p": "pronoun",
+    "e": [
+      "en sí mismo"
+    ]
+  },
+  {
+    "l": "teach",
+    "p": "verb",
+    "e": [
+      "enseñar",
+      "instruir"
+    ]
+  },
+  {
+    "l": "field",
+    "p": "noun",
+    "e": [
+      "campo",
+      "ámbito"
+    ]
+  },
+  {
+    "l": "security",
+    "p": "noun",
+    "e": [
+      "seguridad"
+    ]
+  },
+  {
+    "l": "air",
+    "p": "noun",
+    "e": [
+      "aire",
+      "atmósfera"
+    ]
+  },
+  {
+    "l": "benefit",
+    "p": "noun",
+    "e": [
+      "beneficio",
+      "ventaja"
+    ]
+  },
+  {
+    "l": "trade",
+    "p": "noun",
+    "e": [
+      "comercio",
+      "intercambio"
+    ]
+  },
+  {
+    "l": "risk",
+    "p": "noun",
+    "e": [
+      "riesgo",
+      "peligro"
+    ]
+  },
+  {
+    "l": "news",
+    "p": "noun",
+    "e": [
+      "noticia",
+      "noticias"
+    ]
+  },
+  {
+    "l": "standard",
+    "p": "noun",
+    "e": [
+      "estándar",
+      "norma"
+    ]
+  },
+  {
+    "l": "vote",
+    "p": "noun",
+    "e": [
+      "voto",
+      "sufragio"
+    ]
+  },
+  {
+    "l": "percent",
+    "p": "noun",
+    "e": [
+      "porcentaje",
+      "por ciento"
+    ]
+  },
+  {
+    "l": "focus",
+    "p": "noun",
+    "e": [
+      "enfoque",
+      "foco"
+    ]
+  },
+  {
+    "l": "stage",
+    "p": "noun",
+    "e": [
+      "etapa",
+      "escenario"
+    ]
+  },
+  {
+    "l": "space",
+    "p": "noun",
+    "e": [
+      "espacio"
+    ]
+  },
+  {
+    "l": "realize",
+    "p": "verb",
+    "e": [
+      "darse cuenta de",
+      "realizar"
+    ]
+  },
+  {
+    "l": "usually",
+    "p": "adverb",
+    "e": [
+      "normalmente",
+      "usualmente"
+    ]
+  },
+  {
+    "l": "data",
+    "p": "noun",
+    "e": [
+      "datos",
+      "información"
+    ]
+  },
+  {
+    "l": "single",
+    "p": "adjective",
+    "e": [
+      "único",
+      "soltero"
+    ]
+  },
+  {
+    "l": "address",
+    "p": "noun",
+    "e": [
+      "dirección",
+      "domicilio"
+    ]
+  },
+  {
+    "l": "performance",
+    "p": "noun",
+    "e": [
+      "actuación",
+      "rendimiento"
+    ]
+  },
+  {
+    "l": "chance",
+    "p": "noun",
+    "e": [
+      "oportunidad",
+      "posibilidad"
+    ]
+  },
+  {
+    "l": "accept",
+    "p": "verb",
+    "e": [
+      "aceptar",
+      "admitir"
+    ]
+  },
+  {
+    "l": "society",
+    "p": "noun",
+    "e": [
+      "sociedad"
+    ]
+  },
+  {
+    "l": "technology",
+    "p": "noun",
+    "e": [
+      "tecnología"
+    ]
+  },
+  {
+    "l": "mention",
+    "p": "verb",
+    "e": [
+      "mencionar",
+      "citar"
+    ]
+  },
+  {
+    "l": "choice",
+    "p": "noun",
+    "e": [
+      "elección",
+      "opción"
+    ]
+  },
+  {
+    "l": "save",
+    "p": "verb",
+    "e": [
+      "guardar",
+      "salvar",
+      "ahorrar"
+    ]
+  },
+  {
+    "l": "common",
+    "p": "adjective",
+    "e": [
+      "común",
+      "corriente"
+    ]
+  },
+  {
+    "l": "culture",
+    "p": "noun",
+    "e": [
+      "cultura"
+    ]
+  },
+  {
+    "l": "total",
+    "p": "noun",
+    "e": [
+      "total",
+      "suma"
+    ]
+  },
+  {
+    "l": "demand",
+    "p": "noun",
+    "e": [
+      "demanda",
+      "exigencia"
+    ]
+  },
+  {
+    "l": "material",
+    "p": "noun",
+    "e": [
+      "material"
+    ]
+  },
+  {
+    "l": "limit",
+    "p": "noun",
+    "e": [
+      "límite"
+    ]
+  },
+  {
+    "l": "listen",
+    "p": "verb",
+    "e": [
+      "escuchar",
+      "oír"
+    ]
+  },
+  {
+    "l": "due",
+    "p": "adjective",
+    "e": [
+      "previsto",
+      "debido"
+    ]
+  },
+  {
+    "l": "wrong",
+    "p": "adjective",
+    "e": [
+      "equivocado",
+      "incorrecto"
+    ]
+  },
+  {
+    "l": "foot",
+    "p": "noun",
+    "e": [
+      "pie",
+      "pata"
+    ]
+  },
+  {
+    "l": "effort",
+    "p": "noun",
+    "e": [
+      "esfuerzo"
+    ]
+  },
+  {
+    "l": "attention",
+    "p": "noun",
+    "e": [
+      "atención"
+    ]
+  },
+  {
+    "l": "check",
+    "p": "verb",
+    "e": [
+      "comprobar",
+      "verificar"
+    ]
+  },
+  {
+    "l": "complete",
+    "p": "adjective",
+    "e": [
+      "completo",
+      "total"
+    ]
+  },
+  {
+    "l": "lie",
+    "p": "verb",
+    "e": [
+      "mentir",
+      "yacer"
+    ]
+  },
+  {
+    "l": "pick",
+    "p": "verb",
+    "e": [
+      "elegir",
+      "recoger"
+    ]
+  },
+  {
+    "l": "reduce",
+    "p": "verb",
+    "e": [
+      "reducir",
+      "disminuir"
+    ]
+  },
+  {
+    "l": "personal",
+    "p": "adjective",
+    "e": [
+      "personal",
+      "íntimo"
+    ]
+  },
+  {
+    "l": "ground",
+    "p": "noun",
+    "e": [
+      "suelo",
+      "tierra"
+    ]
+  },
+  {
+    "l": "animal",
+    "p": "noun",
+    "e": [
+      "animal"
+    ]
+  },
+  {
+    "l": "arrive",
+    "p": "verb",
+    "e": [
+      "llegar",
+      "arribar"
+    ]
+  },
+  {
+    "l": "patient",
+    "p": "noun",
+    "e": [
+      "paciente"
+    ]
+  },
+  {
+    "l": "current",
+    "p": "adjective",
+    "e": [
+      "actual",
+      "corriente"
+    ]
+  },
+  {
+    "l": "century",
+    "p": "noun",
+    "e": [
+      "siglo"
+    ]
+  },
+  {
+    "l": "evidence",
+    "p": "noun",
+    "e": [
+      "evidencia",
+      "prueba"
+    ]
+  },
+  {
+    "l": "exist",
+    "p": "verb",
+    "e": [
+      "existir"
+    ]
+  },
+  {
+    "l": "similar",
+    "p": "adjective",
+    "e": [
+      "similar",
+      "parecido"
+    ]
+  },
+  {
+    "l": "fight",
+    "p": "verb",
+    "e": [
+      "luchar",
+      "pelear"
+    ]
+  },
+  {
+    "l": "leader",
+    "p": "noun",
+    "e": [
+      "líder",
+      "dirigente"
+    ]
+  },
+  {
+    "l": "fine",
+    "p": "adjective",
+    "e": [
+      "bien",
+      "estupendo"
+    ]
+  },
+  {
+    "l": "street",
+    "p": "noun",
+    "e": [
+      "calle"
+    ]
+  },
+  {
+    "l": "former",
+    "p": "adjective",
+    "e": [
+      "anterior",
+      "antiguo"
+    ]
+  },
+  {
+    "l": "contact",
+    "p": "noun",
+    "e": [
+      "contacto"
+    ]
+  },
+  {
+    "l": "particularly",
+    "p": "adverb",
+    "e": [
+      "particularmente",
+      "en especial"
+    ]
+  },
+  {
+    "l": "wife",
+    "p": "noun",
+    "e": [
+      "esposa",
+      "mujer"
+    ]
+  },
+  {
+    "l": "sport",
+    "p": "noun",
+    "e": [
+      "deporte"
+    ]
+  },
+  {
+    "l": "prepare",
+    "p": "verb",
+    "e": [
+      "preparar",
+      "organizar"
+    ]
+  },
+  {
+    "l": "discuss",
+    "p": "verb",
+    "e": [
+      "discutir",
+      "debatir"
+    ]
+  },
+  {
+    "l": "response",
+    "p": "noun",
+    "e": [
+      "respuesta",
+      "reacción"
+    ]
+  },
+  {
+    "l": "voice",
+    "p": "noun",
+    "e": [
+      "voz"
+    ]
+  },
+  {
+    "l": "piece",
+    "p": "noun",
+    "e": [
+      "pieza",
+      "trozo",
+      "parte"
+    ]
+  },
+  {
+    "l": "finish",
+    "p": "verb",
+    "e": [
+      "terminar",
+      "acabar"
+    ]
+  },
+  {
+    "l": "suppose",
+    "p": "verb",
+    "e": [
+      "suponer",
+      "imaginar"
+    ]
+  },
+  {
+    "l": "apply",
+    "p": "verb",
+    "e": [
+      "aplicar",
+      "solicitar"
+    ]
+  },
+  {
+    "l": "president",
+    "p": "noun",
+    "e": [
+      "presidente"
+    ]
+  },
+  {
+    "l": "fire",
+    "p": "noun",
+    "e": [
+      "fuego",
+      "incendio"
+    ]
+  },
+  {
+    "l": "compare",
+    "p": "verb",
+    "e": [
+      "comparar"
+    ]
+  },
+  {
+    "l": "court",
+    "p": "noun",
+    "e": [
+      "tribunal",
+      "cancha",
+      "juzgado"
+    ]
+  },
+  {
+    "l": "police",
+    "p": "noun",
+    "e": [
+      "policía"
+    ]
+  },
+  {
+    "l": "store",
+    "p": "noun",
+    "e": [
+      "tienda",
+      "almacén"
+    ]
+  },
+  {
+    "l": "poor",
+    "p": "adjective",
+    "e": [
+      "pobre",
+      "escaso"
+    ]
+  },
+  {
+    "l": "knowledge",
+    "p": "noun",
+    "e": [
+      "conocimiento",
+      "saber"
+    ]
+  },
+  {
+    "l": "laugh",
+    "p": "verb",
+    "e": [
+      "reír",
+      "reírse"
+    ]
+  },
+  {
+    "l": "arm",
+    "p": "noun",
+    "e": [
+      "brazo"
+    ]
+  },
+  {
+    "l": "heart",
+    "p": "noun",
+    "e": [
+      "corazón"
+    ]
+  },
+  {
+    "l": "source",
+    "p": "noun",
+    "e": [
+      "fuente",
+      "origen"
+    ]
+  },
+  {
+    "l": "employee",
+    "p": "noun",
+    "e": [
+      "empleado",
+      "trabajador"
+    ]
+  },
+  {
+    "l": "manage",
+    "p": "verb",
+    "e": [
+      "gestionar",
+      "administrar"
+    ]
+  },
+  {
+    "l": "simply",
+    "p": "adverb",
+    "e": [
+      "simplemente",
+      "sencillamente"
+    ]
+  },
+  {
+    "l": "bank",
+    "p": "noun",
+    "e": [
+      "banco",
+      "orilla"
+    ]
+  },
+  {
+    "l": "firm",
+    "p": "noun",
+    "e": [
+      "empresa",
+      "firma"
+    ]
+  },
+  {
+    "l": "cell",
+    "p": "noun",
+    "e": [
+      "célula",
+      "celda"
+    ]
+  },
+  {
+    "l": "article",
+    "p": "noun",
+    "e": [
+      "artículo"
+    ]
+  },
+  {
+    "l": "fast",
+    "p": "adjective",
+    "e": [
+      "rápido",
+      "veloz"
+    ]
+  },
+  {
+    "l": "attack",
+    "p": "noun",
+    "e": [
+      "ataque",
+      "agresión"
+    ]
+  },
+  {
+    "l": "foreign",
+    "p": "adjective",
+    "e": [
+      "extranjero",
+      "exterior"
+    ]
+  },
+  {
+    "l": "surprise",
+    "p": "noun",
+    "e": [
+      "sorpresa"
+    ]
+  },
+  {
+    "l": "feature",
+    "p": "noun",
+    "e": [
+      "característica",
+      "rasgo"
+    ]
+  },
+  {
+    "l": "factor",
+    "p": "noun",
+    "e": [
+      "factor",
+      "elemento"
+    ]
+  },
+  {
+    "l": "pretty",
+    "p": "adjective",
+    "e": [
+      "bonito",
+      "guapo"
+    ]
+  },
+  {
+    "l": "recently",
+    "p": "adverb",
+    "e": [
+      "recientemente",
+      "últimamente"
+    ]
+  },
+  {
+    "l": "affect",
+    "p": "verb",
+    "e": [
+      "afectar",
+      "influir en"
+    ]
+  },
+  {
+    "l": "drop",
+    "p": "verb",
+    "e": [
+      "caer",
+      "bajar"
+    ]
+  },
+  {
+    "l": "recent",
+    "p": "adjective",
+    "e": [
+      "reciente"
+    ]
+  },
+  {
+    "l": "relate",
+    "p": "verb",
+    "e": [
+      "relacionar",
+      "vincular"
+    ]
+  },
+  {
+    "l": "official",
+    "p": "noun",
+    "e": [
+      "funcionario",
+      "oficial"
+    ]
+  },
+  {
+    "l": "financial",
+    "p": "adjective",
+    "e": [
+      "financiero",
+      "económico"
+    ]
+  },
+  {
+    "l": "miss",
+    "p": "verb",
+    "e": [
+      "echar de menos",
+      "perder"
+    ]
+  },
+  {
+    "l": "art",
+    "p": "noun",
+    "e": [
+      "arte"
+    ]
+  },
+  {
+    "l": "campaign",
+    "p": "noun",
+    "e": [
+      "campaña"
+    ]
+  },
+  {
+    "l": "private",
+    "p": "adjective",
+    "e": [
+      "privado",
+      "íntimo"
+    ]
+  },
+  {
+    "l": "pause",
+    "p": "verb",
+    "e": [
+      "pausar",
+      "hacer una pausa"
+    ]
+  },
+  {
+    "l": "everyone",
+    "p": "pronoun",
+    "e": [
+      "todos",
+      "todo el mundo"
+    ]
+  },
+  {
+    "l": "forget",
+    "p": "verb",
+    "e": [
+      "olvidar",
+      "olvidarse de"
+    ]
+  },
+  {
+    "l": "page",
+    "p": "noun",
+    "e": [
+      "página"
+    ]
+  },
+  {
+    "l": "worry",
+    "p": "verb",
+    "e": [
+      "preocupar",
+      "inquietar"
+    ]
+  },
+  {
+    "l": "summer",
+    "p": "noun",
+    "e": [
+      "verano"
+    ]
+  },
+  {
+    "l": "drink",
+    "p": "verb",
+    "e": [
+      "beber",
+      "tomar"
+    ]
+  },
+  {
+    "l": "opinion",
+    "p": "noun",
+    "e": [
+      "opinión",
+      "punto de vista"
+    ]
+  },
+  {
+    "l": "park",
+    "p": "noun",
+    "e": [
+      "parque"
+    ]
+  },
+  {
+    "l": "represent",
+    "p": "verb",
+    "e": [
+      "representar"
+    ]
+  },
+  {
+    "l": "key",
+    "p": "noun",
+    "e": [
+      "llave",
+      "clave"
+    ]
+  },
+  {
+    "l": "inside",
+    "p": "adverb",
+    "e": [
+      "dentro",
+      "en el interior"
+    ]
+  },
+  {
+    "l": "manager",
+    "p": "noun",
+    "e": [
+      "gerente",
+      "director"
+    ]
+  },
+  {
+    "l": "international",
+    "p": "adjective",
+    "e": [
+      "internacional"
+    ]
+  },
+  {
+    "l": "contain",
+    "p": "verb",
+    "e": [
+      "contener",
+      "incluir"
+    ]
+  },
+  {
+    "l": "notice",
+    "p": "verb",
+    "e": [
+      "notar",
+      "darse cuenta de"
+    ]
+  },
+  {
+    "l": "wonder",
+    "p": "verb",
+    "e": [
+      "preguntarse",
+      "maravillarse"
+    ]
+  },
+  {
+    "l": "nature",
+    "p": "noun",
+    "e": [
+      "naturaleza"
+    ]
+  },
+  {
+    "l": "structure",
+    "p": "noun",
+    "e": [
+      "estructura"
+    ]
+  },
+  {
+    "l": "section",
+    "p": "noun",
+    "e": [
+      "sección",
+      "apartado"
+    ]
+  },
+  {
+    "l": "myself",
+    "p": "pronoun",
+    "e": [
+      "yo mismo"
+    ]
+  },
+  {
+    "l": "exactly",
+    "p": "adverb",
+    "e": [
+      "exactamente",
+      "precisamente"
+    ]
+  },
+  {
+    "l": "plant",
+    "p": "noun",
+    "e": [
+      "planta"
+    ]
+  },
+  {
+    "l": "paint",
+    "p": "verb",
+    "e": [
+      "pintar"
+    ]
+  },
+  {
+    "l": "worker",
+    "p": "noun",
+    "e": [
+      "trabajador",
+      "obrero"
+    ]
+  },
+  {
+    "l": "press",
+    "p": "noun",
+    "e": [
+      "prensa",
+      "medios"
+    ]
+  },
+  {
+    "l": "whatever",
+    "p": "pronoun",
+    "e": [
+      "lo que sea",
+      "cualquier cosa"
+    ]
+  },
+  {
+    "l": "necessary",
+    "p": "adjective",
+    "e": [
+      "necesario",
+      "imprescindible"
+    ]
+  },
+  {
+    "l": "region",
+    "p": "noun",
+    "e": [
+      "región",
+      "zona"
+    ]
+  },
+  {
+    "l": "growth",
+    "p": "noun",
+    "e": [
+      "crecimiento",
+      "aumento"
+    ]
+  },
+  {
+    "l": "evening",
+    "p": "noun",
+    "e": [
+      "tarde",
+      "noche"
+    ]
+  },
+  {
+    "l": "influence",
+    "p": "noun",
+    "e": [
+      "influencia"
+    ]
+  },
+  {
+    "l": "respect",
+    "p": "noun",
+    "e": [
+      "respeto"
+    ]
+  },
+  {
+    "l": "various",
+    "p": "adjective",
+    "e": [
+      "varios",
+      "diverso"
+    ]
+  },
+  {
+    "l": "catch",
+    "p": "verb",
+    "e": [
+      "atrapar",
+      "coger"
+    ]
+  },
+  {
+    "l": "skill",
+    "p": "noun",
+    "e": [
+      "habilidad",
+      "destreza"
+    ]
+  },
+  {
+    "l": "attempt",
+    "p": "noun",
+    "e": [
+      "intento",
+      "esfuerzo"
+    ]
+  },
+  {
+    "l": "son",
+    "p": "noun",
+    "e": [
+      "hijo"
+    ]
+  },
+  {
+    "l": "simple",
+    "p": "adjective",
+    "e": [
+      "simple",
+      "sencillo"
+    ]
+  },
+  {
+    "l": "medium",
+    "p": "adjective",
+    "e": [
+      "mediano",
+      "medio"
+    ]
+  },
+  {
+    "l": "average",
+    "p": "noun",
+    "e": [
+      "promedio",
+      "media"
+    ]
+  },
+  {
+    "l": "stock",
+    "p": "noun",
+    "e": [
+      "acciones",
+      "existencias"
+    ]
+  },
+  {
+    "l": "management",
+    "p": "noun",
+    "e": [
+      "gestión",
+      "dirección"
+    ]
+  },
+  {
+    "l": "character",
+    "p": "noun",
+    "e": [
+      "carácter",
+      "personaje"
+    ]
+  },
+  {
+    "l": "bed",
+    "p": "noun",
+    "e": [
+      "cama"
+    ]
+  },
+  {
+    "l": "hit",
+    "p": "verb",
+    "e": [
+      "golpear",
+      "chocar"
+    ]
+  },
+  {
+    "l": "establish",
+    "p": "verb",
+    "e": [
+      "establecer",
+      "crear"
+    ]
+  },
+  {
+    "l": "indeed",
+    "p": "adverb",
+    "e": [
+      "en efecto",
+      "realmente"
+    ]
+  },
+  {
+    "l": "final",
+    "p": "adjective",
+    "e": [
+      "final",
+      "último"
+    ]
+  },
+  {
+    "l": "economy",
+    "p": "noun",
+    "e": [
+      "economía"
+    ]
+  },
+  {
+    "l": "fit",
+    "p": "adjective",
+    "e": [
+      "en forma",
+      "adecuado"
+    ]
+  },
+  {
+    "l": "guy",
+    "p": "noun",
+    "e": [
+      "tipo",
+      "chico",
+      "tío"
+    ]
+  },
+  {
+    "l": "function",
+    "p": "noun",
+    "e": [
+      "función",
+      "tarea"
+    ]
+  },
+  {
+    "l": "yesterday",
+    "p": "adverb",
+    "e": [
+      "ayer"
+    ]
+  },
+  {
+    "l": "image",
+    "p": "noun",
+    "e": [
+      "imagen"
+    ]
+  },
+  {
+    "l": "size",
+    "p": "noun",
+    "e": [
+      "tamaño",
+      "talla"
+    ]
+  },
+  {
+    "l": "behavior",
+    "p": "noun",
+    "e": [
+      "comportamiento",
+      "conducta"
+    ]
+  },
+  {
+    "l": "addition",
+    "p": "noun",
+    "e": [
+      "adición",
+      "suma"
+    ]
+  },
+  {
+    "l": "determine",
+    "p": "verb",
+    "e": [
+      "determinar",
+      "establecer"
+    ]
+  },
+  {
+    "l": "station",
+    "p": "noun",
+    "e": [
+      "estación",
+      "comisaría"
+    ]
+  },
+  {
+    "l": "population",
+    "p": "noun",
+    "e": [
+      "población"
+    ]
+  },
+  {
+    "l": "fail",
+    "p": "verb",
+    "e": [
+      "fallar",
+      "fracasar"
+    ]
+  },
+  {
+    "l": "environment",
+    "p": "noun",
+    "e": [
+      "entorno",
+      "ambiente",
+      "medioambiente"
+    ]
+  },
+  {
+    "l": "production",
+    "p": "noun",
+    "e": [
+      "producción"
+    ]
+  },
+  {
+    "l": "contract",
+    "p": "noun",
+    "e": [
+      "contrato",
+      "acuerdo"
+    ]
+  },
+  {
+    "l": "player",
+    "p": "noun",
+    "e": [
+      "jugador",
+      "reproductor"
+    ]
+  },
+  {
+    "l": "comment",
+    "p": "noun",
+    "e": [
+      "comentario",
+      "observación"
+    ]
+  },
+  {
+    "l": "enter",
+    "p": "verb",
+    "e": [
+      "entrar",
+      "ingresar"
+    ]
+  },
+  {
+    "l": "occur",
+    "p": "verb",
+    "e": [
+      "ocurrir",
+      "suceder"
+    ]
+  },
+  {
+    "l": "alone",
+    "p": "adjective",
+    "e": [
+      "solo",
+      "solitario"
+    ]
+  },
+  {
+    "l": "significant",
+    "p": "adjective",
+    "e": [
+      "significativo",
+      "importante"
+    ]
+  },
+  {
+    "l": "drug",
+    "p": "noun",
+    "e": [
+      "droga",
+      "medicamento"
+    ]
+  },
+  {
+    "l": "wall",
+    "p": "noun",
+    "e": [
+      "pared",
+      "muro"
+    ]
+  },
+  {
+    "l": "series",
+    "p": "noun",
+    "e": [
+      "serie"
+    ]
+  },
+  {
+    "l": "direct",
+    "p": "adjective",
+    "e": [
+      "directo",
+      "inmediato"
+    ]
+  },
+  {
+    "l": "success",
+    "p": "noun",
+    "e": [
+      "éxito",
+      "logro"
+    ]
+  },
+  {
+    "l": "tomorrow",
+    "p": "adverb",
+    "e": [
+      "mañana"
+    ]
+  },
+  {
+    "l": "director",
+    "p": "noun",
+    "e": [
+      "director"
+    ]
+  },
+  {
+    "l": "clearly",
+    "p": "adverb",
+    "e": [
+      "claramente",
+      "evidentemente"
+    ]
+  },
+  {
+    "l": "lack",
+    "p": "noun",
+    "e": [
+      "falta",
+      "carencia"
+    ]
+  },
+  {
+    "l": "review",
+    "p": "noun",
+    "e": [
+      "revisión",
+      "análisis"
+    ]
+  },
+  {
+    "l": "depend",
+    "p": "verb",
+    "e": [
+      "depender"
+    ]
+  },
+  {
+    "l": "race",
+    "p": "noun",
+    "e": [
+      "raza",
+      "carrera"
+    ]
+  },
+  {
+    "l": "recognize",
+    "p": "verb",
+    "e": [
+      "reconocer",
+      "identificar"
+    ]
+  },
+  {
+    "l": "window",
+    "p": "noun",
+    "e": [
+      "ventana"
+    ]
+  },
+  {
+    "l": "purpose",
+    "p": "noun",
+    "e": [
+      "propósito",
+      "objetivo"
+    ]
+  },
+  {
+    "l": "department",
+    "p": "noun",
+    "e": [
+      "departamento",
+      "sección"
+    ]
+  },
+  {
+    "l": "gain",
+    "p": "verb",
+    "e": [
+      "ganar",
+      "obtener"
+    ]
+  },
+  {
+    "l": "tree",
+    "p": "noun",
+    "e": [
+      "árbol"
+    ]
+  },
+  {
+    "l": "college",
+    "p": "noun",
+    "e": [
+      "universidad",
+      "facultad"
+    ]
+  },
+  {
+    "l": "argue",
+    "p": "verb",
+    "e": [
+      "argumentar",
+      "debatir"
+    ]
+  },
+  {
+    "l": "board",
+    "p": "noun",
+    "e": [
+      "tablero",
+      "junta directiva"
+    ]
+  },
+  {
+    "l": "holiday",
+    "p": "noun",
+    "e": [
+      "vacaciones",
+      "festivo"
+    ]
+  },
+  {
+    "l": "mark",
+    "p": "noun",
+    "e": [
+      "marca",
+      "señal"
+    ]
+  },
+  {
+    "l": "church",
+    "p": "noun",
+    "e": [
+      "iglesia"
+    ]
+  },
+  {
+    "l": "machine",
+    "p": "noun",
+    "e": [
+      "máquina"
+    ]
+  },
+  {
+    "l": "achieve",
+    "p": "verb",
+    "e": [
+      "lograr",
+      "alcanzar"
+    ]
+  },
+  {
+    "l": "item",
+    "p": "noun",
+    "e": [
+      "artículo",
+      "elemento"
+    ]
+  },
+  {
+    "l": "prove",
+    "p": "verb",
+    "e": [
+      "probar",
+      "demostrar"
+    ]
+  },
+  {
+    "l": "cent",
+    "p": "noun",
+    "e": [
+      "centavo",
+      "céntimo"
+    ]
+  },
+  {
+    "l": "season",
+    "p": "noun",
+    "e": [
+      "temporada",
+      "estación"
+    ]
+  },
+  {
+    "l": "floor",
+    "p": "noun",
+    "e": [
+      "suelo",
+      "piso"
+    ]
+  },
+  {
+    "l": "stuff",
+    "p": "noun",
+    "e": [
+      "cosas",
+      "material"
+    ]
+  },
+  {
+    "l": "wide",
+    "p": "adjective",
+    "e": [
+      "ancho",
+      "amplio"
+    ]
+  },
+  {
+    "l": "anyone",
+    "p": "pronoun",
+    "e": [
+      "alguien",
+      "cualquiera"
+    ]
+  },
+  {
+    "l": "method",
+    "p": "noun",
+    "e": [
+      "método",
+      "procedimiento"
+    ]
+  },
+  {
+    "l": "analysis",
+    "p": "noun",
+    "e": [
+      "análisis"
+    ]
+  },
+  {
+    "l": "election",
+    "p": "noun",
+    "e": [
+      "elección",
+      "votación"
+    ]
+  },
+  {
+    "l": "military",
+    "p": "adjective",
+    "e": [
+      "militar"
+    ]
+  },
+  {
+    "l": "hotel",
+    "p": "noun",
+    "e": [
+      "hotel"
+    ]
+  },
+  {
+    "l": "club",
+    "p": "noun",
+    "e": [
+      "club",
+      "palo"
+    ]
+  },
+  {
+    "l": "movie",
+    "p": "noun",
+    "e": [
+      "película",
+      "film"
+    ]
+  },
+  {
+    "l": "doctor",
+    "p": "noun",
+    "e": [
+      "médico",
+      "doctor"
+    ]
+  },
+  {
+    "l": "discussion",
+    "p": "noun",
+    "e": [
+      "discusión",
+      "debate"
+    ]
+  },
+  {
+    "l": "sorry",
+    "p": "adjective",
+    "e": [
+      "lo siento",
+      "arrepentido"
+    ]
+  },
+  {
+    "l": "challenge",
+    "p": "noun",
+    "e": [
+      "reto",
+      "desafío"
+    ]
+  },
+  {
+    "l": "nation",
+    "p": "noun",
+    "e": [
+      "nación",
+      "país"
+    ]
+  },
+  {
+    "l": "nearly",
+    "p": "adverb",
+    "e": [
+      "casi",
+      "aproximadamente"
+    ]
+  },
+  {
+    "l": "statement",
+    "p": "noun",
+    "e": [
+      "declaración",
+      "afirmación"
+    ]
+  },
+  {
+    "l": "link",
+    "p": "noun",
+    "e": [
+      "enlace",
+      "vínculo"
+    ]
+  },
+  {
+    "l": "despite",
+    "p": "preposition",
+    "e": [
+      "a pesar de"
+    ]
+  },
+  {
+    "l": "introduce",
+    "p": "verb",
+    "e": [
+      "presentar",
+      "introducir"
+    ]
+  },
+  {
+    "l": "advantage",
+    "p": "noun",
+    "e": [
+      "ventaja"
+    ]
+  },
+  {
+    "l": "ready",
+    "p": "adjective",
+    "e": [
+      "listo",
+      "preparado"
+    ]
+  },
+  {
+    "l": "marry",
+    "p": "verb",
+    "e": [
+      "casarse",
+      "contraer matrimonio"
+    ]
+  },
+  {
+    "l": "strike",
+    "p": "verb",
+    "e": [
+      "golpear",
+      "hacer huelga"
+    ]
+  },
+  {
+    "l": "mile",
+    "p": "noun",
+    "e": [
+      "milla"
+    ]
+  },
+  {
+    "l": "seek",
+    "p": "verb",
+    "e": [
+      "buscar",
+      "solicitar"
+    ]
+  },
+  {
+    "l": "ability",
+    "p": "noun",
+    "e": [
+      "capacidad",
+      "habilidad"
+    ]
+  },
+  {
+    "l": "unit",
+    "p": "noun",
+    "e": [
+      "unidad"
+    ]
+  },
+  {
+    "l": "card",
+    "p": "noun",
+    "e": [
+      "tarjeta",
+      "carta"
+    ]
+  },
+  {
+    "l": "hospital",
+    "p": "noun",
+    "e": [
+      "hospital"
+    ]
+  },
+  {
+    "l": "quickly",
+    "p": "adverb",
+    "e": [
+      "rápidamente",
+      "pronto"
+    ]
+  },
+  {
+    "l": "interview",
+    "p": "noun",
+    "e": [
+      "entrevista"
+    ]
+  },
+  {
+    "l": "agreement",
+    "p": "noun",
+    "e": [
+      "acuerdo",
+      "convenio"
+    ]
+  },
+  {
+    "l": "release",
+    "p": "verb",
+    "e": [
+      "liberar",
+      "lanzar"
+    ]
+  },
+  {
+    "l": "tax",
+    "p": "noun",
+    "e": [
+      "impuesto",
+      "tributo"
+    ]
+  },
+  {
+    "l": "solution",
+    "p": "noun",
+    "e": [
+      "solución"
+    ]
+  },
+  {
+    "l": "capital",
+    "p": "noun",
+    "e": [
+      "capital"
+    ]
+  },
+  {
+    "l": "popular",
+    "p": "adjective",
+    "e": [
+      "popular",
+      "conocido"
+    ]
+  },
+  {
+    "l": "specific",
+    "p": "adjective",
+    "e": [
+      "específico",
+      "concreto"
+    ]
+  },
+  {
+    "l": "beautiful",
+    "p": "adjective",
+    "e": [
+      "hermoso",
+      "bello"
+    ]
+  },
+  {
+    "l": "fear",
+    "p": "noun",
+    "e": [
+      "miedo",
+      "temor"
+    ]
+  },
+  {
+    "l": "aim",
+    "p": "noun",
+    "e": [
+      "objetivo",
+      "meta"
+    ]
+  },
+  {
+    "l": "television",
+    "p": "noun",
+    "e": [
+      "televisión",
+      "tele"
+    ]
+  },
+  {
+    "l": "serious",
+    "p": "adjective",
+    "e": [
+      "serio",
+      "grave"
+    ]
+  },
+  {
+    "l": "target",
+    "p": "noun",
+    "e": [
+      "objetivo",
+      "meta"
+    ]
+  },
+  {
+    "l": "degree",
+    "p": "noun",
+    "e": [
+      "grado",
+      "título"
+    ]
+  },
+  {
+    "l": "pull",
+    "p": "verb",
+    "e": [
+      "tirar",
+      "jalar"
+    ]
+  },
+  {
+    "l": "red",
+    "p": "adjective",
+    "e": [
+      "rojo"
+    ]
+  },
+  {
+    "l": "husband",
+    "p": "noun",
+    "e": [
+      "marido",
+      "esposo"
+    ]
+  },
+  {
+    "l": "access",
+    "p": "noun",
+    "e": [
+      "acceso"
+    ]
+  },
+  {
+    "l": "movement",
+    "p": "noun",
+    "e": [
+      "movimiento"
+    ]
+  },
+  {
+    "l": "treat",
+    "p": "verb",
+    "e": [
+      "tratar",
+      "atender"
+    ]
+  },
+  {
+    "l": "identify",
+    "p": "verb",
+    "e": [
+      "identificar",
+      "reconocer"
+    ]
+  },
+  {
+    "l": "loss",
+    "p": "noun",
+    "e": [
+      "pérdida"
+    ]
+  },
+  {
+    "l": "shall",
+    "p": "modal",
+    "e": [
+      "deber"
+    ]
+  },
+  {
+    "l": "modern",
+    "p": "adjective",
+    "e": [
+      "moderno",
+      "actual"
+    ]
+  },
+  {
+    "l": "pressure",
+    "p": "noun",
+    "e": [
+      "presión"
+    ]
+  },
+  {
+    "l": "bus",
+    "p": "noun",
+    "e": [
+      "autobús",
+      "bus"
+    ]
+  },
+  {
+    "l": "treatment",
+    "p": "noun",
+    "e": [
+      "tratamiento",
+      "trato"
+    ]
+  },
+  {
+    "l": "conference",
+    "p": "noun",
+    "e": [
+      "conferencia",
+      "congreso"
+    ]
+  },
+  {
+    "l": "yourself",
+    "p": "pronoun",
+    "e": [
+      "tú mismo"
+    ]
+  },
+  {
+    "l": "supply",
+    "p": "noun",
+    "e": [
+      "suministro",
+      "oferta"
+    ]
+  },
+  {
+    "l": "village",
+    "p": "noun",
+    "e": [
+      "pueblo",
+      "aldea"
+    ]
+  },
+  {
+    "l": "worth",
+    "p": "adjective",
+    "e": [
+      "que vale",
+      "valioso"
+    ]
+  },
+  {
+    "l": "natural",
+    "p": "adjective",
+    "e": [
+      "natural"
+    ]
+  },
+  {
+    "l": "express",
+    "p": "verb",
+    "e": [
+      "expresar",
+      "manifestar"
+    ]
+  },
+  {
+    "l": "indicate",
+    "p": "verb",
+    "e": [
+      "indicar",
+      "señalar"
+    ]
+  },
+  {
+    "l": "attend",
+    "p": "verb",
+    "e": [
+      "asistir",
+      "atender"
+    ]
+  },
+  {
+    "l": "brother",
+    "p": "noun",
+    "e": [
+      "hermano"
+    ]
+  },
+  {
+    "l": "investment",
+    "p": "noun",
+    "e": [
+      "inversión"
+    ]
+  },
+  {
+    "l": "score",
+    "p": "noun",
+    "e": [
+      "puntuación",
+      "marcador"
+    ]
+  },
+  {
+    "l": "organize",
+    "p": "verb",
+    "e": [
+      "organizar",
+      "coordinar"
+    ]
+  },
+  {
+    "l": "trip",
+    "p": "noun",
+    "e": [
+      "viaje",
+      "excursión"
+    ]
+  },
+  {
+    "l": "sleep",
+    "p": "verb",
+    "e": [
+      "dormir"
+    ]
+  },
+  {
+    "l": "fish",
+    "p": "noun",
+    "e": [
+      "pez",
+      "pescado"
+    ]
+  },
+  {
+    "l": "promise",
+    "p": "noun",
+    "e": [
+      "promesa"
+    ]
+  },
+  {
+    "l": "potential",
+    "p": "noun",
+    "e": [
+      "potencial"
+    ]
+  },
+  {
+    "l": "energy",
+    "p": "noun",
+    "e": [
+      "energía"
+    ]
+  },
+  {
+    "l": "trouble",
+    "p": "noun",
+    "e": [
+      "problema",
+      "dificultad"
+    ]
+  },
+  {
+    "l": "relation",
+    "p": "noun",
+    "e": [
+      "relación",
+      "vínculo"
+    ]
+  },
+  {
+    "l": "touch",
+    "p": "verb",
+    "e": [
+      "tocar"
+    ]
+  },
+  {
+    "l": "file",
+    "p": "noun",
+    "e": [
+      "archivo",
+      "expediente"
+    ]
+  },
+  {
+    "l": "middle",
+    "p": "noun",
+    "e": [
+      "medio",
+      "centro"
+    ]
+  },
+  {
+    "l": "bar",
+    "p": "noun",
+    "e": [
+      "barra",
+      "bar"
+    ]
+  },
+  {
+    "l": "suffer",
+    "p": "verb",
+    "e": [
+      "sufrir",
+      "padecer"
+    ]
+  },
+  {
+    "l": "strategy",
+    "p": "noun",
+    "e": [
+      "estrategia"
+    ]
+  },
+  {
+    "l": "deep",
+    "p": "adjective",
+    "e": [
+      "profundo",
+      "hondo"
+    ]
+  },
+  {
+    "l": "except",
+    "p": "preposition",
+    "e": [
+      "excepto",
+      "salvo"
+    ]
+  },
+  {
+    "l": "clean",
+    "p": "adjective",
+    "e": [
+      "limpio",
+      "aseado"
+    ]
+  },
+  {
+    "l": "tend",
+    "p": "verb",
+    "e": [
+      "tender",
+      "soler"
+    ]
+  },
+  {
+    "l": "advance",
+    "p": "noun",
+    "e": [
+      "avance",
+      "adelanto"
+    ]
+  },
+  {
+    "l": "fill",
+    "p": "verb",
+    "e": [
+      "llenar",
+      "rellenar"
+    ]
+  },
+  {
+    "l": "star",
+    "p": "noun",
+    "e": [
+      "estrella"
+    ]
+  },
+  {
+    "l": "network",
+    "p": "noun",
+    "e": [
+      "red"
+    ]
+  },
+  {
+    "l": "generally",
+    "p": "adverb",
+    "e": [
+      "generalmente",
+      "en general"
+    ]
+  },
+  {
+    "l": "operation",
+    "p": "noun",
+    "e": [
+      "operación"
+    ]
+  },
+  {
+    "l": "match",
+    "p": "noun",
+    "e": [
+      "partido",
+      "coincidencia"
+    ]
+  },
+  {
+    "l": "avoid",
+    "p": "verb",
+    "e": [
+      "evitar"
+    ]
+  },
+  {
+    "l": "seat",
+    "p": "noun",
+    "e": [
+      "asiento",
+      "silla"
+    ]
+  },
+  {
+    "l": "throw",
+    "p": "verb",
+    "e": [
+      "lanzar",
+      "tirar"
+    ]
+  },
+  {
+    "l": "task",
+    "p": "noun",
+    "e": [
+      "tarea",
+      "encargo"
+    ]
+  },
+  {
+    "l": "normal",
+    "p": "adjective",
+    "e": [
+      "normal",
+      "habitual"
+    ]
+  },
+  {
+    "l": "goal",
+    "p": "noun",
+    "e": [
+      "objetivo",
+      "gol",
+      "meta"
+    ]
+  },
+  {
+    "l": "associate",
+    "p": "verb",
+    "e": [
+      "asociar",
+      "relacionar"
+    ]
+  },
+  {
+    "l": "blue",
+    "p": "adjective",
+    "e": [
+      "azul"
+    ]
+  },
+  {
+    "l": "positive",
+    "p": "adjective",
+    "e": [
+      "positivo"
+    ]
+  },
+  {
+    "l": "option",
+    "p": "noun",
+    "e": [
+      "opción",
+      "alternativa"
+    ]
+  },
+  {
+    "l": "box",
+    "p": "noun",
+    "e": [
+      "caja",
+      "cajón"
+    ]
+  },
+  {
+    "l": "huge",
+    "p": "adjective",
+    "e": [
+      "enorme",
+      "inmenso"
+    ]
+  },
+  {
+    "l": "message",
+    "p": "noun",
+    "e": [
+      "mensaje"
+    ]
+  },
+  {
+    "l": "instance",
+    "p": "noun",
+    "e": [
+      "instancia",
+      "ejemplo",
+      "caso"
+    ]
+  },
+  {
+    "l": "style",
+    "p": "noun",
+    "e": [
+      "estilo"
+    ]
+  },
+  {
+    "l": "refer",
+    "p": "verb",
+    "e": [
+      "referir",
+      "remitir"
+    ]
+  },
+  {
+    "l": "cold",
+    "p": "adjective",
+    "e": [
+      "frío",
+      "helado"
+    ]
+  },
+  {
+    "l": "push",
+    "p": "verb",
+    "e": [
+      "empujar",
+      "presionar"
+    ]
+  },
+  {
+    "l": "quarter",
+    "p": "noun",
+    "e": [
+      "cuarto",
+      "trimestre"
+    ]
+  },
+  {
+    "l": "assume",
+    "p": "verb",
+    "e": [
+      "asumir",
+      "suponer"
+    ]
+  },
+  {
+    "l": "baby",
+    "p": "noun",
+    "e": [
+      "bebé"
+    ]
+  },
+  {
+    "l": "successful",
+    "p": "adjective",
+    "e": [
+      "exitoso",
+      "con éxito"
+    ]
+  },
+  {
+    "l": "sing",
+    "p": "verb",
+    "e": [
+      "cantar"
+    ]
+  },
+  {
+    "l": "doubt",
+    "p": "noun",
+    "e": [
+      "duda"
+    ]
+  },
+  {
+    "l": "competition",
+    "p": "noun",
+    "e": [
+      "competencia",
+      "competición"
+    ]
+  },
+  {
+    "l": "theory",
+    "p": "noun",
+    "e": [
+      "teoría"
+    ]
+  },
+  {
+    "l": "propose",
+    "p": "verb",
+    "e": [
+      "proponer",
+      "sugerir"
+    ]
+  },
+  {
+    "l": "reference",
+    "p": "noun",
+    "e": [
+      "referencia"
+    ]
+  },
+  {
+    "l": "argument",
+    "p": "noun",
+    "e": [
+      "argumento",
+      "discusión"
+    ]
+  },
+  {
+    "l": "adult",
+    "p": "noun",
+    "e": [
+      "adulto"
+    ]
+  },
+  {
+    "l": "fly",
+    "p": "verb",
+    "e": [
+      "volar"
+    ]
+  },
+  {
+    "l": "document",
+    "p": "noun",
+    "e": [
+      "documento"
+    ]
+  },
+  {
+    "l": "pattern",
+    "p": "noun",
+    "e": [
+      "patrón",
+      "modelo"
+    ]
+  },
+  {
+    "l": "application",
+    "p": "noun",
+    "e": [
+      "aplicación",
+      "solicitud"
+    ]
+  },
+  {
+    "l": "hot",
+    "p": "adjective",
+    "e": [
+      "caliente",
+      "caluroso"
+    ]
+  },
+  {
+    "l": "obviously",
+    "p": "adverb",
+    "e": [
+      "obviamente",
+      "claramente"
+    ]
+  },
+  {
+    "l": "unclear",
+    "p": "adjective",
+    "e": [
+      "poco claro",
+      "confuso"
+    ]
+  },
+  {
+    "l": "bill",
+    "p": "noun",
+    "e": [
+      "factura",
+      "cuenta",
+      "proyecto de ley"
+    ]
+  },
+  {
+    "l": "search",
+    "p": "noun",
+    "e": [
+      "búsqueda"
+    ]
+  },
+  {
+    "l": "separate",
+    "p": "adjective",
+    "e": [
+      "separado",
+      "distinto"
+    ]
+  },
+  {
+    "l": "central",
+    "p": "adjective",
+    "e": [
+      "central",
+      "principal"
+    ]
+  },
+  {
+    "l": "career",
+    "p": "noun",
+    "e": [
+      "carrera",
+      "trayectoria"
+    ]
+  },
+  {
+    "l": "anyway",
+    "p": "adverb",
+    "e": [
+      "de todos modos",
+      "en cualquier caso"
+    ]
+  },
+  {
+    "l": "speech",
+    "p": "noun",
+    "e": [
+      "discurso",
+      "habla"
+    ]
+  },
+  {
+    "l": "dog",
+    "p": "noun",
+    "e": [
+      "perro"
+    ]
+  },
+  {
+    "l": "officer",
+    "p": "noun",
+    "e": [
+      "oficial",
+      "agente"
+    ]
+  },
+  {
+    "l": "oil",
+    "p": "noun",
+    "e": [
+      "aceite",
+      "petróleo"
+    ]
+  },
+  {
+    "l": "dress",
+    "p": "noun",
+    "e": [
+      "vestido",
+      "ropa"
+    ]
+  },
+  {
+    "l": "profit",
+    "p": "noun",
+    "e": [
+      "beneficio",
+      "ganancia"
+    ]
+  },
+  {
+    "l": "guess",
+    "p": "verb",
+    "e": [
+      "adivinar",
+      "suponer"
+    ]
+  },
+  {
+    "l": "fun",
+    "p": "noun",
+    "e": [
+      "diversión",
+      "entretenimiento"
+    ]
+  },
+  {
+    "l": "protect",
+    "p": "verb",
+    "e": [
+      "proteger",
+      "defender"
+    ]
+  },
+  {
+    "l": "resource",
+    "p": "noun",
+    "e": [
+      "recurso"
+    ]
+  },
+  {
+    "l": "science",
+    "p": "noun",
+    "e": [
+      "ciencia"
+    ]
+  },
+  {
+    "l": "disease",
+    "p": "noun",
+    "e": [
+      "enfermedad"
+    ]
+  },
+  {
+    "l": "balance",
+    "p": "noun",
+    "e": [
+      "equilibrio",
+      "balance"
+    ]
+  },
+  {
+    "l": "damage",
+    "p": "noun",
+    "e": [
+      "daño",
+      "perjuicio"
+    ]
+  },
+  {
+    "l": "basis",
+    "p": "noun",
+    "e": [
+      "base",
+      "fundamento"
+    ]
+  },
+  {
+    "l": "author",
+    "p": "noun",
+    "e": [
+      "autor",
+      "escritor"
+    ]
+  },
+  {
+    "l": "basic",
+    "p": "adjective",
+    "e": [
+      "básico",
+      "fundamental"
+    ]
+  },
+  {
+    "l": "encourage",
+    "p": "verb",
+    "e": [
+      "alentar",
+      "animar"
+    ]
+  },
+  {
+    "l": "hair",
+    "p": "noun",
+    "e": [
+      "cabello",
+      "pelo"
+    ]
+  },
+  {
+    "l": "male",
+    "p": "adjective",
+    "e": [
+      "masculino",
+      "varonil"
+    ]
+  },
+  {
+    "l": "operate",
+    "p": "verb",
+    "e": [
+      "operar",
+      "funcionar"
+    ]
+  },
+  {
+    "l": "reflect",
+    "p": "verb",
+    "e": [
+      "reflejar",
+      "reflexionar"
+    ]
+  },
+  {
+    "l": "exercise",
+    "p": "noun",
+    "e": [
+      "ejercicio"
+    ]
+  },
+  {
+    "l": "useful",
+    "p": "adjective",
+    "e": [
+      "útil",
+      "práctico"
+    ]
+  },
+  {
+    "l": "restaurant",
+    "p": "noun",
+    "e": [
+      "restaurante"
+    ]
+  },
+  {
+    "l": "income",
+    "p": "noun",
+    "e": [
+      "ingresos",
+      "renta"
+    ]
+  },
+  {
+    "l": "property",
+    "p": "noun",
+    "e": [
+      "propiedad",
+      "inmueble"
+    ]
+  },
+  {
+    "l": "previous",
+    "p": "adjective",
+    "e": [
+      "anterior",
+      "previo"
+    ]
+  },
+  {
+    "l": "dark",
+    "p": "adjective",
+    "e": [
+      "oscuro",
+      "tenebroso"
+    ]
+  },
+  {
+    "l": "imagine",
+    "p": "verb",
+    "e": [
+      "imaginar",
+      "concebir"
+    ]
+  },
+  {
+    "l": "okay",
+    "p": "adjective",
+    "e": [
+      "bien",
+      "de acuerdo"
+    ]
+  },
+  {
+    "l": "earn",
+    "p": "verb",
+    "e": [
+      "ganar",
+      "merecer"
+    ]
+  },
+  {
+    "l": "daughter",
+    "p": "noun",
+    "e": [
+      "hija"
+    ]
+  },
+  {
+    "l": "post",
+    "p": "noun",
+    "e": [
+      "publicación",
+      "puesto"
+    ]
+  },
+  {
+    "l": "newspaper",
+    "p": "noun",
+    "e": [
+      "periódico",
+      "diario"
+    ]
+  },
+  {
+    "l": "define",
+    "p": "verb",
+    "e": [
+      "definir",
+      "establecer"
+    ]
+  },
+  {
+    "l": "conclusion",
+    "p": "noun",
+    "e": [
+      "conclusión"
+    ]
+  },
+  {
+    "l": "clock",
+    "p": "noun",
+    "e": [
+      "reloj"
+    ]
+  },
+  {
+    "l": "everybody",
+    "p": "pronoun",
+    "e": [
+      "todo el mundo",
+      "todos"
+    ]
+  },
+  {
+    "l": "weekend",
+    "p": "noun",
+    "e": [
+      "fin de semana"
+    ]
+  },
+  {
+    "l": "perform",
+    "p": "verb",
+    "e": [
+      "actuar",
+      "realizar"
+    ]
+  },
+  {
+    "l": "professional",
+    "p": "adjective",
+    "e": [
+      "profesional"
+    ]
+  },
+  {
+    "l": "mine",
+    "p": "pronoun",
+    "e": [
+      "mío",
+      "mía"
+    ]
+  },
+  {
+    "l": "debate",
+    "p": "noun",
+    "e": [
+      "debate",
+      "discusión"
+    ]
+  },
+  {
+    "l": "memory",
+    "p": "noun",
+    "e": [
+      "memoria",
+      "recuerdo"
+    ]
+  },
+  {
+    "l": "green",
+    "p": "adjective",
+    "e": [
+      "verde"
+    ]
+  },
+  {
+    "l": "song",
+    "p": "noun",
+    "e": [
+      "canción"
+    ]
+  },
+  {
+    "l": "object",
+    "p": "noun",
+    "e": [
+      "objeto",
+      "cosa"
+    ]
+  },
+  {
+    "l": "maintain",
+    "p": "verb",
+    "e": [
+      "mantener",
+      "conservar"
+    ]
+  },
+  {
+    "l": "credit",
+    "p": "noun",
+    "e": [
+      "crédito",
+      "reconocimiento"
+    ]
+  },
+  {
+    "l": "ring",
+    "p": "noun",
+    "e": [
+      "anillo",
+      "timbre"
+    ]
+  },
+  {
+    "l": "discover",
+    "p": "verb",
+    "e": [
+      "descubrir",
+      "hallar"
+    ]
+  },
+  {
+    "l": "dead",
+    "p": "adjective",
+    "e": [
+      "muerto",
+      "fallecido"
+    ]
+  },
+  {
+    "l": "afternoon",
+    "p": "noun",
+    "e": [
+      "tarde"
+    ]
+  },
+  {
+    "l": "prefer",
+    "p": "verb",
+    "e": [
+      "preferir"
+    ]
+  },
+  {
+    "l": "extend",
+    "p": "verb",
+    "e": [
+      "extender",
+      "ampliar"
+    ]
+  },
+  {
+    "l": "possibility",
+    "p": "noun",
+    "e": [
+      "posibilidad"
+    ]
+  },
+  {
+    "l": "direction",
+    "p": "noun",
+    "e": [
+      "dirección",
+      "rumbo"
+    ]
+  },
+  {
+    "l": "facility",
+    "p": "noun",
+    "e": [
+      "instalación",
+      "facilidad"
+    ]
+  },
+  {
+    "l": "variety",
+    "p": "noun",
+    "e": [
+      "variedad",
+      "diversidad"
+    ]
+  },
+  {
+    "l": "daily",
+    "p": "adjective",
+    "e": [
+      "diario",
+      "cotidiano"
+    ]
+  },
+  {
+    "l": "clothes",
+    "p": "noun",
+    "e": [
+      "ropa",
+      "vestimenta"
+    ]
+  },
+  {
+    "l": "screen",
+    "p": "noun",
+    "e": [
+      "pantalla",
+      "monitor"
+    ]
+  },
+  {
+    "l": "track",
+    "p": "noun",
+    "e": [
+      "pista",
+      "rastro"
+    ]
+  },
+  {
+    "l": "dance",
+    "p": "verb",
+    "e": [
+      "bailar"
+    ]
+  },
+  {
+    "l": "completely",
+    "p": "adverb",
+    "e": [
+      "completamente",
+      "totalmente"
+    ]
+  },
+  {
+    "l": "female",
+    "p": "adjective",
+    "e": [
+      "femenino",
+      "hembra"
+    ]
+  },
+  {
+    "l": "responsibility",
+    "p": "noun",
+    "e": [
+      "responsabilidad"
+    ]
+  },
+  {
+    "l": "original",
+    "p": "adjective",
+    "e": [
+      "original"
+    ]
+  },
+  {
+    "l": "sister",
+    "p": "noun",
+    "e": [
+      "hermana"
+    ]
+  },
+  {
+    "l": "rock",
+    "p": "noun",
+    "e": [
+      "roca",
+      "piedra"
+    ]
+  },
+  {
+    "l": "dream",
+    "p": "noun",
+    "e": [
+      "sueño",
+      "ilusión"
+    ]
+  },
+  {
+    "l": "nor",
+    "p": "conjunction",
+    "e": [
+      "ni",
+      "tampoco"
+    ]
+  },
+  {
+    "l": "university",
+    "p": "noun",
+    "e": [
+      "universidad"
+    ]
+  },
+  {
+    "l": "easily",
+    "p": "adverb",
+    "e": [
+      "fácilmente",
+      "sin dificultad"
+    ]
+  },
+  {
+    "l": "agency",
+    "p": "noun",
+    "e": [
+      "agencia"
+    ]
+  },
+  {
+    "l": "dollar",
+    "p": "noun",
+    "e": [
+      "dólar"
+    ]
+  },
+  {
+    "l": "garden",
+    "p": "noun",
+    "e": [
+      "jardín"
+    ]
+  },
+  {
+    "l": "fix",
+    "p": "verb",
+    "e": [
+      "arreglar",
+      "reparar"
+    ]
+  },
+  {
+    "l": "ahead",
+    "p": "adverb",
+    "e": [
+      "adelante",
+      "por delante"
+    ]
+  },
+  {
+    "l": "cross",
+    "p": "verb",
+    "e": [
+      "cruzar",
+      "atravesar"
+    ]
+  },
+  {
+    "l": "yeah",
+    "p": "adverb",
+    "e": [
+      "sí",
+      "ya"
+    ]
+  },
+  {
+    "l": "candidate",
+    "p": "noun",
+    "e": [
+      "candidato",
+      "aspirante"
+    ]
+  },
+  {
+    "l": "weight",
+    "p": "noun",
+    "e": [
+      "peso"
+    ]
+  },
+  {
+    "l": "legal",
+    "p": "adjective",
+    "e": [
+      "legal",
+      "jurídico"
+    ]
+  },
+  {
+    "l": "proposal",
+    "p": "noun",
+    "e": [
+      "propuesta"
+    ]
+  },
+  {
+    "l": "version",
+    "p": "noun",
+    "e": [
+      "versión"
+    ]
+  },
+  {
+    "l": "conversation",
+    "p": "noun",
+    "e": [
+      "conversación",
+      "diálogo"
+    ]
+  },
+  {
+    "l": "somebody",
+    "p": "pronoun",
+    "e": [
+      "alguien"
+    ]
+  },
+  {
+    "l": "pound",
+    "p": "noun",
+    "e": [
+      "libra"
+    ]
+  },
+  {
+    "l": "magazine",
+    "p": "noun",
+    "e": [
+      "revista"
+    ]
+  },
+  {
+    "l": "shape",
+    "p": "noun",
+    "e": [
+      "forma",
+      "figura"
+    ]
+  },
+  {
+    "l": "sea",
+    "p": "noun",
+    "e": [
+      "mar",
+      "océano"
+    ]
+  },
+  {
+    "l": "immediately",
+    "p": "adverb",
+    "e": [
+      "inmediatamente",
+      "de inmediato"
+    ]
+  },
+  {
+    "l": "welcome",
+    "p": "adjective",
+    "e": [
+      "bienvenido"
+    ]
+  },
+  {
+    "l": "smile",
+    "p": "noun",
+    "e": [
+      "sonrisa"
+    ]
+  },
+  {
+    "l": "communication",
+    "p": "noun",
+    "e": [
+      "comunicación"
+    ]
+  },
+  {
+    "l": "agent",
+    "p": "noun",
+    "e": [
+      "agente",
+      "representante"
+    ]
+  },
+  {
+    "l": "traditional",
+    "p": "adjective",
+    "e": [
+      "tradicional"
+    ]
+  },
+  {
+    "l": "replace",
+    "p": "verb",
+    "e": [
+      "reemplazar",
+      "sustituir"
+    ]
+  },
+  {
+    "l": "judge",
+    "p": "noun",
+    "e": [
+      "juez",
+      "árbitro"
+    ]
+  },
+  {
+    "l": "herself",
+    "p": "pronoun",
+    "e": [
+      "ella misma"
+    ]
+  },
+  {
+    "l": "suddenly",
+    "p": "adverb",
+    "e": [
+      "de repente",
+      "repentinamente"
+    ]
+  },
+  {
+    "l": "generation",
+    "p": "noun",
+    "e": [
+      "generación"
+    ]
+  },
+  {
+    "l": "estimate",
+    "p": "noun",
+    "e": [
+      "estimación",
+      "cálculo"
+    ]
+  },
+  {
+    "l": "favorite",
+    "p": "adjective",
+    "e": [
+      "favorito",
+      "preferido"
+    ]
+  },
+  {
+    "l": "difficulty",
+    "p": "noun",
+    "e": [
+      "dificultad",
+      "obstáculo"
+    ]
+  },
+  {
+    "l": "purchase",
+    "p": "noun",
+    "e": [
+      "compra"
+    ]
+  },
+  {
+    "l": "shoot",
+    "p": "verb",
+    "e": [
+      "disparar",
+      "fotografiar"
+    ]
+  },
+  {
+    "l": "announce",
+    "p": "verb",
+    "e": [
+      "anunciar",
+      "comunicar"
+    ]
+  },
+  {
+    "l": "independent",
+    "p": "adjective",
+    "e": [
+      "independiente"
+    ]
+  },
+  {
+    "l": "recommend",
+    "p": "verb",
+    "e": [
+      "recomendar"
+    ]
+  },
+  {
+    "l": "survey",
+    "p": "noun",
+    "e": [
+      "encuesta",
+      "estudio"
+    ]
+  },
+  {
+    "l": "majority",
+    "p": "noun",
+    "e": [
+      "mayoría"
+    ]
+  },
+  {
+    "l": "stick",
+    "p": "noun",
+    "e": [
+      "palo",
+      "palito"
+    ]
+  },
+  {
+    "l": "request",
+    "p": "noun",
+    "e": [
+      "solicitud",
+      "petición"
+    ]
+  },
+  {
+    "l": "rich",
+    "p": "adjective",
+    "e": [
+      "rico",
+      "adinerado"
+    ]
+  },
+  {
+    "l": "wind",
+    "p": "noun",
+    "e": [
+      "viento",
+      "brisa"
+    ]
+  },
+  {
+    "l": "none",
+    "p": "pronoun",
+    "e": [
+      "ninguno",
+      "ninguna"
+    ]
+  },
+  {
+    "l": "exchange",
+    "p": "noun",
+    "e": [
+      "intercambio",
+      "cambio"
+    ]
+  },
+  {
+    "l": "budget",
+    "p": "noun",
+    "e": [
+      "presupuesto"
+    ]
+  },
+  {
+    "l": "famous",
+    "p": "adjective",
+    "e": [
+      "famoso",
+      "célebre"
+    ]
+  },
+  {
+    "l": "blood",
+    "p": "noun",
+    "e": [
+      "sangre"
+    ]
+  },
+  {
+    "l": "appropriate",
+    "p": "adjective",
+    "e": [
+      "apropiado",
+      "adecuado"
+    ]
+  },
+  {
+    "l": "block",
+    "p": "noun",
+    "e": [
+      "bloque",
+      "manzana"
+    ]
+  },
+  {
+    "l": "warm",
+    "p": "adjective",
+    "e": [
+      "cálido",
+      "templado"
+    ]
+  },
+  {
+    "l": "count",
+    "p": "verb",
+    "e": [
+      "contar"
+    ]
+  },
+  {
+    "l": "scene",
+    "p": "noun",
+    "e": [
+      "escena",
+      "lugar"
+    ]
+  },
+  {
+    "l": "writer",
+    "p": "noun",
+    "e": [
+      "escritor",
+      "redactor"
+    ]
+  },
+  {
+    "l": "content",
+    "p": "noun",
+    "e": [
+      "contenido"
+    ]
+  },
+  {
+    "l": "prevent",
+    "p": "verb",
+    "e": [
+      "prevenir",
+      "evitar"
+    ]
+  },
+  {
+    "l": "safe",
+    "p": "adjective",
+    "e": [
+      "seguro",
+      "salvo"
+    ]
+  },
+  {
+    "l": "invite",
+    "p": "verb",
+    "e": [
+      "invitar"
+    ]
+  },
+  {
+    "l": "mix",
+    "p": "verb",
+    "e": [
+      "mezclar",
+      "combinar"
+    ]
+  },
+  {
+    "l": "element",
+    "p": "noun",
+    "e": [
+      "elemento",
+      "componente"
+    ]
+  },
+  {
+    "l": "effective",
+    "p": "adjective",
+    "e": [
+      "efectivo",
+      "eficaz"
+    ]
+  },
+  {
+    "l": "correct",
+    "p": "adjective",
+    "e": [
+      "correcto",
+      "exacto"
+    ]
+  },
+  {
+    "l": "medical",
+    "p": "adjective",
+    "e": [
+      "médico",
+      "sanitario"
+    ]
+  },
+  {
+    "l": "admit",
+    "p": "verb",
+    "e": [
+      "admitir",
+      "reconocer"
+    ]
+  },
+  {
+    "l": "beat",
+    "p": "verb",
+    "e": [
+      "golpear",
+      "latir"
+    ]
+  },
+  {
+    "l": "telephone",
+    "p": "noun",
+    "e": [
+      "teléfono"
+    ]
+  },
+  {
+    "l": "copy",
+    "p": "noun",
+    "e": [
+      "copia"
+    ]
+  },
+  {
+    "l": "committee",
+    "p": "noun",
+    "e": [
+      "comité",
+      "comisión"
+    ]
+  },
+  {
+    "l": "aware",
+    "p": "adjective",
+    "e": [
+      "consciente",
+      "al tanto"
+    ]
+  },
+  {
+    "l": "advice",
+    "p": "noun",
+    "e": [
+      "consejo",
+      "recomendación"
+    ]
+  },
+  {
+    "l": "handle",
+    "p": "verb",
+    "e": [
+      "manejar",
+      "gestionar"
+    ]
+  },
+  {
+    "l": "glass",
+    "p": "noun",
+    "e": [
+      "vaso",
+      "vidrio",
+      "cristal"
+    ]
+  },
+  {
+    "l": "trial",
+    "p": "noun",
+    "e": [
+      "juicio",
+      "prueba",
+      "ensayo"
+    ]
+  },
+  {
+    "l": "stress",
+    "p": "noun",
+    "e": [
+      "estrés",
+      "tensión"
+    ]
+  },
+  {
+    "l": "radio",
+    "p": "noun",
+    "e": [
+      "radio"
+    ]
+  },
+  {
+    "l": "administration",
+    "p": "noun",
+    "e": [
+      "administración",
+      "gestión"
+    ]
+  },
+  {
+    "l": "complex",
+    "p": "adjective",
+    "e": [
+      "complejo",
+      "complicado"
+    ]
+  },
+  {
+    "l": "text",
+    "p": "noun",
+    "e": [
+      "texto"
+    ]
+  },
+  {
+    "l": "context",
+    "p": "noun",
+    "e": [
+      "contexto"
+    ]
+  },
+  {
+    "l": "ride",
+    "p": "verb",
+    "e": [
+      "montar",
+      "viajar en"
+    ]
+  },
+  {
+    "l": "directly",
+    "p": "adverb",
+    "e": [
+      "directamente"
+    ]
+  },
+  {
+    "l": "heavy",
+    "p": "adjective",
+    "e": [
+      "pesado",
+      "denso"
+    ]
+  },
+  {
+    "l": "remove",
+    "p": "verb",
+    "e": [
+      "quitar",
+      "eliminar"
+    ]
+  },
+  {
+    "l": "conduct",
+    "p": "noun",
+    "e": [
+      "conducta",
+      "comportamiento"
+    ]
+  },
+  {
+    "l": "equipment",
+    "p": "noun",
+    "e": [
+      "equipamiento",
+      "equipo"
+    ]
+  },
+  {
+    "l": "title",
+    "p": "noun",
+    "e": [
+      "título"
+    ]
+  },
+  {
+    "l": "extra",
+    "p": "adjective",
+    "e": [
+      "extra",
+      "adicional"
+    ]
+  },
+  {
+    "l": "executive",
+    "p": "noun",
+    "e": [
+      "ejecutivo",
+      "directivo"
+    ]
+  },
+  {
+    "l": "chair",
+    "p": "noun",
+    "e": [
+      "silla",
+      "sillón"
+    ]
+  },
+  {
+    "l": "expensive",
+    "p": "adjective",
+    "e": [
+      "caro",
+      "costoso"
+    ]
+  },
+  {
+    "l": "sample",
+    "p": "noun",
+    "e": [
+      "muestra",
+      "ejemplo"
+    ]
+  },
+  {
+    "l": "sex",
+    "p": "noun",
+    "e": [
+      "sexo"
+    ]
+  },
+  {
+    "l": "deliver",
+    "p": "verb",
+    "e": [
+      "entregar",
+      "repartir"
+    ]
+  },
+  {
+    "l": "video",
+    "p": "noun",
+    "e": [
+      "vídeo",
+      "video"
+    ]
+  },
+  {
+    "l": "connection",
+    "p": "noun",
+    "e": [
+      "conexión",
+      "vínculo"
+    ]
+  },
+  {
+    "l": "primary",
+    "p": "adjective",
+    "e": [
+      "primario",
+      "principal"
+    ]
+  },
+  {
+    "l": "weather",
+    "p": "noun",
+    "e": [
+      "tiempo",
+      "clima"
+    ]
+  },
+  {
+    "l": "collect",
+    "p": "verb",
+    "e": [
+      "recoger",
+      "coleccionar"
+    ]
+  },
+  {
+    "l": "inform",
+    "p": "verb",
+    "e": [
+      "informar",
+      "comunicar"
+    ]
+  },
+  {
+    "l": "principle",
+    "p": "noun",
+    "e": [
+      "principio",
+      "norma"
+    ]
+  },
+  {
+    "l": "straight",
+    "p": "adjective",
+    "e": [
+      "recto",
+      "derecho"
+    ]
+  },
+  {
+    "l": "appeal",
+    "p": "noun",
+    "e": [
+      "apelación",
+      "atractivo"
+    ]
+  },
+  {
+    "l": "highly",
+    "p": "adverb",
+    "e": [
+      "altamente",
+      "muy"
+    ]
+  },
+  {
+    "l": "trust",
+    "p": "noun",
+    "e": [
+      "confianza",
+      "fe"
+    ]
+  },
+  {
+    "l": "wonderful",
+    "p": "adjective",
+    "e": [
+      "maravilloso",
+      "estupendo"
+    ]
+  },
+  {
+    "l": "flat",
+    "p": "adjective",
+    "e": [
+      "plano",
+      "liso"
+    ]
+  },
+  {
+    "l": "absolutely",
+    "p": "adverb",
+    "e": [
+      "absolutamente",
+      "totalmente"
+    ]
+  },
+  {
+    "l": "flow",
+    "p": "noun",
+    "e": [
+      "flujo",
+      "corriente"
+    ]
+  },
+  {
+    "l": "fair",
+    "p": "adjective",
+    "e": [
+      "justo",
+      "imparcial"
+    ]
+  },
+  {
+    "l": "additional",
+    "p": "adjective",
+    "e": [
+      "adicional",
+      "extra"
+    ]
+  },
+  {
+    "l": "responsible",
+    "p": "adjective",
+    "e": [
+      "responsable"
+    ]
+  },
+  {
+    "l": "farm",
+    "p": "noun",
+    "e": [
+      "granja",
+      "finca"
+    ]
+  },
+  {
+    "l": "collection",
+    "p": "noun",
+    "e": [
+      "colección"
+    ]
+  },
+  {
+    "l": "hang",
+    "p": "verb",
+    "e": [
+      "colgar",
+      "suspender"
+    ]
+  },
+  {
+    "l": "negative",
+    "p": "adjective",
+    "e": [
+      "negativo"
+    ]
+  },
+  {
+    "l": "band",
+    "p": "noun",
+    "e": [
+      "banda",
+      "grupo"
+    ]
+  },
+  {
+    "l": "relative",
+    "p": "noun",
+    "e": [
+      "pariente",
+      "familiar"
+    ]
+  },
+  {
+    "l": "tour",
+    "p": "noun",
+    "e": [
+      "gira",
+      "tour",
+      "visita"
+    ]
+  },
+  {
+    "l": "alternative",
+    "p": "noun",
+    "e": [
+      "alternativa",
+      "opción"
+    ]
+  },
+  {
+    "l": "software",
+    "p": "noun",
+    "e": [
+      "software",
+      "programa"
+    ]
+  },
+  {
+    "l": "pair",
+    "p": "noun",
+    "e": [
+      "par",
+      "pareja"
+    ]
+  },
+  {
+    "l": "ship",
+    "p": "noun",
+    "e": [
+      "barco",
+      "nave"
+    ]
+  },
+  {
+    "l": "attitude",
+    "p": "noun",
+    "e": [
+      "actitud",
+      "postura"
+    ]
+  },
+  {
+    "l": "cheap",
+    "p": "adjective",
+    "e": [
+      "barato",
+      "económico"
+    ]
+  },
+  {
+    "l": "double",
+    "p": "adjective",
+    "e": [
+      "doble"
+    ]
+  },
+  {
+    "l": "leg",
+    "p": "noun",
+    "e": [
+      "pierna",
+      "pata"
+    ]
+  },
+  {
+    "l": "observe",
+    "p": "verb",
+    "e": [
+      "observar",
+      "notar"
+    ]
+  },
+  {
+    "l": "sentence",
+    "p": "noun",
+    "e": [
+      "oración",
+      "sentencia"
+    ]
+  },
+  {
+    "l": "print",
+    "p": "verb",
+    "e": [
+      "imprimir",
+      "publicar"
+    ]
+  },
+  {
+    "l": "progress",
+    "p": "noun",
+    "e": [
+      "progreso",
+      "avance"
+    ]
+  }
 ]

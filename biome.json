@@ -25,7 +25,32 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "style": {
+        "noRestrictedImports": {
+          "level": "error",
+          "options": {
+            "paths": {
+              "@/catalog/data/_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-040-bis).",
+              "./_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-040-bis).",
+              "../_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-040-bis).",
+              "../data/_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-040-bis)."
+            }
+          }
+        }
+      }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["e2e/**", "src/**/*.test.ts", "src/**/*.test.tsx"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": "off"
+          }
+        }
+      }
+    }
+  ]
 }

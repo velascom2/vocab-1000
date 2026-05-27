@@ -18,8 +18,8 @@
   /* Texto */
   --ink: #1B1A17;         /* primario, botón primario */
   --ink-2: #3A3833;       /* secundario, hover primary */
-  --muted: #7C786F;       /* labels mono, microcopy */
-  --muted-2: #A8A498;     /* separadores tipográficos */
+  --muted: #666259;       /* labels mono, microcopy — WCAG AA 4.5:1 sobre --bg/--surface (fix v1.1.0) */
+  --muted-2: #6D6963;     /* microcopy sutil, separadores tipográficos — WCAG AA 4.5:1 sobre --bg/--bg-2/--surface (fix v1.1.0). Antes #A8A498 daba 2.23:1 (FAIL) cuando se usaba como texto en /styleguide, Acepciones, DirectionSwitch. */
 
   /* Bordes */
   --rule: #D8D2C4;        /* cards, separadores */

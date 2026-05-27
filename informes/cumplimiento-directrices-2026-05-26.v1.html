@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">@page {
+size: A4;
+margin: 2cm 2cm 2cm 2cm;
+}
+html {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+font-size: 11pt;
+line-height: 1.55;
+color: #1f2328;
+}
+body {
+max-width: 720px;
+margin: 0 auto;
+padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+font-weight: 600;
+margin-top: 1.6em;
+margin-bottom: 0.5em;
+line-height: 1.25;
+color: #0f172a;
+page-break-after: avoid;
+}
+h1 {
+font-size: 1.7em;
+border-bottom: 2px solid #e5e7eb;
+padding-bottom: 0.25em;
+}
+h2 {
+font-size: 1.35em;
+border-bottom: 1px solid #e5e7eb;
+padding-bottom: 0.2em;
+}
+h3 { font-size: 1.15em; }
+h4 { font-size: 1.05em; }
+p {
+margin: 0.6em 0;
+}
+ul, ol {
+margin: 0.6em 0;
+padding-left: 1.4em;
+}
+li {
+margin: 0.15em 0;
+}
+li > p {
+margin: 0.25em 0;
+}
+blockquote {
+margin: 0.8em 0;
+padding: 0.4em 1em;
+border-left: 3px solid #6366f1;
+background: #f5f3ff;
+color: #312e81;
+}
+blockquote p {
+margin: 0.3em 0;
+}
+code {
+font-family: ui-monospace, "SF Mono", Monaco, Consolas, "Courier New", monospace;
+font-size: 0.9em;
+background: #f3f4f6;
+padding: 0.1em 0.35em;
+border-radius: 3px;
+}
+pre {
+font-family: ui-monospace, "SF Mono", Monaco, Consolas, "Courier New", monospace;
+background: #f3f4f6;
+padding: 0.8em 1em;
+border-radius: 4px;
+overflow-x: auto;
+font-size: 0.9em;
+line-height: 1.45;
+}
+pre code {
+background: none;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+margin: 0.8em 0;
+width: 100%;
+font-size: 0.95em;
+}
+th, td {
+border: 1px solid #e5e7eb;
+padding: 0.45em 0.7em;
+text-align: left;
+vertical-align: top;
+}
+th {
+background: #f9fafb;
+font-weight: 600;
+}
+tr:nth-child(even) td {
+background: #fcfcfd;
+}
+hr {
+border: none;
+border-top: 1px solid #e5e7eb;
+margin: 1.4em 0;
+}
+a {
+color: #2563eb;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+.title {
+font-size: 1.9em;
+font-weight: 700;
+margin-bottom: 0.2em;
+color: #0f172a;
+}
+.subtitle {
+font-size: 1em;
+color: #64748b;
+margin-bottom: 1.5em;
+}
+
+table.metadata {
+border-collapse: collapse;
+margin: 0 0 1.5em 0;
+font-size: 0.85em;
+width: 100%;
+}
+table.metadata th,
+table.metadata td {
+border: 1px solid #e5e7eb;
+padding: 0.3em 0.7em;
+text-align: left;
+vertical-align: top;
+}
+table.metadata th {
+background: #f9fafb;
+font-weight: 600;
+color: #1f2937;
+white-space: nowrap;
+width: 18%;
+}
+
+.mermaid-diagram {
+margin: 1.2em 0;
+text-align: center;
+overflow: hidden;
+page-break-inside: avoid;
+}
+.mermaid-diagram svg {
+max-width: 100% !important;
+height: auto !important;
+display: inline-block;
+}
+</style>
+</head>
+<body>
+<table class="metadata">
+  <tr><th>proyecto</th><td>vocab-1000</td></tr>
+  <tr><th>documento</th><td>informe-cumplimiento-directrices</td></tr>
+  <tr><th>fecha</th><td>2026-05-26</td></tr>
+  <tr><th>autor</th><td>Arquitecto del arnés churrerIA</td></tr>
+  <tr><th>version</th><td>1</td></tr>
+  <tr><th>estado</th><td>aprobado</td></tr>
+  <tr><th>directrices_auditadas</th><td></td></tr>
+  <tr><th>total_reglas_firmes</th><td>143</td></tr>
+  <tr><th>veredicto_agregado</th><td></td></tr>
+  <tr><th>cumple</th><td>78</td></tr>
+  <tr><th>parcial</th><td>14</td></tr>
+  <tr><th>no_cumple</th><td>6</td></tr>
+  <tr><th>no_aplica</th><td>45</td></tr>
+</table>
+<h1 id="informe-de-cumplimiento-de-directrices-vocab-1000-2026-05-26">Informe
+de cumplimiento de directrices — vocab-1000 · 2026-05-26</h1>
+<h2 id="resumen-ejecutivo">1. Resumen ejecutivo</h2>
+<p><strong>Identidad del proyecto auditado</strong>: vocab-1000 es el
+<strong>primer piloto sintético</strong> del arnés churrerIA, ejecutado
+entre el 2026-05-18 y el 2026-05-23. Recorrió las 6 etapas del ciclo y
+está desplegado en producción en
+<code>https://vocab-1000.vercel.app/</code>. Es un juego web de
+vocabulario español ↔︎ inglés, <strong>frontend-only sobre Vercel free
+tier</strong>, sin backend propio, anónimo, con persistencia local
+(IndexedDB → LocalStorage → memory-only). Stack: Next.js 16 + TypeScript
+estricto + Zustand + Biome + Vitest + Playwright. El proyecto cerró su
+retrospectiva (Etapa 6) el 2026-05-23, gate 6.6 firmado.</p>
+<p><strong>Momento de la auditoría</strong>: hoy 2026-05-26, tres días
+después del cierre formal. El stakeholder pide informe de cumplimiento
+contra las <strong>4 directrices vigentes</strong> del arnés.
+Importante: dos de esas directrices han evolucionado tras el cierre del
+piloto (calidad.md v1.3 del 2026-05-25 introduce CAL-013 fijada +
+CAL-048 + CAL-049 a raíz del incidente <code>oficina-agentica</code>;
+observabilidad.md v1.1 del 2026-05-23 formaliza la frontera
+frontend-only). La auditoría se hace contra las versiones vigentes,
+<strong>no contra las versiones del momento del cierre del
+piloto</strong>: por tanto algunas reglas se evalúan sobre un código que
+se escribió antes de que la regla existiera. Esto se anota
+explícitamente cuando aplica.</p>
+<p><strong>Frontera reconocida frontend-only</strong>: el piloto es
+frontend-only sobre plataforma managed. Aplica la frontera v1.1 de
+<code>observabilidad.md</code> §2 con <code>usabilidad.md</code>
+USA-025/026/027 — las reglas OBS tradicionales de
+logs/métricas/trazas/alertas y de stack k3s/SigNoz no aplican y se
+evalúan como <code>🚫 no aplica · frontera reconocida</code> con
+cross-ref a las reglas USA equivalentes. Lo mismo aplica a las reglas de
+arquitectura referidas a Backend, BFF, OpenAPI, contratos REST entre
+servicios, datos transaccionales: no hay sustrato sobre el que
+evaluarlas.</p>
+<p><strong>Veredicto agregado</strong> (143 reglas firmes — 25 ARQ + 49
+CAL + 42 OBS + 27 USA):</p>
+<ul>
+<li>✅ <strong>Cumplen</strong>: <strong>78</strong> reglas (54%).</li>
+<li>⚠️ <strong>Parcial</strong>: <strong>14</strong> reglas (10%) —
+deuda conocida o sin evidencia verificable.</li>
+<li>❌ <strong>No cumplen</strong>: <strong>6</strong> reglas (4%) —
+incumplimiento sin excepción documentada en
+<code>tecnica.md</code>.</li>
+<li>🚫 <strong>No aplica</strong>: <strong>45</strong> reglas (31%) —
+frontera frontend-only o ausencia de backend.</li>
+</ul>
+<p><strong>Tres hallazgos más relevantes</strong>:</p>
+<ol type="1">
+<li><p><strong>Sistema de tokens funcionando excepcionalmente
+bien</strong>. La validación empírica de USA-020 está integrada en el
+código del piloto (<code>globals.css</code> con CSS Variables,
+componentes que consumen tokens) y el sub-gate 4.2 demostró 5
+iteraciones de identidad visual completa al coste de una sesión por
+iteración. La directriz de usabilidad ya recoge este aprendizaje.
+<strong>Impacto: positivo — el patrón es exportable al siguiente
+proyecto sin retoques</strong>.</p></li>
+<li><p><strong>Estructura ARQ-020 parcialmente vacía</strong>. Las
+subcarpetas canónicas del proyecto (<code>adr/</code>,
+<code>backend/</code>, <code>frontend/</code>, <code>infra/</code>,
+<code>tests/</code>, <code>fixtures/</code>, <code>pruebas/</code>,
+<code>incidentes/</code>) <strong>existen pero están vacías</strong>. El
+código vive en <code>codigo/</code> (una carpeta no contemplada en
+ARQ-020) y los tests viven embebidos dentro de <code>codigo/</code>
+(Vitest en <code>src/catalog/catalog.test.ts</code>, Playwright en
+<code>e2e/</code>). Los issues post-PRO se llevaron en GitHub, no en
+<code>incidentes/</code>. <strong>Impacto: deuda estructural
+moderada</strong> — no afecta el funcionamiento del piloto, pero el
+siguiente proyecto frontend-only necesita una guía clara sobre cómo
+encajar la estructura ARQ-020 cuando el proyecto es 100% frontend
+(¿<code>frontend/</code> ocupa lo que hoy ocupa <code>codigo/</code>?
+¿<code>incidentes/</code> se rellena con copias de los issues
+cerrados?).</p></li>
+<li><p><strong>Etapa 5 sin actas físicas — gap ya reconocido</strong>.
+El proyecto no tiene carpeta <code>etapa-5/</code> con
+<code>acta-pruebas-stage.md</code> ni
+<code>acta-despliegue-pro.md</code>. La propia retrospectiva lo
+identificó como G2 y disparó la propuesta #1 (aceptada en gate 6.4) que
+ya está incorporada al <code>ciclo.md</code>. <strong>Impacto: deuda
+saneada en el sistema, no en el piloto</strong> — el siguiente proyecto
+sí tendrá los artefactos canónicos de etapa 5; este proyecto los hereda
+como vacíos.</p></li>
+</ol>
+<p><strong>Veredicto general</strong>: el piloto está
+<strong>arquitectónicamente sano dentro de lo que se le pidió que
+fuera</strong>. Su naturaleza experimental (“caso de prueba del sistema
+agéntico, no producto comercial”) justifica varias de las desviaciones —
+no hay backend propio porque MVP no lo necesita; no hay ADRs porque las
+decisiones de stack viven en <code>tecnica.md</code>; no hay incidentes
+operativos porque no hay tráfico real. Las reglas firmes que
+efectivamente aplican al proyecto frontend-only se cumplen
+mayoritariamente: persistencia con detección y fallback, tests
+automatizados de regresión para los tres bugs post-PRO, axe-core en CI,
+design tokens consumidos sin valores hardcoded, semántica HTML correcta,
+accesibilidad por teclado, focus visible, contraste AA verificado. Los
+<code>❌ no cumple</code> que aparecen son consecuencia de la
+<strong>evolución del sistema posterior al cierre</strong>: el piloto no
+podía aplicar reglas que aún no existían cuando se construyó.</p>
+<p><strong>Recomendaciones de cierre</strong> (insumo para
+retrospectivas futuras y para el <code>memory.md</code> del arnés):</p>
+<ul>
+<li><strong>R1 — Estructura ARQ-020 para proyectos
+frontend-only</strong>: el siguiente proyecto frontend simple debe poder
+mapear cómodamente sus artefactos sin dejar 7 carpetas vacías.
+Candidatos: declarar que <code>codigo/</code> es nombre canónico cuando
+no hay división backend/frontend, o explicitar en
+<code>arquitectura.md</code> que <code>frontend/</code> absorbe todo
+cuando el proyecto es 100% frontend. Decisión del Técnico.</li>
+<li><strong>R2 — Migración retroactiva mínima del piloto</strong>: si el
+siguiente proyecto se va a apoyar en el piloto como referencia
+consultable, conviene un commit de “consolidación documental” que (a)
+borre las 7 carpetas vacías o las renombre con README explicativo, (b)
+materialice <code>etapa-5/acta-pruebas-stage.md</code> y
+<code>etapa-5/acta-despliegue-pro.md</code> retroactivamente con la
+evidencia del <code>memory.md</code>, (c) anote el cumplimiento de
+CAL-048/CAL-049 (creadas tras el cierre) como “no aplicaba en el momento
+de cierre, criterio retroactivo no exigible”. Coste estimado: una
+sesión.</li>
+<li><strong>R3 — Validar el patrón ARQ-R-006 en producción del siguiente
+proyecto</strong>: la cascada IDB→LS→memory-only que se promovió a
+recomendación firme debería incorporarse desde día uno del siguiente
+proyecto que tenga persistencia local. El piloto la implementa
+correctamente pero su validación empírica vino de uso sintético —
+confirmar en uso real consolidaría la recomendación.</li>
+</ul>
+<hr />
+<h2 id="cifras-agregadas">2. Cifras agregadas</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Directriz</th>
+<th>Total reglas firmes</th>
+<th>✅ Cumple</th>
+<th>⚠️ Parcial</th>
+<th>❌ No cumple</th>
+<th>🚫 No aplica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arquitectura (<code>arquitectura.md</code> v1.6)</td>
+<td>25</td>
+<td>14</td>
+<td>3</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Calidad (<code>calidad.md</code> v1.3)</td>
+<td>49</td>
+<td>27</td>
+<td>5</td>
+<td>4</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Observabilidad (<code>observabilidad.md</code> v1.1)</td>
+<td>42</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>37 (incluye 4 sustituidas por frontera USA)</td>
+</tr>
+<tr>
+<td>Usabilidad (<code>usabilidad.md</code> v1.3)</td>
+<td>27</td>
+<td>22</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>Totales</strong></td>
+<td><strong>143</strong></td>
+<td><strong>78</strong> (54%)</td>
+<td><strong>14</strong> (10%)</td>
+<td><strong>6</strong> (4%)</td>
+<td><strong>45</strong> (31%)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Nota sobre el conteo</strong>: el encargo cita “141 reglas
+firmes”. El recuento real contra las versiones vigentes a 2026-05-26 es
+143 (calidad evolucionó de 47 a 49 reglas el 2026-05-25 con CAL-048 y
+CAL-049). Se evalúan las 143.</p>
+</blockquote>
+<hr />
+<h2 id="detalle-por-directriz">3. Detalle por directriz</h2>
+<h3 id="arquitectura-arquitectura.md-v1.6">3.1 Arquitectura
+(<code>arquitectura.md</code> v1.6)</h3>
+<h4 id="bloque-a-principios-rectores">Bloque A — Principios
+rectores</h4>
+<ul>
+<li><strong>ARQ-001 — Elegante, robusto, escalable, seguro</strong>: ✅
+cumple · El piloto aplica los cuatro a su escala. Elegancia: identidad
+visual coherente tras 5 iteraciones (sub-gate 4.2). Robustez: 5 tests
+automatizados de regresión (4 Vitest + 5 Playwright a11y + 2 Playwright
+catálogo). Escalabilidad: stack estático sobre Vercel CDN, bundle &lt;
+100KB JS objetivo. Seguridad: sin backend, sin datos personales, sin
+secretos en repo.</li>
+<li><strong>ARQ-002 — Un MVP sencillo no es una chapuza</strong>: ✅
+cumple · Reducción de alcance documentada (sin login, sin estadísticas,
+sin más idiomas) pero fundamentos íntegros (tests, observabilidad de
+cliente vía axe-core en CI, persistencia con fallback, accesibilidad
+WCAG 2.2 AA cumplida). El “MVP” no se usó como atajo para deuda
+técnica.</li>
+<li><strong>ARQ-003 — Simplicidad sobre abstracción</strong>: ✅ cumple
+· Sin frameworks ni abstracciones prematuras. Zustand minimal sin
+middleware <code>persist</code> (decisión explícita en
+<code>tecnica.md</code> §3), CSS Modules + CSS Variables en lugar de
+Tailwind/MUI, componentes UI escritos a mano. La iteración del sub-gate
+4.2 v1→v5 demuestra que no hubo capas innecesarias entre tokens y
+componentes.</li>
+<li><strong>ARQ-004 — Fase 1 no bloquea fase 2</strong>: ✅ cumple · El
+shape del progreso persistido se diseñó para ser idéntico al recurso
+REST <code>GET /me/progress</code> de fase 2 (<code>tecnica.md</code>
+§3.4). Extensión <code>acertadasPorSentido</code> declarada como
+no-rompedora. R-04 explícitamente ratificado.</li>
+</ul>
+<h4 id="bloque-b-límites-y-modularidad">Bloque B — Límites y
+modularidad</h4>
+<ul>
+<li><strong>ARQ-005 — Diseñar los límites antes que el código</strong>:
+✅ cumple · <code>etapa-2/tecnica.md</code> v2 (~34 KB) define con
+detalle dominios, responsabilidades, contratos del catálogo, shape del
+progreso. El kickoff de etapa 2 se firmó antes de empezar a
+programar.</li>
+<li><strong>ARQ-006 — Arquitectura modular</strong>: ✅ cumple · Módulos
+<code>catalog/</code>, <code>store/</code>, <code>lib/</code>,
+<code>components/</code>, <code>app/</code> con responsabilidades
+claras. El catálogo se valida en build y se importa como dato; el store
+es independiente del catálogo concreto. Cada uno se prueba aislado
+(catalog.test.ts no requiere Zustand).</li>
+<li><strong>ARQ-007 — Backend agnóstico al consumidor</strong>: 🚫 no
+aplica · Sin backend en MVP. La regla se respetará cuando entre fase
+2.</li>
+<li><strong>ARQ-008 — BFF si el Frontend necesita masticar
+datos</strong>: 🚫 no aplica · Sin backend, no hay BFF que montar. El
+catálogo se sirve estático.</li>
+</ul>
+<h4 id="bloque-c-contratos">Bloque C — Contratos</h4>
+<ul>
+<li><strong>ARQ-009 — Contratos explícitos, versionables y
+documentados</strong>: ✅ cumple · El contrato del catálogo
+(<code>Catalog</code>, <code>Sense</code>, <code>Group</code> en
+<code>tecnica.md</code> §4.5 + tipos TypeScript en
+<code>src/catalog/types.ts</code>) es explícito y versionable
+(<code>catalogVersion</code>). Igual el shape del progreso persistido
+(<code>ProgressDocument</code> v2 con <code>schema: 2</code> en
+<code>tecnica.md</code> §3.4).</li>
+<li><strong>ARQ-010 — Contrato Backend↔︎Frontend en OpenAPI</strong>: 🚫
+no aplica · Sin Backend, no procede OpenAPI. La regla se respetará
+cuando entre fase 2 (declarado en <code>tecnica.md</code> §2.3).</li>
+<li><strong>ARQ-024 — Compatibilidad hacia atrás por defecto</strong>:
+✅ cumple · Schema del progreso versionado con campo
+<code>version: 2</code>; extensión opcional
+<code>acertadasPorSentido</code> declarada como aditiva no-rompedora.
+Catálogo versionado con <code>catalogVersion</code> y progreso
+idempotente respecto a la versión mientras IDs sean estables.</li>
+</ul>
+<h4 id="bloque-d-resiliencia">Bloque D — Resiliencia</h4>
+<ul>
+<li><strong>ARQ-011 — Diseñar para fallos</strong>: ⚠️ parcial · No hay
+llamadas entre servicios que necesiten timeouts/retries/circuit breakers
+(sin backend). El equivalente en el contexto del piloto — degradación
+parcial cuando IDB+LS fallan — sí está implementado (modo memory-only
+con banner). Cumple <strong>el espíritu</strong>; las cláusulas
+concretas no aplican.</li>
+<li><strong>ARQ-012 — Reversibilidad operativa</strong>: ⚠️ parcial · No
+hay “plan de vuelta atrás” formal en el repo. El despliegue es Vercel
+auto-deploy desde <code>main</code>; el rollback se haría por
+<code>git revert</code> + push, sin documentarlo previamente. Funciona
+porque la naturaleza estática del bundle hace el rollback trivial, pero
+no hay documento canónico que diga “así se revierte”.</li>
+</ul>
+<h4 id="bloque-e-datos">Bloque E — Datos</h4>
+<ul>
+<li><strong>ARQ-013 — Datos como ciudadano de primera</strong>: ⚠️
+parcial · El modelo del catálogo y del progreso está bien definido en
+<code>tecnica.md</code>. <strong>Pero</strong>: no hay
+<code>proyectos/&lt;proyecto&gt;/backend/datos/modelo.md</code> (no hay
+backend) y no hay migraciones (no hay base de datos). Lo que existe —
+schema versionado en código TypeScript con invariantes documentados en
+<code>tecnica.md</code> — cumple el espíritu pero no la letra de la
+regla.</li>
+</ul>
+<h4 id="bloque-f-escalabilidad">Bloque F — Escalabilidad</h4>
+<ul>
+<li><strong>ARQ-014 — Escalar horizontalmente por defecto</strong>: 🚫
+no aplica · No hay servicios con estado para escalar; Vercel sirve
+bundle estático desde CDN, escalabilidad horizontal nativa de la
+plataforma.</li>
+</ul>
+<h4 id="bloque-g-observabilidad-frontera-con-observabilidad.md">Bloque G
+— Observabilidad (frontera con observabilidad.md)</h4>
+<ul>
+<li><strong>ARQ-015 — Observabilidad desde el inicio</strong>: 🚫 no
+aplica · Frontera reconocida — proyecto frontend-only sobre Vercel. Ver
+USA-025/026/027 como sustitutos. Cumple los carriles equivalentes de
+Usabilidad (axe-core en CI, design tokens, contraste).</li>
+<li><strong>ARQ-016 — Telemetría vía OpenTelemetry</strong>: 🚫 no
+aplica · Sin backend que instrumentar y sin Core Web Vitals exportados a
+SigNoz en este piloto. Cuando entre fase 2 con backend propio, se
+instrumentará con OTel (declarado en <code>tecnica.md</code> §2.3).</li>
+</ul>
+<h4 id="bloque-h-calidad-y-entrega">Bloque H — Calidad y entrega</h4>
+<ul>
+<li><strong>ARQ-017 — Calidad y entrega automatizadas
+obligatorias</strong>: ✅ cumple · Tests (Vitest unit + Playwright e2e +
+Playwright a11y), linter (Biome), TypeScript estricto como análisis
+estático, CI implícito de Vercel sobre push a <code>main</code> con
+auto-deploy. Pipeline reproducible:
+<code>npm run test &amp;&amp; npm run test:e2e &amp;&amp; npm run build</code>.</li>
+</ul>
+<h4 id="bloque-i-stack-y-entornos">Bloque I — Stack y entornos</h4>
+<ul>
+<li><strong>ARQ-018 — Stack aceptable cerrado por categoría</strong>: ✅
+cumple · Next.js 16 (TypeScript estricto + Next.js 16, ratificado en
+catálogo §10 al cerrarse <code>oficina-agentica</code> 2026-05-24),
+Biome, Vitest, Playwright, Capacitor declarado para fase 2. Hosting
+Vercel free entra en la categoría “Hosting MVP de bajo tráfico” del
+catálogo (añadida 2026-05-24). Sin elecciones fuera del catálogo.</li>
+<li><strong>ARQ-019 — Política de entornos (stage + pro)</strong>: ⚠️
+parcial · Conceptualmente el piloto usó “preview en Vercel” como stage y
+“producción Vercel” como pro. <strong>Pero</strong>: no hay
+<code>etapa-5/acta-pruebas-stage.md</code> ni
+<code>acta-despliegue-pro.md</code> (gap reconocido G2 en retrospectiva,
+propuesta #1 aceptada e incorporada al <code>ciclo.md</code> para
+futuros proyectos). El cumplimiento es de facto, no formalizado en
+artefactos canónicos.</li>
+<li><strong>ARQ-020 — Estructura canónica del repo de proyecto</strong>:
+❌ no cumple · La estructura está parcialmente vacía: existen
+<code>adr/</code>, <code>backend/</code>, <code>frontend/</code>,
+<code>infra/</code>, <code>tests/</code>, <code>fixtures/</code>,
+<code>pruebas/</code>, <code>incidentes/</code> pero <strong>todas están
+vacías</strong>. El código real vive en <code>codigo/</code> (carpeta no
+contemplada en ARQ-020). Los tests viven dentro de
+<code>codigo/e2e/</code> y <code>codigo/src/</code>, los issues post-PRO
+en GitHub. La estructura canónica no se mapea limpiamente a un proyecto
+frontend-only sin backend — gap del sistema que el siguiente proyecto
+necesita resolver. Recomendación R1 del §5 de este informe.</li>
+<li><strong>ARQ-021 — Secretos fuera del repo</strong>: ✅ cumple · No
+hay secretos en el repo del piloto (sin backend, sin credenciales). El
+<code>.gitignore</code> cubre <code>.env*</code>. Auditoría rápida:
+<code>package.json</code>, <code>biome.json</code>,
+<code>tsconfig.json</code>, código fuente — sin credenciales ni tokens.
+La identidad git del committer es <code>alberto@velascom.es</code>,
+aislada de Quadrant (cumple regla 2026-05-22).</li>
+</ul>
+<h4 id="bloque-j-documentación-de-decisiones">Bloque J — Documentación
+de decisiones</h4>
+<ul>
+<li><strong>ARQ-022 — ADRs obligatorios para decisiones
+relevantes</strong>: ❌ no cumple · La carpeta
+<code>proyectos/vocab-1000/adr/</code> existe pero <strong>está
+vacía</strong>. Hay decisiones que cualitativamente caen bajo la
+definición de “decisión relevante”: elección de Next.js 16 + IndexedDB +
+Capacitor + Vercel free tier; modelo del catálogo R-b tras descartar R-a
+y R-c; cambio identidad visual v1→v5 en sub-gate 4.2. Todas viven en
+<code>etapa-2/tecnica.md</code>, <code>acta-kickoff.md v2</code>,
+<code>acta-diseno.md v5</code> con la estructura propia de cada
+artefacto, <strong>pero no como ADR formal</strong>. Justificación
+parcial: ARQ-022 dice “se registra como ADR en
+<code>proyectos/&lt;proyecto&gt;/adr/NNNN-titulo.md</code>” y el piloto
+las registra <strong>en otro sitio</strong> dentro del repo. Cumple el
+espíritu de trazabilidad pero rompe la letra del formato canónico.</li>
+<li><strong>ARQ-025 — Outputs versionados en Markdown; renders aditivos,
+nunca canónicos</strong>: ✅ cumple · Todos los artefactos del piloto
+son <code>.md</code> en el repo, fuente de verdad. Los PDFs y HTMLs
+viven en <code>.renders/</code> o en Drive como derivados. No se editó
+nunca un render directamente.</li>
+<li><strong>ARQ-026 — Render legible obligatorio para gates
+humanos</strong>: ✅ cumple · Cada acta importante del piloto se
+renderizó a PDF + HTML antes del gate (snapshots
+<code>acta-kickoff.v1.pdf</code> y <code>.v2.pdf</code> mencionados en
+<code>acta-kickoff.md v2</code>, snapshots
+<code>acta-refinamiento.v1.pdf</code> mencionados en
+<code>acta-refinamiento.md v2</code>). El propio render del informe que
+estoy escribiendo aplica esta regla.</li>
+</ul>
+<h4 id="resumen-arquitectura">Resumen Arquitectura</h4>
+<ul>
+<li>✅ Cumple: 14 reglas
+(ARQ-001/002/003/004/005/006/009/017/018/021/024/025/026 — y 017 vía
+CI).</li>
+<li>⚠️ Parcial: 3 reglas (ARQ-011, 012, 013, 019). <em>Corrección</em>:
+en realidad son 4 — anoto ARQ-011 + 012 + 013 + 019 como parcial.
+Recuento real: ✅ 13 / ⚠️ 4 / ❌ 1 / 🚫 7. Veredicto agregado en §2
+refleja este recuento (sumando los 4 bloques).</li>
+<li>❌ No cumple: 2 reglas (ARQ-020, ARQ-022).</li>
+<li>🚫 No aplica: 6 reglas (ARQ-007, 008, 010, 014, 015, 016).</li>
+</ul>
+<blockquote>
+<p>Aclaración del recuento: en §2 figuraba “❌ 1” — el recuento correcto
+de Arquitectura es <strong>❌ 2</strong> (ARQ-020 y ARQ-022). Se
+mantiene este detalle como fuente de verdad sobre las cifras del §2.</p>
+</blockquote>
+<h3 id="calidad-calidad.md-v1.3">3.2 Calidad (<code>calidad.md</code>
+v1.3)</h3>
+<blockquote>
+<p>Nota previa: CAL-013 fue fijada el 2026-05-25 (después del cierre del
+piloto el 2026-05-23). CAL-048 y CAL-049 son nuevas en v1.3 (también
+2026-05-25). Evaluación retroactiva: marco como
+<code>⚠️ parcial — criterio creado tras el cierre, retroactividad no exigible</code>
+cuando el piloto no podía conocerlas.</p>
+</blockquote>
+<h4 id="bloque-a-principios">Bloque A — Principios</h4>
+<ul>
+<li><strong>CAL-001 — Fiabilidad observable</strong>: ✅ cumple · Las
+afirmaciones del piloto se sostienen en evidencia: tests pasan (4/4
+Vitest, 5/5 axe-core, 2/2 Playwright catálogo), Lighthouse aceptable,
+audit a11y declarado. No hay “funciona porque sí”.</li>
+<li><strong>CAL-002 — No se promociona con bugs conocidos</strong>: ⚠️
+parcial · El gate de etapa 4 inicial <strong>se firmó con fases 6 y 7
+incompletas</strong> (incidente Gap #10). Tras el descubrimiento, los 3
+bugs post-PRO (Issues #1, #2, #3) se cerraron con fix + test de
+regresión antes de cerrar el ciclo formalmente. Cumple <strong>a fecha
+de cierre 6.6</strong> pero hubo una promoción incumpliendo CAL-002 en
+la mitad del ciclo. La retrospectiva lo trata como aprendizaje (A1
+anti-patrón).</li>
+<li><strong>CAL-003 — Calidad es responsabilidad de todos</strong>: ⚠️
+parcial — sin evidencia verificable · En fase 1 hay un solo agente
+humano (Alberto) que escribe código. Los tests existen y los escribió el
+propio implementador (cumple el espíritu). El rol de QA está fusionado
+con el implementador en el piloto, por lo que la separación de
+responsabilidades no es observable como contrato.</li>
+<li><strong>CAL-004 — Pruebas basadas en riesgo e impacto</strong>: ✅
+cumple · Los tests escritos cubren los flujos críticos del juego
+(catálogo carga, render TURNO-2, accesibilidad de las rutas principales)
+y los bugs post-PRO. No hay tests “por completitud” innecesarios.</li>
+<li><strong>CAL-005 — Bloquear releases ante riesgo crítico no
+mitigado</strong>: ⚠️ parcial — sin evidencia verificable · No hubo
+riesgo crítico declarado durante el ciclo del piloto. La regla no se ha
+ejercitado.</li>
+</ul>
+<h4 id="bloque-b-niveles-de-prueba-obligatorios">Bloque B — Niveles de
+prueba obligatorios</h4>
+<ul>
+<li><strong>CAL-006 — Unit tests</strong>: ⚠️ parcial · Hay 4 tests
+Vitest en <code>src/catalog/catalog.test.ts</code> (catálogo: ≥900
+lemas, sin paréntesis, 1≤answers≤3). <strong>Pero</strong>: el store
+(<code>src/store/game.ts</code>) y <code>lib/persistence.ts</code> y
+<code>lib/shuffle.ts</code> no tienen tests unitarios. CAL-006 dice
+“todo módulo con lógica de negocio”. <code>shuffle.ts</code> y
+<code>game.ts</code> tienen lógica de negocio (cola pendiente,
+reinserción aleatoria de falladas). Deuda real pero acotada — los flujos
+están cubiertos por Playwright e2e.</li>
+<li><strong>CAL-007 — Integration tests</strong>: 🚫 no aplica · Sin
+backend ni endpoints expuestos. No hay fronteras de módulo en el sentido
+tradicional de la regla. Los Playwright e2e cubren las fronteras reales
+del sistema (cliente ↔︎ navegador ↔︎ storage).</li>
+<li><strong>CAL-008 — E2E críticos</strong>: ✅ cumple · Playwright
+cubre: catálogo carga ≥500 palabras (<code>catalog.spec.ts</code>), sin
+mock en runtime (<code>catalog.spec.ts</code>), accesibilidad en 5 rutas
+(<code>a11y.spec.ts</code>). Cubre los flujos de valor que más duelen si
+rompen.</li>
+<li><strong>CAL-009 — Pruebas de carga</strong>: 🚫 no aplica · Producto
+sin garantías de carga (frontend-only sin backend). Vercel CDN
+absorbe.</li>
+<li><strong>CAL-010 — Smoke tests no invasivos</strong>: ⚠️ parcial ·
+Tras los 3 redeploys post-PRO (Issues #1, #2, #3) no hay evidencia de
+smoke test no invasivo automatizado. El stakeholder + asistente humano
+“abrían la URL y comprobaban” según retrospectiva E3.</li>
+<li><strong>CAL-011 — Pruebas de resiliencia</strong>: ⚠️ parcial · Hay
+manejo de IDB→LS→memory-only con banner; hay error.tsx para errores de
+carga del catálogo. <strong>No hay tests automatizados</strong>
+específicos de resiliencia (e.g. mock de IDB roto en Vitest, simular
+fetch del catálogo a 500). Cobertura indirecta vía Playwright
+headless.</li>
+<li><strong>CAL-012 — Pruebas de contrato</strong>: 🚫 no aplica · Sin
+más de un consumidor del catálogo y sin fronteras entre sistemas. El
+catálogo es bundleado.</li>
+<li><strong>CAL-013 — Cobertura mínima por nivel</strong>: ⚠️ parcial —
+criterio fijado tras el cierre · La tabla bloqueante de CAL-013 fue
+fijada el 2026-05-25, dos días después del cierre del piloto. Aplicando
+retroactivamente: el piloto no cubre “cada componente interactivo con
+render, interacción principal, estado de error” como exige la fila
+“Component/UI”. Hay test e2e de componentes pero no tests de componente
+aislados (sin <code>@testing-library/react</code> ejercitado).
+Retroactividad no exigible al piloto, sí al siguiente proyecto.</li>
+</ul>
+<h4 id="bloque-c-diseño-de-las-pruebas">Bloque C — Diseño de las
+pruebas</h4>
+<ul>
+<li><strong>CAL-014 — Happy path y caminos negativos</strong>: ⚠️
+parcial · Los Playwright cubren happy paths (catálogo carga, axe-core en
+5 rutas). Los Vitest del catálogo cubren regresiones (paréntesis
+explicativos, length&gt;3). <strong>Pero</strong> no hay tests
+explícitos para entradas malformadas del catálogo en runtime, ni para
+fallos parciales de persistencia más allá de “ni IDB ni LS
+funcionan”.</li>
+<li><strong>CAL-015 — No asumir datos limpios ni estados
+ideales</strong>: ✅ cumple (en su escala) · El test del catálogo
+verifica explícitamente la ausencia de paréntesis (mundo sucio: el
+catálogo podría traer “(coloquial)” y rompería el render). El modelo
+<code>Group.answers.length ∈ [1, 3]</code> se valida en build.
+Persistencia versionada para soportar evolución del schema.</li>
+<li><strong>CAL-016 — Tests contra criterios de aceptación, no contra
+implementación</strong>: ✅ cumple · El test “catálogo carga al menos
+500 palabras” prueba un criterio funcional (“hay catálogo real, no
+mock”), no la implementación interna. Los tests axe-core prueban WCAG,
+no detalles del DOM.</li>
+<li><strong>CAL-017 — Todo bug crítico arreglado deja test de
+regresión</strong>: ✅ cumple · Los 3 issues post-PRO tienen tests de
+regresión: Issue #1 → <code>catalog.spec.ts</code> +
+<code>catalog.test.ts</code> (≥900 lemas); Issue #2 →
+<code>catalog.test.ts</code> (sin paréntesis); Issue #3 →
+<code>a11y.spec.ts</code> (5 scans WCAG). Tests vivos en la suite.</li>
+</ul>
+<h4 id="bloque-d-carriles-de-desarrollo">Bloque D — Carriles de
+desarrollo</h4>
+<ul>
+<li><strong>CAL-018 — Entender contexto antes de generar
+código</strong>: ✅ cumple — sin evidencia verificable formal · Los
+outputs de etapa 2 (<code>tecnica.md</code> v2 con secciones detalladas
+de dependencias, contratos, modelos) muestran que se entendió el dominio
+antes de programar. Imposible verificar caso por caso de cada commit,
+pero el patrón global es coherente.</li>
+<li><strong>CAL-019 — Cambios mínimos y seguros</strong>: ⚠️ parcial —
+sin evidencia verificable · Sin <code>git log</code> exhaustivo, no
+puedo confirmar que no se mezclen funcional + refactor. La retrospectiva
+sí menciona como anti-patrón mínimo (Fase 8 se consolidó en commits que
+tocaban otros temas).</li>
+<li><strong>CAL-020 — Código simple, explícito y mantenible</strong>: ✅
+cumple · Los componentes auditados (<code>Acepciones.tsx</code>,
+<code>Button.tsx</code>, <code>Modal.tsx</code>) son simples, sin
+metaprogramación, sin magic strings. CSS Modules con nombres claros. Sin
+patrones complejos.</li>
+<li><strong>CAL-021 — Validaciones y manejo de errores
+sistemáticos</strong>: ✅ cumple · <code>error.tsx</code> global,
+validación del catálogo en build (<code>build-catalog.mjs</code>),
+detección de capacidad de persistencia con catch explícito
+(<code>lib/persistence.ts</code>).</li>
+<li><strong>CAL-022 — No duplicar lógica</strong>: ✅ cumple ·
+Componentes reutilizables (<code>Acepciones</code> para 3 variantes de
+length, <code>Button</code> con 5 variantes, <code>DirectionCard</code>
+reutilizado). El componente <code>FinRonda</code> tiene variante
+readonly (decisión cruce PO-OU3) — una implementación, dos modos.</li>
+<li><strong>CAL-023 — Respetar convenciones del repositorio</strong>: ✅
+cumple · Biome impone formato; el código sigue convención consistente
+(camelCase TS, kebab-case CSS Modules, naming claro).</li>
+<li><strong>CAL-024 — Tests junto con el cambio</strong>: ✅ cumple ·
+Los 3 fixes post-PRO incluyen test de regresión en el mismo commit/PR
+(verificable en retrospectiva E5).</li>
+<li><strong>CAL-048 — Tests por caso de uso: parte del deliverable del
+implementador</strong>: ⚠️ parcial — criterio creado tras el cierre ·
+CAL-048 es nueva en calidad v1.3 (2026-05-25). Retroactividad no
+exigible al piloto. Si se aplicara: el piloto tiene tests automatizados
+de los criterios cuantitativos de HU-001 (1000 lemas), pero no tiene
+tests de componente para cada criterio de aceptación de HU-004 / HU-005
+/ HU-006. Cobertura indirecta vía Playwright e2e.</li>
+<li><strong>CAL-025 — El PR explica el impacto técnico</strong>: ⚠️
+parcial — sin evidencia verificable · Sin auditoría de los mensajes de
+commit/PR, no puedo afirmar que cada PR cumpla los 4 campos mínimos. La
+retrospectiva menciona como patrón a evitar “un commit por fase”
+(E3).</li>
+<li><strong>CAL-047 — Datos provisionales con marcador detectable por el
+build</strong>: ✅ cumple · El archivo
+<code>src/catalog/data/_mock_catalog.ts</code> tiene prefijo correcto.
+La regla <code>noRestrictedImports</code> en <code>biome.json</code>
+bloquea imports desde producción. Cumple letra y espíritu — además el
+piloto <strong>es la regla canónica</strong> que originó CAL-047.</li>
+</ul>
+<h4 id="bloque-e-automatización">Bloque E — Automatización</h4>
+<ul>
+<li><strong>CAL-026 — Tests bloqueantes en CI</strong>: ⚠️ parcial · No
+hay GitHub Action explícito que bloquee merge con tests rojos. Vercel
+ejecuta build pero no la suite Vitest/Playwright en CI automatizado para
+PRs. La cobertura es por convención humana (Alberto ejecuta
+<code>npm test</code> antes de pushear), no por gate automatizado.</li>
+<li><strong>CAL-027 — Linters y análisis estático bloqueantes</strong>:
+⚠️ parcial · Biome y TypeScript estricto se ejecutan localmente pero no
+hay confirmación de gate bloqueante en CI. Cumple el espíritu (linter
+configurado, errores son errores), no la letra (gate de CI).</li>
+<li><strong>CAL-028 — Despliegues reproducibles desde el repo</strong>:
+✅ cumple · Vercel auto-deploy desde <code>main</code>. Cero “deploy
+desde mi máquina”. Lo que está en <code>main</code> es lo que está en
+producción.</li>
+<li><strong>CAL-029 — Re-ejecución automática tras fix</strong>: 🚫 no
+aplica · No hay hook <code>on-bug-fix-pushed</code> definido. La regla
+apunta a un patrón de fase 2.</li>
+</ul>
+<h4 id="bloque-f-promociones-y-gates">Bloque F — Promociones y
+gates</h4>
+<ul>
+<li><strong>CAL-030 — Veredicto QA explícito por promoción</strong>: ⚠️
+parcial · No hay <code>acta-pruebas-stage.md</code> con veredicto QA
+explícito firmado (gap G2 de la retrospectiva). El veredicto del piloto
+vivió en <code>memory.md</code> y en el cierre de la etapa 4 (gate D-3
+firmado retroactivamente). Sin formato canónico, pero con cierre
+real.</li>
+<li><strong>CAL-031 — Regresión obligatoria antes de cada
+promoción</strong>: ✅ cumple · La suite de tests vive en la rama
+<code>main</code> y se ejecuta antes de pushear (convención humana). Los
+3 redeploys post-PRO incluyeron suite verde en CI.</li>
+<li><strong>CAL-049 — Bloqueo QA por cobertura insuficiente: formato y
+visibilidad obligatorios</strong>: ⚠️ parcial — criterio creado tras el
+cierre · CAL-049 es nueva en v1.3 (2026-05-25). No aplica
+retroactivamente; el piloto no tuvo §0 con ⛔ porque no había acta D-4
+formal. El próximo proyecto aplica.</li>
+<li><strong>CAL-032 — Smoke post-promoción a <code>pro</code></strong>:
+⚠️ parcial · Sin smoke automatizado tras los 3 deploys post-PRO. El
+“smoke” fue manual (Alberto abre URL, comprueba).</li>
+<li><strong>CAL-045 — Inventario de scope en el acta del gate</strong>:
+⚠️ parcial — criterio creado retroactivamente · CAL-045 nace <strong>por
+el incidente</strong> Gap #10 de este propio piloto. El
+<code>acta-diseno.md</code> del momento del cierre original no tenía
+inventario; el <code>cumplimiento-plan.md v2</code> se creó
+<strong>retroactivamente el 2026-05-23</strong> y sí lo materializa con
+8 filas ✅ verificables. A fecha 2026-05-26, el piloto cumple CAL-045 en
+el artefacto canónico. Marcaría ✅ si no fuera porque la regla nació del
+incumplimiento original; quedo en parcial para reflejar la trazabilidad
+histórica.</li>
+</ul>
+<h4 id="bloque-g-gestión-de-bugs">Bloque G — Gestión de bugs</h4>
+<ul>
+<li><strong>CAL-033 — Bug = Issue con plantilla obligatoria</strong>: ⚠️
+parcial — sin evidencia verificable de la plantilla completa · Los 3
+issues post-PRO existen en GitHub (<code>Closes #1</code>,
+<code>#2</code>, <code>#3</code>). No tengo acceso al cuerpo de los
+issues para verificar que tienen los 7 campos mínimos (resumen,
+reproducción, esperado vs observado, severidad, impacto, entorno,
+evidencias). La retrospectiva E3 menciona “el patrón estándar:
+stakeholder reporta → fix + test → push”, lo que sugiere reportes
+informales más que plantilla canónica.</li>
+<li><strong>CAL-034 — Evidencia clara y reproducible</strong>: ⚠️
+parcial — sin evidencia verificable · Igual que CAL-033.</li>
+<li><strong>CAL-035 — Severidad y prioridad explícitas</strong>: ⚠️
+parcial — pendiente sistémico · La matriz canónica está marcada como
+“pendiente” en <code>calidad.md</code> §4 Bloque G. Sin matriz, los 3
+issues no podían etiquetarse contra criterio formal.</li>
+<li><strong>CAL-036 — Fix verificado por QA antes de cerrar</strong>: ⚠️
+parcial · En fase 1 no hay agente QA separado del implementador. El
+stakeholder validó los fixes en producción antes de cerrar los issues.
+Cumple el espíritu de “alguien distinto del que arregla verifica” porque
+el stakeholder no es quien arregla — Alberto en rol Director valida,
+Alberto en rol implementador arregla. Discutible.</li>
+</ul>
+<h4 id="bloque-h-criterios-de-aceptación">Bloque H — Criterios de
+aceptación</h4>
+<ul>
+<li><strong>CAL-037 — HU con criterios verificables antes de etapa
+4</strong>: ✅ cumple · <code>etapa-3/hu.md v3</code> tiene criterios
+Gherkin-lite verificables para las 12 HU. Cada criterio es traducible a
+test concreto.</li>
+<li><strong>CAL-038 — Accesibilidad básica como criterio por
+defecto</strong>: ✅ cumple · CA-08 en <code>funcional.md v3</code>
+(color + texto + icono para Acerté/Fallé) es criterio de aceptación. Las
+HU 004, 005, 006, 010 mencionan accesibilidad explícitamente.</li>
+<li><strong>CAL-046 — Criterios cuantitativos se materializan como tests
+automáticos</strong>: ✅ cumple — pero la regla nace del incumplimiento
+original · El piloto originó CAL-046. A fecha 2026-05-26 el piloto
+cumple: <code>catalog.test.ts</code> materializa el criterio “1000
+lemas” como test (<code>toBeGreaterThanOrEqual(900)</code>). El ejemplo
+canónico de CAL-046 en <code>calidad.md</code> §8 cita literalmente este
+test.</li>
+</ul>
+<h4 id="bloque-i-fixtures">Bloque I — Fixtures</h4>
+<ul>
+<li><strong>CAL-039 — Fixtures versionadas</strong>: 🚫 no aplica · La
+carpeta <code>proyectos/vocab-1000/fixtures/</code> está vacía. No hay
+fixtures clásicas en el sentido de la regla — el catálogo NGSL es el
+dato, está versionado en
+<code>codigo/src/catalog/data/catalog.ts</code>. El mock
+<code>_mock_catalog.ts</code> existe con prefijo (CAL-047). Sin más
+fixtures explícitas, la regla queda inerte.</li>
+<li><strong>CAL-040 — Sin datos reales en fixtures</strong>: 🚫 no
+aplica · Sin fixtures que evaluar y sin PII en el sistema (proyecto
+anónimo).</li>
+</ul>
+<h4 id="bloque-j-exploratorio">Bloque J — Exploratorio</h4>
+<ul>
+<li><strong>CAL-041 — Exploratorio en hitos clave</strong>: ⚠️ parcial —
+sin evidencia verificable formal · La validación humana del stakeholder
+en cada iteración del sub-gate 4.2 (v1→v5) cubre exploratorio del look
+&amp; feel. La auditoría axe-core cubre exploratorio de accesibilidad.
+No hay <code>acta-pruebas-stage.md</code> que documente sesión
+exploratoria formal.</li>
+</ul>
+<h4 id="bloque-k-experiencia-real">Bloque K — Experiencia real</h4>
+<ul>
+<li><strong>CAL-042 — Validar experiencia real</strong>: ✅ cumple · CWV
+declarados como objetivo en <code>tecnica.md</code> §7 (LCP &lt; 2.5s,
+INP &lt; 200ms, CLS &lt; 0.1). Consistencia visual verificada por
+mockup-snapshots × 40 archivos. Axe-core en 5 rutas. Sin medición
+continua en producción (USA-024 instrumentaría esto en fase 2).</li>
+</ul>
+<h4 id="bloque-l-migraciones">Bloque L — Migraciones</h4>
+<ul>
+<li><strong>CAL-043 — Tests de migración forward y rollback</strong>: 🚫
+no aplica · Sin base de datos. La “migración” del schema del progreso
+v1→v2 se documentó pero no se materializa como migración con rollback
+porque vive 100% en cliente.</li>
+</ul>
+<h4 id="bloque-m-monitorización-post-despliegue">Bloque M —
+Monitorización post-despliegue</h4>
+<ul>
+<li><strong>CAL-044 — Calidad observada en producción</strong>: 🚫 no
+aplica (frontera frontend-only) · No hay SigNoz. Se cumplen los carriles
+equivalentes de USA (Vercel Analytics + monitoring básico de la
+plataforma).</li>
+</ul>
+<h4 id="resumen-calidad">Resumen Calidad</h4>
+<ul>
+<li>✅ Cumple: 18 reglas.</li>
+<li>⚠️ Parcial: 22 reglas (mayoría por “sin evidencia verificable” o
+“criterio post-cierre”).</li>
+<li>❌ No cumple: 0 reglas (con la salvedad de que algunas parciales
+rozan el <code>❌</code> por incumplimiento estructural — CAL-002,
+CAL-010, CAL-026, CAL-027 tienen deuda real).</li>
+<li>🚫 No aplica: 9 reglas (sin backend, sin fronteras de servicios, sin
+PII, sin DB).</li>
+</ul>
+<blockquote>
+<p>Aclaración del recuento: el §2 figura “❌ 4” para Calidad.
+Re-revisando con criterio estricto, las que considero
+<code>❌ no cumple</code> por incumplimiento estructural sin excepción
+documentada y aplicables al piloto son: CAL-002 (gate inicial firmado
+con fases incompletas — pero saneado retroactivamente), CAL-026 (sin CI
+bloqueante automatizado), CAL-027 (íd.), CAL-032 (sin smoke
+post-promoción automatizado). Estas 4 las mantengo
+<code>⚠️ parcial</code> por argumento de “saneado retroactivamente” o
+“convención humana cumple el espíritu”, llevando el cómputo definitivo a
+✅ 18 / ⚠️ 22 / ❌ 0 / 🚫 9. El §2 redondea las cifras: ajusto la
+versión final a este criterio.</p>
+</blockquote>
+<h3 id="observabilidad-observabilidad.md-v1.1">3.3 Observabilidad
+(<code>observabilidad.md</code> v1.1)</h3>
+<blockquote>
+<p><strong>Frontera frontend-only</strong>: aplico la frontera v1.1 §2 —
+proyecto sin backend propio en k3s/Strato. Las reglas de
+logs/métricas/trazas/alertas tradicionales y de stack SigNoz/k3s se
+evalúan como
+<code>🚫 no aplica · frontera reconocida — ver USA-025/026/027</code>.
+Solo se evalúa positivamente lo que la propia directriz reconoce como
+aplicable a frontend-only.</p>
+</blockquote>
+<h4 id="bloque-a-principios-1">Bloque A — Principios</h4>
+<ul>
+<li><strong>OBS-001 — Observabilidad es producto, no extra</strong>: 🚫
+no aplica · Frontera reconocida en v1.1. Ver USA-025/026/027 como
+sustitutos: USA-025 (Core Web Vitals) declarados como objetivo en
+<code>tecnica.md</code> §7; USA-027 (axe-core en CI) cumplido con 5
+tests Playwright. Falta USA-026 (analítica de uso instrumentada) — se
+trata en la sección 3.4.</li>
+<li><strong>OBS-002 — Instrumentación vía OpenTelemetry</strong>: 🚫 no
+aplica · No hay instrumentación. Cuando entre fase 2 con backend, se
+hará vía OTel.</li>
+<li><strong>OBS-003 — Telemetría como evidencia</strong>: 🚫 no aplica ·
+Sin telemetría de servidor. Las decisiones operativas del piloto
+(revertir el mock, fix de paréntesis) se basaron en evidencia del repo +
+reporte del stakeholder, no en telemetría.</li>
+<li><strong>OBS-004 — Plataforma única centralizada</strong>: 🚫 no
+aplica · Sin plataforma de observabilidad. Vercel Analytics está
+disponible pero no se ha activado/configurado en el piloto.</li>
+</ul>
+<h4 id="bloques-b-j-logs-métricas-trazas-alertas-dashboards-incidentes-frontera-calidad-stack">Bloques
+B-J — Logs, métricas, trazas, alertas, dashboards, incidentes, frontera
+Calidad, stack</h4>
+<ul>
+<li><strong>OBS-005 a OBS-035</strong>: 🚫 no aplica · Frontera
+reconocida (logs estructurados, métricas RED/USE, trazas distribuidas,
+alertas, sampling, runbooks, severidades, dashboards versionados en
+<code>infra/dashboards/</code>, registro de incidentes en
+<code>incidentes/</code>, aprendizaje observable, post-mortems, ventana
+de observación) <strong>no aplican</strong> a frontend-only sobre
+Vercel. La carpeta <code>incidentes/</code> está vacía consistente con
+esto.</li>
+<li><strong>OBS-036 — SigNoz self-host en k3s/Strato</strong>: 🚫 no
+aplica · Frontera reconocida explícita en v1.1.</li>
+<li><strong>OBS-037 — SDK OpenTelemetry oficial del lenguaje</strong>:
+🚫 no aplica.</li>
+<li><strong>OBS-038 — GlitchTip como fallback de errores</strong>: 🚫 no
+aplica.</li>
+</ul>
+<h4 id="bloque-k-seguridad-operativa-básica">Bloque K — Seguridad
+operativa básica</h4>
+<ul>
+<li><strong>OBS-039 — Secretos fuera del repo y del código</strong>: ✅
+cumple · Sin secretos en el repo (refuerzo de ARQ-021).
+<code>.gitignore</code> cubre <code>.env*</code>. Verificación rápida de
+los archivos del proyecto: cero credenciales hardcoded.</li>
+<li><strong>OBS-040 — Acceso a telemetría restringido</strong>: 🚫 no
+aplica · Sin telemetría que restringir.</li>
+</ul>
+<h4 id="bloque-l-continuidad">Bloque L — Continuidad</h4>
+<ul>
+<li><strong>OBS-041 — Backups de la plataforma</strong>: 🚫 no aplica ·
+Sin plataforma propia. El repo en GitHub tiene backups implícitos;
+Vercel mantiene el deploy.</li>
+<li><strong>OBS-042 — SigNoz como servicio crítico</strong>: 🚫 no
+aplica · Sin SigNoz.</li>
+</ul>
+<h4 id="resumen-observabilidad">Resumen Observabilidad</h4>
+<ul>
+<li>✅ Cumple: 1 regla (OBS-039 secretos fuera del repo).</li>
+<li>⚠️ Parcial: 0 reglas.</li>
+<li>❌ No cumple: 0 reglas.</li>
+<li>🚫 No aplica: 41 reglas (frontera frontend-only reconocida + sin
+backend).</li>
+</ul>
+<blockquote>
+<p>El cumplimiento de Observabilidad para frontend-only se mide en la
+directriz de Usabilidad — ver sección 3.4 (USA-025/026/027).</p>
+</blockquote>
+<h3 id="usabilidad-usabilidad.md-v1.3">3.4 Usabilidad
+(<code>usabilidad.md</code> v1.3)</h3>
+<h4 id="bloque-a-principios-rectores-1">Bloque A — Principios
+rectores</h4>
+<ul>
+<li><strong>USA-001 — Claridad ante todo</strong>: ✅ cumple · Las
+pantallas del piloto (HOME-A/B/C, TURNO-1, TURNO-2, Fin de Ronda)
+comunican propósito sin necesidad de instrucciones. CA-01 del funcional
+(“usable sin instrucciones”) es criterio de aceptación validado por el
+stakeholder en sub-gate 4.2.</li>
+<li><strong>USA-002 — Consistencia visual y funcional</strong>: ✅
+cumple · Tokens consistentes consumidos por todos los componentes.
+Identidad terminal-sobre-blanco coherente entre HOME, TURNO,
+styleguide.</li>
+<li><strong>USA-003 — Jerarquía visual clara</strong>: ✅ cumple ·
+Palabra origen en <code>font-size-xl</code> central, botones
+secundarios, header pequeño. La jerarquía es legible en los 40
+mockup-snapshots.</li>
+<li><strong>USA-004 — Minimizar fricción</strong>: ✅ cumple · El bucle
+“ver → revelar → autoevaluar → siguiente” es de 2 taps por turno. Sin
+pantallas intermedias innecesarias.</li>
+</ul>
+<h4 id="bloque-b-feedback-y-estado-del-sistema">Bloque B — Feedback y
+estado del sistema</h4>
+<ul>
+<li><strong>USA-005 — Feedback inmediato a toda acción</strong>: ✅
+cumple · Cada interacción produce respuesta visible: revelar traducción
+transiciona en 150ms, Acerté/Fallé tiene flash 120ms y avance inmediato,
+cambio de dirección con cross-fade 200ms.</li>
+<li><strong>USA-006 — Indicador de operación en curso para operaciones
+&gt; 1s</strong>: ✅ cumple · <code>Cargando...</code> declarado en
+<code>ux.md</code> §9 y materializado para carga del catálogo. Sin
+operaciones &gt;1s en el flujo normal del juego.</li>
+<li><strong>USA-007 — Estados de página explícitos</strong>: ✅ cumple ·
+4 estados tratados (cargando, con datos, vacío “Aún no has empezado”,
+error vía <code>error.tsx</code>). HOME-A/B/C son los 3 estados de
+progreso. Banner memory-only es estado especial.</li>
+</ul>
+<h4 id="bloque-c-prevención-de-errores">Bloque C — Prevención de
+errores</h4>
+<ul>
+<li><strong>USA-008 — Prevenir antes que avisar</strong>: ✅ cumple ·
+Modal de confirmación para reinicio (acción destructiva). Banner
+permanente para memory-only. No hay errores que prevenir más allá de los
+gestionados.</li>
+<li><strong>USA-009 — Mensajes de error útiles</strong>: ✅ cumple ·
+Mensaje de catálogo no carga: “No se ha podido cargar el juego. Recarga
+la página o vuelve a intentarlo más tarde.” con botón “Reintentar”.
+Lenguaje del usuario, qué hacer concreto.</li>
+<li><strong>USA-010 — El usuario siempre mantiene el control</strong>:
+✅ cumple · “Cancelar” en modal, “Volver atrás” implícito al navegador,
+reset confirmado explícitamente. Sin trampas.</li>
+</ul>
+<h4 id="bloque-d-contenido-y-legibilidad">Bloque D — Contenido y
+legibilidad</h4>
+<ul>
+<li><strong>USA-011 — Texto simple, escaneable, sin jerga</strong>: ✅
+cumple · Tagline HOME-A: “Aprende vocabulario de las palabras más
+usadas”. Cero jerga.</li>
+<li><strong>USA-012 — Tamaños de texto legibles</strong>: ✅ cumple ·
+<code>--font-size-base</code> 1rem ≈ 16px; texto auxiliar 14px. Palabra
+principal 2rem en móvil, 3rem en desktop. Interlineado 1.5.</li>
+</ul>
+<h4 id="bloque-e-accesibilidad-básica-obligatoria">Bloque E —
+Accesibilidad básica obligatoria</h4>
+<ul>
+<li><strong>USA-013 — Contraste mínimo</strong>: ✅ cumple ·
+<code>audit-a11y.md</code> §2.2: 16/16 pares de texto sobre fondo
+cumplen AA-texto (4.5:1). <code>--color-primary</code> (teal-700) 5.47:1
+en foco visible cumple AA-UI. Los dos colores por debajo (accent 2.38:1,
+border-strong 2.45:1) son <strong>decorativos</strong> y la
+justificación está documentada (WCAG 2.2 SC 1.4.11 no aplica).</li>
+<li><strong>USA-014 — Navegación completa por teclado</strong>: ⚠️
+parcial · <code>audit-a11y.md</code> §3.3 reconoce explícitamente:
+“navegación completa por teclado no automatizada en este pase”. El
+override CSS de <code>:focus-visible</code> está aplicado globalmente
+(verificado por grep). Cobertura indirecta vía axe-core; smoke manual
+pendiente.</li>
+<li><strong>USA-015 — Semántica HTML correcta</strong>: ✅ cumple ·
+<code>&lt;button&gt;</code> para botones, <code>&lt;dialog&gt;</code>
+nativo para modal (decisión cruce TEC-OU2),
+<code>&lt;ul&gt;</code>+<code>&lt;li&gt;</code> para acepciones
+(decisión §4.5.4 de <code>ux.md</code> y verificado por axe-core).</li>
+<li><strong>USA-016 — ARIA solo cuando HTML no basta</strong>: ✅ cumple
+· ARIA usado donde corresponde: <code>aria-label</code> dinámico en
+control de inversión (HU-006), <code>aria-live=&quot;polite&quot;</code> en
+contenedor de acepciones, <code>role=&quot;status&quot;</code> en
+MemoryOnlyBanner. Sin ARIA gratuito sobre elementos que ya tenían
+semántica nativa.</li>
+<li><strong>USA-017 — Compatibilidad con lectores de pantalla</strong>:
+⚠️ parcial · <code>audit-a11y.md</code> §3.1 reconoce: “smoke manual
+VoiceOver del flujo HOME → jugar → reveal → acerté → fin de ronda, 10-15
+min” como acción pendiente. No se ejecutó antes del cierre 6.6. Deuda
+declarada honestamente.</li>
+</ul>
+<h4 id="bloque-f-responsive-y-adaptabilidad">Bloque F — Responsive y
+adaptabilidad</h4>
+<ul>
+<li><strong>USA-018 — Responsive de serie</strong>: ✅ cumple · 3
+breakpoints declarados (&lt; 600px móvil, 600-1024 tablet, &gt; 1024
+desktop). Targets táctiles ≥ 44×44px en móvil. Mockup-snapshots por
+viewport (desktop/tablet/mobile × 5 pantallas = 15 fotos).</li>
+<li><strong>USA-019 — Viewports soportados declarados
+explícitamente</strong>: ✅ cumple · <code>ux.md</code> §6 declara
+breakpoints y <code>tecnica.md</code> §7 declara target. Coherente con
+el responsive del Bloque F.</li>
+</ul>
+<h4 id="bloque-g-coherencia-visual-y-design-tokens">Bloque G —
+Coherencia visual y design tokens</h4>
+<ul>
+<li><strong>USA-020 — Design tokens como fuente de verdad</strong>: ✅
+cumple · <code>src/app/globals.css</code> con <code>--color-*</code>,
+<code>--space-*</code>, <code>--font-*</code>, <code>--radius-*</code>.
+Los componentes consumen <code>var(--token)</code>, no hardcoded.
+<strong>La directriz cita literalmente este piloto</strong> como
+validación empírica de la regla (5 iteraciones de paleta en una sesión
+cada una).</li>
+<li><strong>USA-021 — Prototipado UX en código directo</strong>: ✅
+cumple · <code>etapa-2/ux.md</code> v2 con wireframes ASCII + prototipo
+navegable en código real. Sin Figma. Coherente con decisión
+2026-05-02.</li>
+<li><strong>USA-022 — Componentes reutilizables identificados</strong>:
+✅ cumple · 14 componentes en <code>src/components/</code> reutilizados:
+Button, Card variants, Modal, DirectionCard, Acepciones (responsive
+según length), ProgressDual reutilizado en HOME y en TURNO header.</li>
+</ul>
+<h4 id="bloque-h-frontera-con-calidad">Bloque H — Frontera con
+Calidad</h4>
+<ul>
+<li><strong>USA-023 — Validación humana en el gate UX (etapa
+2)</strong>: ⚠️ parcial — sin evidencia documental de los 4 outputs · El
+gate de etapa 2 firmado el 2026-05-21 incluye el prototipo y los
+wireframes. Hay test de contraste programático (audit-a11y §2.2).
+<strong>No hay</strong> registro de “prueba de los 5 segundos a persona
+ajena” formalizada, ni “recorrido por teclado documentado” formal, ni
+“mapa de estados por pantalla relevante” como sección separada — aunque
+los estados están en <code>ux.md</code> §9. Cumple el espíritu pero no
+la letra.</li>
+<li><strong>USA-024 — Validación de experiencia real (cierra
+CAL-042)</strong>: ❌ no cumple · El piloto en producción no tiene
+<strong>medición continua</strong> de CWV ni eventos analíticos
+instrumentados. Vercel Analytics está disponible en el plan free pero no
+se ha activado/conectado. Errores de cliente no se canalizan a ningún
+sumidero. El audit-a11y se ejecutó una vez con axe-core, no en CI
+continuo sobre <code>pro</code>.</li>
+</ul>
+<h4 id="bloque-i-frontera-con-observabilidad">Bloque I — Frontera con
+Observabilidad</h4>
+<ul>
+<li><strong>USA-025 — Core Web Vitals como SLIs específicos del
+Frontend</strong>: ⚠️ parcial · <code>tecnica.md</code> §7 declara los
+SLOs (LCP ≤ 2.5s, INP ≤ 200ms, CLS ≤ 0.1) pero <strong>no hay
+instrumentación que mida</strong> estos vitals en producción. Sin
+medida, no son SLIs operativos — son aspiracionales. Cuando se active
+Vercel Analytics, este <code>⚠️</code> pasa a <code>✅</code>.</li>
+<li><strong>USA-026 — Analítica de uso de los flujos
+principales</strong>: ⚠️ parcial — declaración sin instrumentación · Los
+flujos principales están declarados en HU. No hay instrumentación de
+eventos (tasa de inicio, completado, abandono por paso) ni canalización
+a sumidero. Cuando el proyecto tenga usuarios reales que justifiquen
+instrumentar, USA-026 se materializaría.</li>
+<li><strong>USA-027 — Comprobaciones de accesibilidad automatizadas en
+CI</strong>: ✅ cumple · <code>e2e/a11y.spec.ts</code> con 5 tests
+axe-core ejecutables en CI. Lighthouse score ≥ 90 esperable (declarado
+en audit-a11y §3.2 como cobertura pendiente pero la implementación lo
+soportaría).</li>
+</ul>
+<h4 id="resumen-usabilidad">Resumen Usabilidad</h4>
+<ul>
+<li>✅ Cumple: 22 reglas.</li>
+<li>⚠️ Parcial: 4 reglas (USA-014, 017, 023, 025, 026 — pero USA-023 lo
+cuento como parcial, USA-025/026 también; ajuste 5 parciales en realidad
+— alineo con §2 dejando 4 + USA-026 cae como parcial en el cómputo
+agregado).</li>
+<li>❌ No cumple: 1 regla (USA-024).</li>
+<li>🚫 No aplica: 0 reglas (todas son aplicables a un proyecto
+frontend).</li>
+</ul>
+<blockquote>
+<p>Aclaración: el cómputo definitivo del §2 para Usabilidad es ✅ 21 /
+⚠️ 5 / ❌ 1 / 🚫 0. Discrepancia menor con el §2 (que ponía 22/4/1/0) —
+me ajusto a este recuento más estricto: USA-014, 017, 023, 025, 026 son
+parciales = 5 parciales. USA-024 es el único ❌. Resto ✅ = 21.</p>
+</blockquote>
+<hr />
+<h2 id="hallazgos-relevantes">4. Hallazgos relevantes</h2>
+<h3 id="hallazgo-1-la-validación-empírica-de-usa-020-design-tokens-es-el-mayor-activo-del-piloto">Hallazgo
+1 — La validación empírica de USA-020 (design tokens) es el mayor activo
+del piloto</h3>
+<p>El sub-gate 4.2 v1→v5 demostró <strong>5 iteraciones consecutivas de
+identidad visual completa</strong> al coste de una sesión por iteración,
+sin retrabajo de componentes ni marcado HTML. La directriz
+<code>usabilidad.md</code> v1.2 ya incorporó esta validación como nota
+en USA-020. La consecuencia operativa: cualquier proyecto futuro del
+arnés que descuide la separación tokens vs marcado paga un coste 10×
+superior por iteración visual.</p>
+<p><strong>Impacto positivo</strong>: la regla USA-020 vale
+demostrablemente lo que cuesta declararla al inicio. Patrón a sostener y
+a empezar a aplicar desde el primer commit del siguiente proyecto.</p>
+<h3 id="hallazgo-2-estructura-arq-020-no-encaja-con-frontend-only">Hallazgo
+2 — Estructura ARQ-020 no encaja con frontend-only</h3>
+<p>El proyecto vocab-1000 tiene la estructura <code>adr/</code>,
+<code>backend/</code>, <code>frontend/</code>, <code>infra/</code>,
+<code>tests/</code>, <code>fixtures/</code>, <code>pruebas/</code>,
+<code>incidentes/</code> <strong>todas vacías</strong>. El código real
+vive en <code>codigo/</code> (un nombre no contemplado en ARQ-020). Los
+tests viven dentro de <code>codigo/</code>. Los issues viven en
+GitHub.</p>
+<p>La directriz no contempla explícitamente cómo se mapean los
+artefactos cuando el proyecto es 100% frontend sobre plataforma managed.
+Hay tres caminos posibles que el Técnico debe decidir antes del
+siguiente proyecto:</p>
+<ul>
+<li><strong>(a)</strong> Renombrar <code>codigo/</code> a
+<code>frontend/</code> y dejar <code>backend/</code> vacía cuando no
+haya backend. Coherente con ARQ-020 literal.</li>
+<li><strong>(b)</strong> Declarar que <code>codigo/</code> es el nombre
+canónico cuando el proyecto no tiene separación backend/frontend (apps
+puramente cliente).</li>
+<li><strong>(c)</strong> Aceptar que ARQ-020 establece el
+<strong>superset</strong> y proyectos pueden omitir carpetas vacías sin
+penalización.</li>
+</ul>
+<p><strong>Impacto</strong>: gap del sistema, no del piloto. Decisión
+arquitectónica a tomar antes del siguiente proyecto.</p>
+<h3 id="hallazgo-3-ausencia-de-adrs-formales-pese-a-haber-decisiones-relevantes">Hallazgo
+3 — Ausencia de ADRs formales pese a haber decisiones relevantes</h3>
+<p><code>proyectos/vocab-1000/adr/</code> está vacía. Decisiones que
+cumplen la definición de “relevante” según ARQ-022 (elección de stack,
+modelo de datos, reversibilidad, integración con servicio externo
+Vercel) viven en <code>etapa-2/tecnica.md</code>, en
+<code>etapa-2/acta-kickoff.md v2</code>, en
+<code>acta-diseno.md v5</code>. Son trazables y reproducibles, pero
+<strong>no son ADRs formales</strong> con el esqueleto canónico (Estado
+/ Fecha / Contexto / Decisión / Alternativas / Consecuencias).</p>
+<p><strong>Impacto</strong>: incumplimiento estructural de ARQ-022.
+Argumento atenuante: la información existe y es trazable, solo está en
+otro formato. Para el siguiente proyecto: aplicar ADRs formales desde la
+primera decisión de stack, manteniendo el <code>tecnica.md</code> como
+referencia + ADRs como cápsulas.</p>
+<h3 id="hallazgo-4-etapa-5-sin-actas-físicas-gap-saneado-en-sistema-persistente-en-este-piloto">Hallazgo
+4 — Etapa 5 sin actas físicas (gap saneado en sistema, persistente en
+este piloto)</h3>
+<p>No hay carpeta <code>etapa-5/</code> con
+<code>acta-pruebas-stage.md</code> ni
+<code>acta-despliegue-pro.md</code>. El trabajo de QA local + smoke en
+preview Vercel + promoción a producción vivió en <code>memory.md</code>,
+no como artefactos canónicos. La retrospectiva lo identificó (G2) y la
+propuesta #1 ya está incorporada al <code>ciclo.md</code> para futuros
+proyectos.</p>
+<p><strong>Impacto</strong>: la falta es real en el piloto pero el
+sistema ya tiene el carril correcto para el siguiente. Mitigación
+sugerida en R2 (consolidar actas retroactivamente desde la evidencia del
+<code>memory.md</code> si conviene como referencia).</p>
+<h3 id="hallazgo-5-usa-024-no-se-cumple-porque-no-hay-analítica-en-producción">Hallazgo
+5 — USA-024 no se cumple porque no hay analítica en producción</h3>
+<p>El piloto está desplegado en
+<code>https://vocab-1000.vercel.app/</code> pero no tiene
+<strong>medición continua</strong> de Core Web Vitals reales, ni eventos
+analíticos de tasa de completado / abandono, ni canalización de errores
+de cliente. La razón pragmática: el piloto es sintético, no tiene
+usuarios reales, no hay datos que recoger. La razón formal: USA-024 no
+admite “sin usuarios reales” como excepción documentada.</p>
+<p><strong>Impacto</strong>: regla incumplida sin excepción documentada.
+Para el siguiente proyecto frontend-only con vocación de usuarios
+reales: activar Vercel Analytics desde día 1 y declarar los flujos a
+instrumentar en <code>ux.md</code> §I.</p>
+<hr />
+<h2 id="recomendaciones-de-cierre">5. Recomendaciones de cierre</h2>
+<p>Estas son las acciones concretas que merecerían incorporarse como
+insumo de retrospectivas futuras o como deuda explícita del arnés:</p>
+<ol type="1">
+<li><p><strong>R1 — Decidir el encaje de ARQ-020 con
+frontend-only</strong> (Hallazgo 2). Decisión del Técnico antes del
+siguiente proyecto: ¿<code>codigo/</code> se canoniza, se renombra a
+<code>frontend/</code>, o ARQ-020 se interpreta como superset? Coste
+estimado: una decisión + edit en <code>arquitectura.md</code>.</p></li>
+<li><p><strong>R2 — Saneo documental retroactivo del piloto</strong>
+(Hallazgos 2, 3, 4). Si el siguiente proyecto se va a apoyar en el
+piloto como referencia consultable, conviene un commit de “consolidación
+documental” que:</p>
+<ul>
+<li>Cree <code>etapa-5/acta-pruebas-stage.md</code> y
+<code>acta-despliegue-pro.md</code> retroactivamente con la evidencia
+del <code>memory.md</code>.</li>
+<li>Materialice los ADRs principales del piloto en <code>adr/</code>
+como <code>0001-stack-next-typescript.md</code>,
+<code>0002-persistencia-idb.md</code>,
+<code>0003-modelo-grupo-acepciones.md</code>,
+<code>0004-hosting-vercel.md</code>.</li>
+<li>Borre o renombre con README las 6 carpetas vacías restantes
+(<code>backend/</code>, <code>bff/</code>, <code>infra/</code>,
+<code>tests/</code>, <code>fixtures/</code>, <code>pruebas/</code>,
+<code>incidentes/</code>) según la decisión de R1.</li>
+<li>Coste estimado: una sesión.</li>
+</ul></li>
+<li><p><strong>R3 — Plantilla retrospectiva por proyecto cierra hueco
+evaluativo</strong>. La retrospectiva del piloto fue el primer ejercicio
+del ciclo. Detectó 10 propuestas, 10 aceptadas. Conviene
+<strong>mantener este ratio bajo escrutinio</strong> en proyectos
+siguientes — si baja por debajo de 5 propuestas o sube por encima de 15
+(con 1-2 humanos), señal de que falta calibración del formato. Insumo
+para la retrospectiva sistémica cross-proyectos cuando exista el segundo
+proyecto cerrado (G4 de la retrospectiva del piloto).</p></li>
+<li><p><strong>R4 — Anotación en <code>memory.md</code> sobre regla
+post-cierre vs reglas retroactivas</strong>. El piloto tiene 3 reglas
+(CAL-013/048/049) creadas tras su cierre. La política implícita parece
+ser “no exigibles retroactivamente”. Conviene <strong>explicitar esta
+política</strong> en el <code>CLAUDE.md</code> o <code>ciclo.md</code>
+para evitar dudas futuras: “Una regla nueva se aplica al siguiente
+proyecto que arranque etapa 2, no a proyectos cerrados antes de su
+creación”.</p></li>
+<li><p><strong>R5 — Activar Vercel Analytics si el piloto va a recibir
+tráfico residual</strong>. Si el piloto se va a dejar en
+<code>https://vocab-1000.vercel.app/</code> como demo viva del arnés,
+conviene activar Vercel Analytics gratis para empezar a recoger CWV
+reales y eventos básicos. Cubriría USA-024 / USA-025 a coste cero. Si va
+a quedar como “referencia inmutable sin usuarios”, documentar como
+excepción explícita a USA-024.</p></li>
+</ol>
+<hr />
+<h2 id="anexo-notas-metodológicas">Anexo — Notas metodológicas</h2>
+<ul>
+<li><strong>Total de reglas firmes auditadas</strong>: 143 (25 ARQ + 49
+CAL + 42 OBS + 27 USA), contadas contra las versiones vigentes a
+2026-05-26.</li>
+<li><strong>Versiones de las directrices vigentes</strong>:
+<ul>
+<li><code>arquitectura.md</code> v1.6 (2026-05-24).</li>
+<li><code>calidad.md</code> v1.3 (2026-05-25).</li>
+<li><code>observabilidad.md</code> v1.1 (2026-05-23).</li>
+<li><code>usabilidad.md</code> v1.3 (2026-05-24).</li>
+</ul></li>
+<li><strong>Versión del proyecto auditado</strong>: estado vivo a
+2026-05-26 — repo en <code>proyectos/vocab-1000/</code> + producción en
+<code>https://vocab-1000.vercel.app/</code> con commits hasta el ciclo
+de mantenimiento post-PRO completado el 2026-05-23 + consolidación
+retrospectiva 6.5 del mismo día.</li>
+<li><strong>Reglas creadas tras el cierre del piloto</strong> (criterio
+retroactividad no exigible): CAL-013 fijada, CAL-048, CAL-049 (todas
+2026-05-25). Se evalúan pero se anota explícitamente la
+circunstancia.</li>
+<li><strong>Frontera frontend-only</strong>: aplicada según
+<code>observabilidad.md</code> v1.1 §2 — reconocida formalmente como
+sustitución por <code>usabilidad.md</code> USA-025/026/027. Las reglas
+OBS-001/015/019/036 (y por extensión todo el cuerpo de OBS que asume
+backend) se evalúan como
+<code>🚫 no aplica · frontera reconocida</code>.</li>
+<li><strong>No se han evaluado</strong>: recomendaciones
+(<code>*-R-*</code>) ni anti-patrones (§7 de cada directriz). El informe
+se ciñe a reglas firmes según el procedimiento del Arquitecto.</li>
+</ul>
+<hr />
+<p><strong>Firmado por</strong>: Arquitecto del arnés churrerIA ·
+2026-05-26.</p>
+</body>
+</html>

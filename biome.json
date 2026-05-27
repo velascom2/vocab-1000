@@ -31,10 +31,10 @@
           "level": "error",
           "options": {
             "paths": {
-              "@/catalog/data/_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-040-bis).",
-              "./_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-040-bis).",
-              "../_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-040-bis).",
-              "../data/_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-040-bis)."
+              "@/catalog/data/_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-047).",
+              "./_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-047).",
+              "../_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-047).",
+              "../data/_mock_catalog": "Archivos `_mock_*` solo se importan desde tests. Para producción usa el catálogo real (CAL-047)."
             }
           }
         }

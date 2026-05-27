@@ -10,14 +10,14 @@
   justify-content: space-between;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-6);
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
+  background: var(--surface);
+  border-bottom: 1px solid var(--rule);
   flex-wrap: wrap;
 }
 
 .directionLabel {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  color: var(--muted);
   font-weight: 500;
   min-width: 0;
 }
@@ -31,14 +31,14 @@
   background: transparent;
   border: 1px solid transparent;
   border-radius: var(--radius-md);
-  color: var(--color-text-muted);
-  font-size: var(--font-size-lg);
+  color: var(--muted);
+  font-size: 1.25rem;
   transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
 }
 .resetIcon:hover {
-  background: var(--color-surface-elevated);
-  color: var(--color-text);
-  border-color: var(--color-border-strong);
+  background: var(--bg-2);
+  color: var(--ink);
+  border-color: var(--muted-2);
 }
 
 .turnoMain {
@@ -93,10 +93,10 @@
 }
 
 .finTitle {
-  font-size: var(--font-size-xl);
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
-  color: var(--color-text);
+  color: var(--ink);
   line-height: 1.25;
   letter-spacing: -0.02em;
 }
@@ -106,11 +106,11 @@
 }
 .finStats p {
   margin: var(--space-2) 0;
-  color: var(--color-text);
+  color: var(--ink);
 }
 .finStatsHint {
-  color: var(--color-text-muted);
-  font-size: var(--font-size-sm);
+  color: var(--muted);
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
@@ -128,17 +128,17 @@
   justify-content: center;
   min-height: 48px;
   padding: var(--space-3) var(--space-6);
-  border: 1px solid var(--color-border-strong);
+  border: 1px solid var(--muted-2);
   border-radius: var(--radius-md);
-  background: var(--color-surface);
-  color: var(--color-text);
-  font-size: var(--font-size-base);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   transition: background 150ms ease, border-color 150ms ease;
 }
 .linkButton:hover {
-  background: var(--color-surface-elevated);
-  border-color: var(--color-text-faint);
-  color: var(--color-text);
+  background: var(--bg-2);
+  border-color: var(--muted-2);
+  color: var(--ink);
 }

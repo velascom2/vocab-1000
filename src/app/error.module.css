@@ -6,13 +6,13 @@
   min-height: 100dvh;
   padding: var(--space-6);
   gap: var(--space-4);
-  font-family: var(--font-family);
-  background: var(--color-bg);
+  font-family: var(--font-mono);
+  background: var(--bg);
 }
 
 .message {
-  color: var(--color-text);
-  font-size: var(--font-size-base);
+  color: var(--ink);
+  font-size: 1rem;
   text-align: center;
   line-height: 1.6;
   max-width: 36ch;
@@ -20,15 +20,15 @@
 
 .retryBtn {
   padding: var(--space-3) var(--space-6);
-  background: var(--color-primary);
+  background: var(--accent);
   color: #fff;
   border: none;
   border-radius: var(--radius-md);
-  font-size: var(--font-size-base);
-  font-family: var(--font-family);
+  font-size: 1rem;
+  font-family: var(--font-mono);
   cursor: pointer;
 }
 
 .retryBtn:hover {
-  background: var(--color-primary-hover);
+  background: var(--accent-ink);
 }

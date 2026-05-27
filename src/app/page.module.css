@@ -13,11 +13,11 @@
 }
 
 .tagline {
-  font-size: var(--font-size-lg);
+  font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
   margin: var(--space-8) 0 var(--space-2) 0;
-  color: var(--color-text);
+  color: var(--ink);
   line-height: 1.25;
   letter-spacing: -0.01em;
   word-break: normal;
@@ -25,21 +25,21 @@
 }
 
 .taglinePrefix {
-  color: var(--color-primary);
+  color: var(--accent);
   margin-right: 0.5ch;
 }
 
 @media (min-width: 480px) {
   .tagline {
-    font-size: var(--font-size-xl);
+    font-size: 2rem;
   }
 }
 
 .intro {
-  color: var(--color-text-muted);
+  color: var(--muted);
   text-align: center;
   margin: 0 0 var(--space-8) 0;
-  font-size: var(--font-size-sm);
+  font-size: 0.875rem;
   letter-spacing: 0.02em;
 }
 
@@ -56,7 +56,7 @@
 
 @media (min-width: 600px) {
   .tagline {
-    font-size: var(--font-size-xxl);
+    font-size: 3rem;
   }
 }
 

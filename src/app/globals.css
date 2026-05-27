@@ -1,76 +1,71 @@
 /*
- * Design tokens — vocab-1000 MVP
+ * Design tokens — vocab-1000 (rediseño editorial v2, 2026-05-26)
  *
- * Paleta "terminal sobre blanco" (familia C variante mono — USA-R-006).
- * Decisión 2026-05-22 v5: fondo blanco + tipografía monoespaciada para
- * un look más robótico / desarrollador-friendly inspirado en terminales
- * modernas (Cursor, Linear mono mode, Matrix sobrio).
+ * Paleta "papel + tinta + esmeralda" — sustituye a la anterior
+ * "terminal sobre blanco". Documentada en /styleguide.
  *
- * Audiencia: adultos aprendiendo idiomas, sesiones medio-largas.
- * Sensación buscada: técnico, sobrio, foco, sin frivolidad.
+ * Decisión 2026-05-26: rediseño editorial completo. Las fuentes se
+ * cargan vía next/font/google en layout.tsx, expuestas como
+ * --font-serif / --font-sans / --font-mono.
  */
 
 :root {
   /* Fondos */
-  --color-bg: #FFFFFF;
-  --color-surface: #FFFFFF;
-  --color-surface-elevated: #F8FAFC;
+  --bg: #F6F2EB;          /* papel cálido */
+  --bg-2: #EFEAE0;        /* hover sutil, chips inertes */
+  --surface: #FBF8F2;     /* cards, modal, superficies elevadas */
 
   /* Texto */
-  --color-text: #0F172A;           /* slate-900 */
-  --color-text-muted: #475569;     /* slate-600 */
-  --color-text-faint: #64748B;     /* slate-500 */
-
-  /* Marca — teal terminal */
-  --color-primary: #0F766E;        /* teal-700 — primario */
-  --color-primary-hover: #0D5B54;  /* teal-800 — hover */
-  --color-accent: #14B8A6;         /* teal-500 — acento sutil para detalles */
-
-  /* Semánticos */
-  --color-success: #15803D;        /* green-700 — distinto del primary teal */
-  --color-success-hover: #166534;  /* green-800 */
-  --color-danger: #B91C1C;         /* red-700 */
-  --color-danger-hover: #991B1B;   /* red-800 */
-  --color-warning-soft: #B45309;   /* amber-700 */
-  --color-warning-bg: #FFFBEB;     /* amber-50 — fondo banner memory-only */
-  --color-warning-border: #FCD34D; /* amber-300 — borde banner memory-only */
+  --ink: #1B1A17;         /* primario, botón primario */
+  --ink-2: #3A3833;       /* secundario, hover primary */
+  --muted: #7C786F;       /* labels mono, microcopy */
+  --muted-2: #A8A498;     /* separadores tipográficos */
 
   /* Bordes */
-  --color-border: #E2E8F0;         /* slate-200 */
-  --color-border-strong: #94A3B8;  /* slate-400 — más visible, look "cuadrado" */
+  --rule: #D8D2C4;        /* cards, separadores */
+  --rule-2: #E7E1D2;      /* carriles, divisores sutiles */
 
-  /* Spacing */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
+  /* Acento (verde esmeralda) */
+  --accent: #1F6F5C;
+  --accent-ink: #0E3D32;
+  --accent-bg: #E4EEE9;
 
-  /* Tipografía — monoespaciada como default */
-  --font-family: ui-monospace, "SF Mono", "Menlo", "Monaco", "Consolas",
-    "Liberation Mono", "Courier New", monospace;
-  --font-family-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.25rem;
-  --font-size-xl: 2rem;
-  --font-size-xxl: 3rem;
-  --line-height-base: 1.5;
+  /* Semánticos */
+  --success: #1F6F5C;     /* = --accent (intencional) */
+  --danger: #A8392E;
+  --danger-bg: #F1DDD9;
 
-  /* Radius — más cuadrado, look "código/terminal" */
-  --radius-sm: 0.125rem;
-  --radius-md: 0.25rem;
-  --radius-lg: 0.375rem;
-  --radius-xl: 0.5rem;
+  /* Familias (las cargan next/font/google y las expone como CSS vars
+     en <html className=...>). Mantengo el fallback aquí por robustez. */
+  --font-serif: "Newsreader", ui-serif, "Iowan Old Style", Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Monaco, monospace;
 
-  /* Sombras — casi planas */
-  --shadow-sm: 0 1px 0 rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 2px 4px rgba(15, 23, 42, 0.06);
-  --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.10);
-  --shadow-glow-primary: 0 0 0 1px rgba(15, 118, 110, 0.25);
+  /* Spacing — escala 4-pt extendida */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Radios */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-pill: 999px;
+
+  /* Sombras */
+  --shadow-card: 0 1px 0 rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-lift: 0 1px 0 rgba(0, 0, 0, 0.03), 0 8px 24px -8px rgba(0, 0, 0, 0.10);
+  --shadow-modal: 0 24px 64px -16px rgba(0, 0, 0, 0.28);
 
   /* Safe area (futura WebView Capacitor — fase 2) */
   --safe-top: env(safe-area-inset-top);
@@ -87,11 +82,13 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-family);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  letter-spacing: -0.005em;
+  font-feature-settings: "ss01", "cv11";
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -115,31 +112,30 @@ button {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--accent);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-primary-hover);
+  color: var(--accent-ink);
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
-/* Cursor parpadeante para uso decorativo (terminal vibe) */
-.cursor::after {
-  content: "_";
-  color: var(--color-primary);
-  margin-left: 2px;
-  animation: blink 1s steps(2) infinite;
-}
-
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+/* Animaciones globales */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -149,10 +145,5 @@ button:focus-visible {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
-  }
-
-  .cursor::after {
-    animation: none;
-    opacity: 1;
   }
 }

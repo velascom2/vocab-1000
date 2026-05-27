@@ -1,30 +1,41 @@
+/*
+ * Botón polimórfico — variantes del styleguide (sección 06).
+ *
+ * Pildora 999px por defecto. Las variantes `success` y `danger` son los
+ * botones grandes de evaluación del Turno (radius-lg, height 52px,
+ * peso 600). El resto van como píldora estándar (44px, peso 500).
+ */
+
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
-  min-height: 48px;
-  padding: var(--space-3) var(--space-6);
-  border: 1px solid transparent;
-  border-radius: var(--radius-md);
-  font-size: var(--font-size-base);
+  height: 44px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 14.5px;
   font-weight: 500;
   cursor: pointer;
-  transition: background 120ms ease, border-color 120ms ease, transform 80ms ease, box-shadow 200ms ease;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease,
+    transform 0.12s ease;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .btn:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
-.btn:active {
-  transform: scale(0.98);
+.btn:active:not(:disabled) {
+  transform: translateY(1px);
 }
 
 .btn:disabled {
-  opacity: 0.5;
+  opacity: 0.35;
   cursor: not-allowed;
 }
 
@@ -36,68 +47,70 @@
 .icon {
   display: inline-flex;
   align-items: center;
-  font-weight: 700;
 }
 
 .fullWidth {
   width: 100%;
 }
 
-/* Primary — indigo, ligera glow al hover */
+/* Primary — tinta sólida (botón "Continuar" de la home) */
 .primary {
-  background: var(--color-primary);
-  color: white;
-  border-color: var(--color-primary);
-  box-shadow: var(--shadow-sm);
-}
-.primary:hover {
-  background: var(--color-primary-hover);
-  border-color: var(--color-primary-hover);
-  box-shadow: var(--shadow-glow-primary);
+  background: var(--ink);
+  color: var(--bg);
 }
 
-/* Secondary — surface elevada, borde sutil */
+.primary:hover:not(:disabled) {
+  background: var(--ink-2);
+}
+
+/* Secondary — ghost con borde sutil (botón "Reiniciar" de la home) */
 .secondary {
-  background: var(--color-surface);
-  color: var(--color-text);
-  border-color: var(--color-border-strong);
-}
-.secondary:hover {
-  background: var(--color-surface-elevated);
-  border-color: var(--color-text-faint);
+  background: transparent;
+  color: var(--ink-2);
+  box-shadow: inset 0 0 0 1px var(--rule);
 }
 
-/* Success — verde vivo */
-.success {
-  background: var(--color-success);
-  color: white;
-  border-color: var(--color-success);
-  box-shadow: var(--shadow-sm);
-}
-.success:hover {
-  background: var(--color-success-hover);
-  border-color: var(--color-success-hover);
+.secondary:hover:not(:disabled) {
+  background: var(--bg-2);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--muted-2);
 }
 
-/* Danger — rojo vivo */
-.danger {
-  background: var(--color-danger);
-  color: white;
-  border-color: var(--color-danger);
-  box-shadow: var(--shadow-sm);
-}
-.danger:hover {
-  background: var(--color-danger-hover);
-  border-color: var(--color-danger-hover);
-}
-
-/* Ghost — transparente con hover sutil */
+/* Ghost — sin chrome */
 .ghost {
   background: transparent;
-  color: var(--color-text-muted);
-  border-color: transparent;
+  color: var(--ink-2);
 }
-.ghost:hover {
-  background: var(--color-surface-elevated);
-  color: var(--color-text);
+
+.ghost:hover:not(:disabled) {
+  background: var(--bg-2);
+  color: var(--ink);
+}
+
+/* Success / Danger — botones grandes de evaluación (Turno) */
+.success,
+.danger {
+  height: 52px;
+  padding: 0 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  color: #FBFBF7;
+}
+
+.success {
+  background: var(--success);
+}
+
+.success:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--success) 88%, black);
+}
+
+.danger {
+  background: var(--danger);
+}
+
+.danger:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--danger) 88%, black);
 }

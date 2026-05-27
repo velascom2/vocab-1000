@@ -1,6 +1,26 @@
 import type { Metadata } from "next";
+import { JetBrains_Mono, Manrope, Newsreader } from "next/font/google";
 import { MemoryOnlyBanner } from "@/components/MemoryOnlyBanner";
 import "./globals.css";
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-serif",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
   title: "vocab-1000",
@@ -14,7 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html
+      lang="es"
+      className={`${newsreader.variable} ${manrope.variable} ${jetbrainsMono.variable}`}
+    >
       <body>
         <MemoryOnlyBanner />
         {children}
